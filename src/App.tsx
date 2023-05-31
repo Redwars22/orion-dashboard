@@ -37,10 +37,12 @@ function App() {
   return (
     <div className="App">
       {!logged && <LoginScreen />}
-      {logged && <div style={{ display: "flex", maxWidth: "100vw" }}>
-        <Menu/>
-        <HomeScreen/>
-      </div>}
+      {logged && 
+        <div style={{ display: "flex", maxWidth: "100vw" }}>
+          <Menu/>
+          <HomeScreen/>
+        </div>
+      }
     </div>
   );
 }
