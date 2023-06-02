@@ -5,8 +5,8 @@ import TrendingDownIcon from '@mui/icons-material/TrendingDown';
 
 export default function SalesComponent(props: {
     gainsOrLosses: number,
-	dailyAverage: number,
-	annualGainsOrLosses: number
+    dailyAverage: number,
+    annualGainsOrLosses: number
 }) {
     return (<Card variant={"outlined"} sx={{
         paddingLeft: "0.5rem",
@@ -22,9 +22,9 @@ export default function SalesComponent(props: {
             marginLeft: "auto",
             marginRight: "auto",
             margin: "0.75rem"
-        }}>{props?.gainsOrLosses > 0 ? <TrendingUpIcon fontSize='large' color="success" /> : <TrendingDownIcon fontSize="large" color="warning"/>}</div>
+        }}>{props?.gainsOrLosses > 0 ? <TrendingUpIcon fontSize='large' color="success" /> : <TrendingDownIcon fontSize="large" color="warning" />}</div>
         <span className={props?.gainsOrLosses > 0 ? styles.moneyGreen : styles.moneyRed}>+R$ {props.gainsOrLosses}</span>
         <span>Média diária: +R$987711,99</span>
- <span>Total anual: +RS91919199191991912,99</span>
+        <span>Total anual: +RS91919199191991912,99</span>
     </Card>)
 }

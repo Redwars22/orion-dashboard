@@ -35,23 +35,23 @@ function App() {
 
   const [logged, setLogged] = useState(true);
 
-	const DashHome = () => {
-		return(
-			<div style={{ display: "flex", maxWidth: "100vw" }}>
-          <Menu/>
-          <HomeScreen/>
-</div>
-		)
-	}
+  const DashHome = () => {
+    return (
+      <div style={{ display: "flex", maxWidth: "100vw" }}>
+        <Menu />
+        <HomeScreen />
+      </div>
+    )
+  }
 
   return (
     <div className="App">
-	<Router>
-		<Routes>
-			<Route path="/" element={<LoginScreen/>}/>
-			<Route path="/dashboard" element={<DashHome/>}/>
-		</Routes>
-	</Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LoginScreen />} />
+          <Route path="/dashboard" element={<DashHome />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
