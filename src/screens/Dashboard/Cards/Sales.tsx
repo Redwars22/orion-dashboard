@@ -22,9 +22,9 @@ export default function SalesComponent(props: {
             marginLeft: "auto",
             marginRight: "auto",
             margin: "0.75rem"
-        }}>{props.gainsOrLosses > 0 ? <TrendingUpIcon fontSize='large' color="success" /> : <TrendingDownIcon fontSize="large" color="warning"/>}</div>
-        <span className={props.gainsOrLosses > 0 ? styles.moneyGreen : styles.moneyRed}>+R$ {props.gainsOrLosses}</span>
-        <span>Média diária: +R${props.dailyAverage.toFixed(2)}</span>
- <span>Total anual: +RS{props.annualGainsOrLosses.toFixed(2)}</span>
+        }}>{props?.gainsOrLosses > 0 ? <TrendingUpIcon fontSize='large' color="success" /> : <TrendingDownIcon fontSize="large" color="warning"/>}</div>
+        <span className={props?.gainsOrLosses > 0 ? styles.moneyGreen : styles.moneyRed}>+R$ {props.gainsOrLosses}</span>
+        <span>Média diária: +R${props?.dailyAverage.toFixed(2)}</span>
+ <span>Total anual: +RS{props?.annualGainsOrLosses.toFixed(2)}</span>
     </Card>)
 }
