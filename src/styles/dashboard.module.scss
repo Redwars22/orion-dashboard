@@ -1,0 +1,31 @@
+.row {
+    padding: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    width: fill-parent;
+}
+
+.dashboard {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: calc(80vw - 3rem);
+    width: calc(80vw - 3rem);
+    min-width: calc(80vw - 3rem);
+    gap: 0.5rem;
+	height: calc(100vh - 3rem);
+	max-height: calc(100vh - 3rem);
+overflow: overflow-y;
+}
+
+.moneyGreen {
+    color: #00bf63;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.moneyRed {
+    color: red;
+    font-size: 2rem;
+    font-weight: 900;
+}

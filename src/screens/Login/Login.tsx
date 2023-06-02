@@ -1,11 +1,14 @@
 import { Stack, TextField, Button } from "@mui/material";
 import { useState } from "react";
 import Brand from "../../global/Brand";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginScreen() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [logged, setLogged] = useState(false);
+
+	const navigate = useNavigate();
 
   const handleUsernameChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
     setUsername(event.target.value);
@@ -17,7 +20,7 @@ export default function LoginScreen() {
 
   const handleSubmit = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
-    setLogged(true);
+    navigate("/dashboard");
   };
 
   return (
