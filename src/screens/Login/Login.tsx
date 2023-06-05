@@ -2,11 +2,13 @@ import { Stack, TextField, Button } from "@mui/material";
 import { useState } from "react";
 import Brand from "../../global/Brand";
 import { useNavigate } from "react-router-dom";
+import {credentials} from "../../../global/login.ts";
 
 export default function LoginScreen() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [logged, setLogged] = useState(false);
+  const [invalid, setInvalid] = useState(false)
 
 	const navigate = useNavigate();
 
@@ -20,7 +22,10 @@ export default function LoginScreen() {
 
   const handleSubmit = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
-    navigate("/dashboard");
+
+    if(username === credentials.username && password === credentials.password)
+      navigate("/dashboard");
+    else setInvalid(true);
   };
 
   return (
@@ -42,6 +47,9 @@ export default function LoginScreen() {
           fullWidth
           margin="normal"
         />
+        {invalid && <span style={
+          color: "red"
+        }></span>}
         <Button type="submit" variant="contained" color="primary">
           Login
         </Button>
