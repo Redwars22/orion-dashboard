@@ -2,7 +2,7 @@ import { Stack, TextField, Button } from "@mui/material";
 import { useState } from "react";
 import Brand from "../../global/Brand";
 import { useNavigate } from "react-router-dom";
-import {credentials} from "../../global/login.ts";
+import {credentials} from "../../global/login";
 
 export default function LoginScreen() {
   const [username, setUsername] = useState('');
