@@ -47,9 +47,9 @@ export default function LoginScreen() {
           fullWidth
           margin="normal"
         />
-        {invalid && <span style={
+        {invalid && <span style={{
           color: "red"
-        }></span>}
+        }}>Nenhum usuário com essas informações foi encontrado. Tente novamente!</span>}
         <Button type="submit" variant="contained" color="primary">
           Login
         </Button>
