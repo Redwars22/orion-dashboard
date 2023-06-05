@@ -1,8 +1,11 @@
 {
     "business": {
-	"companyName": "AndrewNation Software",
-    "dailyGainsOrLosses": 9876543.99,
-	"dailyAverage": 761611.89,
-	"annualGainsOrLosses": 19991919191.17
+        "companyName": "AndrewNation Software",
+        "dailyGainsOrLosses": 9876543.99,
+        "dailyAverage": 761611.89,
+        "annualGainsOrLosses": 19991919191.17,
+        "clients": [],
+        "events": [],
+        "tasks": []
     }
 }
