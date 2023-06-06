@@ -30,7 +30,11 @@ export default function ClientsScreen() {
             }}>
                 <h2>Lista de Clientes</h2>
             </div>
-            <hr/>
+            <hr style={{
+                padding: "0.5rem",
+                color: "grey",
+                width: "1px",
+            }}/>
             <ClientsTable data={data} />
         </div>
     );

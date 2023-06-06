@@ -13,10 +13,15 @@ export default function ClientsTable(props: {
 
     return (
         <>{props.data.length < 1 ? <span>Nenhum cliente foi encontrado!</span> : <>
+        <span>{props.data.length} cliente(s) encontrado(s)</span>
             <div style={{
                 display: "grid",
                 gridTemplateColumns: "30% 13% 36% 10% 10%",
-                justifyItems: "start"
+                justifyItems: "start",
+                fontWeight: "bold",
+                borderBottomWidth: "1px",
+                borderBottomColor: "grey",
+                borderBottomStyle: "solid",
             }}>
                 <span>Nome</span>
                 <span>CPF</span>
@@ -33,8 +38,9 @@ export default function ClientsTable(props: {
             }) =>
                 <div style={{
                     display: "grid",
-                    gridTemplateColumns: "33% 13% 33% 10% 10%",
-                    justifyItems: "start"
+                    gridTemplateColumns: "30% 13% 36% 10% 10%",
+                    justifyItems: "start",
+                    alignItems: "center"
                 }}>
                     <span>{item?.name!}</span>
                     <span>{item?.CPF!}</span>
