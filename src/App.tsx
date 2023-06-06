@@ -29,7 +29,7 @@ import Brand from './global/Brand';
 import LoginScreen from './screens/Login/Login';
 import Menu from './screens/Dashboard/Menu/Menu';
 import HomeScreen from './screens/Dashboard/Home.screen';
-import ClientsScreen from "./screens/Clients/Clients.screen.tsx";
+import ClientsScreen from "./screens/Clients/Clients.screen";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
