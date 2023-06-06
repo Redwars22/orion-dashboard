@@ -3,7 +3,7 @@ import ClientsTable from "./ClientsTable";
 import React from "react";
 
 export default function ClientsScreen() {
-    const [data, setData] = React.useState<[]|null>(null);
+    const [data, setData] = React.useState<[]>([]);
 
     React.useEffect(() => {
         async function getBusinessData() {
@@ -14,7 +14,7 @@ export default function ClientsScreen() {
         }
 
         getBusinessData();
-    }, [])
+    }, []);
 
     return (
         <div className={styles.dashboard}>
