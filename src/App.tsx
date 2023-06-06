@@ -49,8 +49,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<LoginScreen />} />
-          <Route path="/dashboard" element={<ScreenWithMenu children={HomeScreen} />} />
-          <Route path="/clients" element={<ScreenWithMenu children={ClientsScreen} />} />
+          <Route path="/dashboard" element={<ScreenWithMenu children={<HomeScreen/>} />} />
+          <Route path="/clients" element={<ScreenWithMenu children={<ClientsScreen/>} />} />
         </Routes>
       </Router>
     </div>
