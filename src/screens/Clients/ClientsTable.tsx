@@ -13,14 +13,18 @@ export default function ClientsTable(props: { data: {
                 <span>Endereço</span>
                 <span>Telefone</span>
             </div>
-            {props.data.map(() => {
+            {props.data.map((item: {
+    name: string;
+    address: string;
+    phoneNumber: string;
+}) => {
                 <div style={{
                     display: "grid",
                     gridTemplateColumns: "33% 33% 13%"
                 }}>
-                    <span>{props.data?.name!}</span>
-                    <span>{props.data?.address!}</span>
-                    <span>{props.data?.phoneNumber!}</span>
+                    <span>{item?.name!}</span>
+                    <span>{item?.address!}</span>
+                    <span>{item?.phoneNumber!}</span>
                 </div>
             })}
         </>}</>
