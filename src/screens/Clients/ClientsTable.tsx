@@ -1,8 +1,12 @@
-export default function ClientsTable(props: { data: {
-    name: string;
-    address: string;
-    phoneNumber: string;
-}[] }) {
+export default function ClientsTable(props: {
+    data: {
+        name: string;
+        address: string;
+        phoneNumber: string;
+    }[]
+}) {
+
+    console.log(props.data)
     return (
         <>{props.data.length < 1 ? <span>Nenhum cliente foi encontrado!</span> : <>
             <div style={{
@@ -14,10 +18,10 @@ export default function ClientsTable(props: { data: {
                 <span>Telefone</span>
             </div>
             {props.data.map((item: {
-    name: string;
-    address: string;
-    phoneNumber: string;
-}) => {
+                name: string;
+                address: string;
+                phoneNumber: string;
+            }) => {
                 <div style={{
                     display: "grid",
                     gridTemplateColumns: "33% 33% 13%"
