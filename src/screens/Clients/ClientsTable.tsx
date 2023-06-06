@@ -6,7 +6,6 @@ export default function ClientsTable(props: {
     }[]
 }) {
 
-    console.log(props.data)
     return (
         <>{props.data.length < 1 ? <span>Nenhum cliente foi encontrado!</span> : <>
             <div style={{
@@ -21,7 +20,7 @@ export default function ClientsTable(props: {
                 name: string;
                 address: string;
                 phoneNumber: string;
-            }) => {
+            }) =>
                 <div style={{
                     display: "grid",
                     gridTemplateColumns: "33% 33% 13%"
@@ -30,7 +29,7 @@ export default function ClientsTable(props: {
                     <span>{item?.address!}</span>
                     <span>{item?.phoneNumber!}</span>
                 </div>
-            })}
+            )}
             </>
         </>}</>
     )
