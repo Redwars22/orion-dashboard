@@ -1,4 +1,8 @@
-export default function ClientsTable(props: { data: any[] }) {
+export default function ClientsTable(props: { data: {
+    name: string;
+    address: string;
+    phoneNumber: string;
+}[] }) {
     return (
         <>{props.data.length < 1 ? <span>Nenhum cliente foi encontrado!</span> : <>
             <div style={{
