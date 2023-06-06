@@ -6,6 +6,8 @@ export default function ClientsTable(props: {
         name: string;
         address: string;
         phoneNumber: string;
+        id: string;
+        CPF: string;
     }[]
 }) {
 
@@ -13,10 +15,11 @@ export default function ClientsTable(props: {
         <>{props.data.length < 1 ? <span>Nenhum cliente foi encontrado!</span> : <>
             <div style={{
                 display: "grid",
-                gridTemplateColumns: "33% 33% 13%",
+                gridTemplateColumns: "33% 13% 33% 10% 10%",
                 textAlign: "center"
             }}>
                 <span>Nome</span>
+                <span>CPF</span>
                 <span>Endereço</span>
                 <span>Telefone</span>
                 <span>Contato</span>
@@ -25,13 +28,16 @@ export default function ClientsTable(props: {
                 name: string;
                 address: string;
                 phoneNumber: string;
+                id: string;
+                CPF: string;
             }) =>
                 <div style={{
                     display: "grid",
-                    gridTemplateColumns: "33% 33% 13% 13%",
+                    gridTemplateColumns: "33% 13% 33% 10% 10%",
                     textAlign: "center"
                 }}>
                     <span>{item?.name!}</span>
+                    <span>{item?.CPF!}</span>
                     <span>{item?.address!}</span>
                     <span>{item?.phoneNumber!}</span>
                     <Button variant="text">

@@ -7,21 +7,29 @@
         "clients": [
             {
                 "name": "Mário Donetzki",
+                "CPF": "",
+                "id": "",
                 "address": "Rua Darcy Sucena, 823, Contorno",
                 "phoneNumber": "(42) 98428-0983"
             },
             {
                 "name": "Ervino Arnoldo Schade",
+                "CPF": "",
+                "id": "",
                 "address": "Rua Siqueira Campos, 213, Cará-Cará",
                 "phoneNumber": "(42) 98417-6363"
             },
             {
                 "name": "",
+                "CPF": "",
+                "id": "",
                 "address": "",
                 "phoneNumber": ""
             },
             {
                 "name": "",
+                "CPF": "",
+                "id": "",
                 "address": "",
                 "phoneNumber": ""
             }
