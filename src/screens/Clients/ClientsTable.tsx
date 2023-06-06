@@ -19,6 +19,7 @@ export default function ClientsTable(props: {
                 <span>Nome</span>
                 <span>Endereço</span>
                 <span>Telefone</span>
+                <span>Contato</span>
             </div>
             <>{props.data.map((item: {
                 name: string;
