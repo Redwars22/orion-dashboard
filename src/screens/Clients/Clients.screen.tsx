@@ -1,5 +1,6 @@
 import styles from "../../styles/dashboard.module.scss";
 import ClientsTable from "./ClientsTable";
+import React from "react";
 
 export default function ClientsScreen() {
     const [data, setData] = React.useState<[]>(null);
