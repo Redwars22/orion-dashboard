@@ -1,5 +1,29 @@
-export default function ClientsScreen(){
-    return(
-        <h1>Clientes</h1>
+import styles from "../../styles/dashboard.module.scss";
+import ClientsTable from "./ClientsTable";
+
+export default function ClientsScreen() {
+    const [data, setData] = React.useState<[]>(null);
+
+    React.useEffect(() => {
+        async function getBusinessData() {
+            const data = await fetch("./api.json");
+            const response = await data.json();
+
+            setData(response.business.clients)
+        }
+
+        getBusinessData();
+    }, [])
+
+    return (
+        <div className={styles.dashboard}>
+            <div className={styles.row} style={{
+                marginLeft: "auto",
+                marginRight: "auto"
+            }}>
+                <h2>Lista de Clientes</h2>
+            </div>
+            <ClientsTable data={data} />
+        </div>
     );
 }
