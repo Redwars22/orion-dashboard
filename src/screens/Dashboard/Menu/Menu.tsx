@@ -7,8 +7,12 @@ import PollIcon from '@mui/icons-material/Poll';
 import SportsScoreIcon from '@mui/icons-material/SportsScore';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import SettingsIcon from '@mui/icons-material/Settings';
+import { useNavigate } from "react-router-dom";
 
 export default function Menu() {
+    const [path, setPath] = useState("");
+    const navigate = useNavigate();
+
     return (
         <div style={{
             borderRightWidth: "2px",
@@ -26,7 +30,9 @@ export default function Menu() {
                     display: "flex",
                     gap: "0.5rem",
                     justifyContent: "flex-start"
-                }}>
+                }}
+                onClick={()=> navigate("/dashboard")}
+                >
                     <PieChartIcon />
                     Dashboard
                 </Button>
@@ -35,7 +41,9 @@ export default function Menu() {
                     display: "flex",
                     gap: "0.5rem",
                     justifyContent: "flex-start"
-                }}>
+                }}
+                onClick={()=> navigate("/clients")}
+                >
                     <FaceIcon />
                     Clientes
                 </Button>

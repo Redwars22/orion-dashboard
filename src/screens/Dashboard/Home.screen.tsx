@@ -9,17 +9,20 @@ import TasksComponent from './Cards/Tasks';
 import EventsComponent from './Cards/Events';
 
 export default function HomeScreen() {
-    const [data, setData] = useState<null | {business: {
-        dailyGainsOrLosses: number,
-	companyName: string,
-	annualGainsOrLosses: number,
-	dailyAverage: number	
-    }}>(null);
+    const [data, setData] = useState<null | {
+        business: {
+            dailyGainsOrLosses: number,
+            companyName: string,
+            annualGainsOrLosses: number,
+            dailyAverage: number,
+            clients: any[]
+        }
+    }>(null);
 
-    useEffect(()=>{
-        async function getBusinessData(){
+    useEffect(() => {
+        async function getBusinessData() {
             const data = await fetch("./api.json");
-		const response = await data.json();
+            const response = await data.json();
 
             setData(response)
         }
@@ -28,22 +31,22 @@ export default function HomeScreen() {
     }, [])
 
     return (<div className={styles.dashboard}>
-	<div className={styles.row} style={{
-		marginLeft: "auto",
-		marginRight: "auto"
-	}}>
-		<h2>Painel de controle da {data?.business?.companyName}</h2>
-	</div>
-        <div className={styles.row}>
-            <SalesComponent gainsOrLosses={data?.business?.dailyGainsOrLosses!}
-annualGainsOrLosses={data?.business?.annualGainsOrLosses!}
-dailyAverage={data?.business?.dailyAverage!}
-/>
-            <FinancesChartComponent/>
+        <div className={styles.row} style={{
+            marginLeft: "auto",
+            marginRight: "auto"
+        }}>
+            <h2>Painel de controle da {data?.business?.companyName}</h2>
         </div>
         <div className={styles.row}>
-            <TasksComponent/>
-            <EventsComponent/>
+            <SalesComponent gainsOrLosses={data?.business?.dailyGainsOrLosses!}
+                annualGainsOrLosses={data?.business?.annualGainsOrLosses!}
+                dailyAverage={data?.business?.dailyAverage!}
+            />
+            <FinancesChartComponent />
+        </div>
+        <div className={styles.row}>
+            <TasksComponent />
+            <EventsComponent />
         </div>
     </div>
     )

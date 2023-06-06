@@ -29,17 +29,17 @@ import Brand from './global/Brand';
 import LoginScreen from './screens/Login/Login';
 import Menu from './screens/Dashboard/Menu/Menu';
 import HomeScreen from './screens/Dashboard/Home.screen';
+import ClientsScreen from "./screens/Clients/Clients.screen.tsx";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
-
   const [logged, setLogged] = useState(true);
 
-  const DashHome = () => {
+  const ScreenWithMenu = ({ children }: { children: React.ReactNode }) => {
     return (
-      <div style={{ display: "flex", maxWidth: "100vw" }}>
+      <div style={{ display: "flex", maxWidth: "100vw", maxHeight: "100vh" }}>
         <Menu />
-        <HomeScreen />
+        {children}
       </div>
     )
   }
@@ -49,7 +49,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<LoginScreen />} />
-          <Route path="/dashboard" element={<DashHome />} />
+          <Route path="/dashboard" element={<ScreenWithMenu children={HomeScreen} />} />
+          <Route path="/clients" element={<ScreenWithMenu children={ClientsScreen} />} />
         </Routes>
       </Router>
     </div>
