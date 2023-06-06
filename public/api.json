@@ -4,7 +4,28 @@
         "dailyGainsOrLosses": 9876543.99,
         "dailyAverage": 761611.89,
         "annualGainsOrLosses": 19991919191.17,
-        "clients": [],
+        "clients": [
+            {
+                "name": "Mário Donetzki",
+                "address": "Rua Darcy Sucena, 823, Contorno",
+                "phoneNumber": "(42) 98428-0983"
+            },
+            {
+                "name": "Ervino Arnoldo Schade",
+                "address": "Rua Siqueira Campos, 213, Cará-Cará",
+                "phoneNumber": "(42) 98417-6363"
+            },
+            {
+                "name": "",
+                "address": "",
+                "phoneNumber": ""
+            },
+            {
+                "name": "",
+                "address": "",
+                "phoneNumber": ""
+            }
+        ],
         "events": [],
         "tasks": []
     }
