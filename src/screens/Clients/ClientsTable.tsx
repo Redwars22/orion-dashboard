@@ -17,7 +17,7 @@ export default function ClientsTable(props: {
                 <span>Endereço</span>
                 <span>Telefone</span>
             </div>
-            {props.data.map((item: {
+            <>{props.data.map((item: {
                 name: string;
                 address: string;
                 phoneNumber: string;
@@ -31,6 +31,7 @@ export default function ClientsTable(props: {
                     <span>{item?.phoneNumber!}</span>
                 </div>
             })}
+            </>
         </>}</>
     )
 }
