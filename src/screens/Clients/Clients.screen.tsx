@@ -3,7 +3,7 @@ import ClientsTable from "./ClientsTable";
 import React from "react";
 
 export default function ClientsScreen() {
-    const [data, setData] = React.useState<[]>(null);
+    const [data, setData] = React.useState<[]|null>(null);
 
     React.useEffect(() => {
         async function getBusinessData() {
