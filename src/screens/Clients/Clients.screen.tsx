@@ -7,6 +7,8 @@ export default function ClientsScreen() {
         name: string;
         address: string;
         phoneNumber: string;
+        id: string;
+        CPF: string;
     }[]|[]>([]);
 
     React.useEffect(() => {
