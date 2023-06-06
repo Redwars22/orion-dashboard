@@ -10,7 +10,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import { useNavigate } from "react-router-dom";
 
 export default function Menu() {
-    const [path, setPath] = useState("");
+    //const [path, setPath] = useState("");
     const navigate = useNavigate();
 
     return (
