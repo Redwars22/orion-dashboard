@@ -7,16 +7,11 @@ import SalesComponent from './Cards/Sales';
 import FinancesChartComponent from './Cards/FinancesChart';
 import TasksComponent from './Cards/Tasks';
 import EventsComponent from './Cards/Events';
+import {IOrionAPI} from "../../global/types";
 
 export default function HomeScreen() {
     const [data, setData] = useState<null | {
-        business: {
-            dailyGainsOrLosses: number,
-            companyName: string,
-            annualGainsOrLosses: number,
-            dailyAverage: number,
-            clients: any[]
-        }
+        business: IOrionAPI
     }>(null);
 
     useEffect(() => {

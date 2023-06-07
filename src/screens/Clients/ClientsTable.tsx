@@ -1,14 +1,9 @@
 import { Button } from "@mui/material";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import {IClients} from "../../global/types";
 
 export default function ClientsTable(props: {
-    data: {
-        name: string;
-        address: string;
-        phoneNumber: string;
-        id: string;
-        CPF: string;
-    }[]
+    data: IClients[]
 }) {
 
     return (
@@ -29,13 +24,7 @@ export default function ClientsTable(props: {
                 <span>Telefone</span>
                 <span>Contato</span>
             </div>
-            <>{props.data.map((item: {
-                name: string;
-                address: string;
-                phoneNumber: string;
-                id: string;
-                CPF: string;
-            }) =>
+            <>{props.data.map((item: IClients) =>
                 <div style={{
                     display: "grid",
                     gridTemplateColumns: "30% 13% 36% 10% 10%",

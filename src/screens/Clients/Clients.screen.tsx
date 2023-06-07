@@ -1,15 +1,10 @@
 import styles from "../../styles/dashboard.module.scss";
 import ClientsTable from "./ClientsTable";
 import React from "react";
+import {IClients} from "../../global/types";
 
 export default function ClientsScreen() {
-    const [data, setData] = React.useState<{
-        name: string;
-        address: string;
-        phoneNumber: string;
-        id: string;
-        CPF: string;
-    }[]|[]>([]);
+    const [data, setData] = React.useState<IClients[]|[]>([]);
 
     React.useEffect(() => {
         async function getBusinessData() {
