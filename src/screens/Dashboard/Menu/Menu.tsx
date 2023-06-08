@@ -82,7 +82,7 @@ export default function Menu() {
                     gap: "0.5rem",
                     justifyContent: "flex-start"
                 }}
-                onClick={() => navigate("settings")}
+                onClick={() => navigate("/settings")}
                 >
                     <SettingsIcon />
                     Configurações

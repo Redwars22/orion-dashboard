@@ -30,7 +30,9 @@ export default function SettingsScreen(){
             }} />
             <div>
                 <h3>Detalhes da Empresa</h3>
-
+                <div>
+                    
+                </div>
             </div>
         </div>
     )
