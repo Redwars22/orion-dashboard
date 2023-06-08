@@ -52,8 +52,9 @@ export default function Menu() {
                     display: "flex",
                     gap: "0.5rem",
                     justifyContent: "flex-start"
-                    onClick={()=> navigate("/finances")}
-                }}>
+                }}
+                onClick={()=> navigate("/finances")}
+                >
                     <PollIcon />
                     Financeiro
                 </Button>
