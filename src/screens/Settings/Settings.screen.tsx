@@ -36,7 +36,11 @@ export default function SettingsScreen() {
       />
       <div>
         <h3>Detalhes da Empresa</h3>
-        <div>
+        <div style={{
+            display: "flex",
+            gap: "0.3rem",
+            flexDirection: "column"
+        }}>
           <TextField
             id="filled-basic"
             label="Nome da Empresa"
