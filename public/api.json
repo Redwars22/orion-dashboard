@@ -21,6 +21,18 @@
             }
         ],
         "events": [],
-        "tasks": []
+        "tasks": [],
+        "finances": [
+            {
+                "year": "2023",
+                "month": "Fevereiro",
+                "amount": 981717127.81
+            },
+            {
+                "year": "2023",
+                "month": "Janeiro",
+                "amount": -981717.13
+            }
+        ]
     }
 }

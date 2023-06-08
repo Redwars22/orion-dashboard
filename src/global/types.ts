@@ -14,4 +14,12 @@ export type IOrionAPI = {
 	clients: IClients[];
 	events: [];
 	tasks: [];
+	finances?: IFinances[];
+}
+
+export type IFinances = {
+    year: string;
+    month: string;
+    amount: number;
+    fileURL: string;
 }
