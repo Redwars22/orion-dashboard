@@ -32,6 +32,7 @@ import HomeScreen from './screens/Dashboard/Home.screen';
 import ClientsScreen from "./screens/Clients/Clients.screen";
 import FinancesScreen from './screens/Finances/Finances.screen';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import SettingsScreen from './screens/Settings/Settings.screen';
 
 function App() {
   const [logged, setLogged] = useState(true);
@@ -53,6 +54,7 @@ function App() {
           <Route path="/dashboard" element={<ScreenWithMenu children={<HomeScreen/>} />} />
           <Route path="/clients" element={<ScreenWithMenu children={<ClientsScreen/>} />} />
           <Route path="/finances" element={<ScreenWithMenu children={<FinancesScreen/>} />} />
+          <Route path="/settings" element={<ScreenWithMenu children={<SettingsScreen/>} />} />
         </Routes>
       </Router>
     </div>
