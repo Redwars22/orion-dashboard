@@ -36,18 +36,23 @@ export default function SettingsScreen() {
       />
       <div>
         <h3>Detalhes da Empresa</h3>
-        <div style={{
+        <div
+          style={{
             display: "flex",
             gap: "0.3rem",
-            flexDirection: "column"
-        }}>
+            flexDirection: "column",
+            alignItems: "flex-start",
+          }}
+        >
           <TextField
             id="filled-basic"
             label="Nome da Empresa"
             variant="filled"
           />
           <TextField id="filled-basic" label="Filled" variant="filled" />
-          <InputLabel id="demo-simple-select-label">Age</InputLabel>
+          <InputLabel id="demo-simple-select-label">
+            Habilitar autenticação de dois fatores
+          </InputLabel>
           <Select
             labelId="demo-simple-select-label"
             id="demo-simple-select"
@@ -57,9 +62,10 @@ export default function SettingsScreen() {
           >
             <MenuItem value={10}>Sim</MenuItem>
             <MenuItem value={20}>Não</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
           </Select>
-          <InputLabel id="demo-simple-select-label">Age</InputLabel>
+          <InputLabel id="demo-simple-select-label">
+            Escolher administrador
+          </InputLabel>
           <Select
             labelId="demo-simple-select-label"
             id="demo-simple-select"
