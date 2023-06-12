@@ -1,4 +1,16 @@
 import styles from "../../styles/dashboard.module.scss";
+import { Line } from 'react-chartjs-2';
+import {
+    Chart as ChartJS,
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Legend,
+} from 'chart.js';
+import { fakerPT_BR } from '@faker-js/faker';
 
 export default function Analytics(){
     const RenderChart = (props: {
@@ -11,6 +23,27 @@ export default function Analytics(){
             <h2>{props?.title}</h2>
             <>{props?.children}</>
         </div>);
+    }
+
+    const GenderChart = () => {
+        const labels = ["Masculino", "Feminino"];
+
+        return(
+            <Line
+                datasetIdKey='id'
+                data={{
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: "",
+                            data: labels.map(() => fakerPT_BR.datatype.number({ min: -1000, max: 1000 })),
+                            borderColor: 'rgb(255, 99, 132)',
+                            backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                        },
+                    ],
+                }}
+            />
+        )
     }
 
     return(
