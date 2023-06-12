@@ -22,6 +22,26 @@
         ],
         "events": [],
         "tasks": [],
+        "projects": [
+            {
+                "title": "Lorem Ipsum",
+                "owner": "Bruce Wayne",
+                "description": "Lorem ipsum dolor sit amet amen.",
+                "status": "todo"
+            },
+            {
+                "title": "Lorem Ipsum 2",
+                "owner": "Damian Wayne",
+                "description": "Lorem ipsum dolor sit amet amen.",
+                "status": "done"
+            },
+            {
+                "title": "Lorem Ipsum 3",
+                "owner": "Bruce Wayne",
+                "description": "Lorem ipsum dolor sit amet amen.",
+                "status": "doing"
+            }
+        ],
         "finances": [
             {
                 "year": "2023",

@@ -15,6 +15,7 @@ export type IOrionAPI = {
 	events: [];
 	tasks: [];
 	finances?: IFinances[];
+	projects?: IProjects[] | [];
 }
 
 export type IFinances = {
@@ -22,4 +23,11 @@ export type IFinances = {
     month: string;
     amount: number;
     fileURL: string;
+}
+
+export type IProjects = {
+	title: string;
+	owner: string;
+	description: string;
+	status: "todo" | "doing" | "done";
 }
