@@ -13,7 +13,10 @@ export default function Analytics(){
             margin: "0.75rem"
         }}>
             <h2>{props?.title}</h2>
-            <>{props?.children}</>
+            <div style={{
+                maxWidth: "150px",
+                maxHeight: "150px"
+            }}>{props?.children}</div>
         </div>);
     }
 
@@ -52,7 +55,7 @@ export default function Analytics(){
 		  datasets: [
 		    {
 		      label: 'Clientes quanto a faixa etária',
-		      data: [12, 19, 3, 5, 2, 3],
+		      data: [1, 12, 317, 9872, 215, 39],
 		      backgroundColor: [
 		        'rgba(255, 99, 132, 0.2)',
 		        'rgba(54, 162, 235, 0.2)',
