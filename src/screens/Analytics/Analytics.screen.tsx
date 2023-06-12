@@ -1,15 +1,7 @@
 import styles from "../../styles/dashboard.module.scss";
-import { Line } from 'react-chartjs-2';
-import {
-    Chart as ChartJS,
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Legend,
-} from 'chart.js';
+import React from 'react';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Doughnut } from 'react-chartjs-2';
 import { fakerPT_BR } from '@faker-js/faker';
 
 export default function Analytics(){
@@ -26,24 +18,63 @@ export default function Analytics(){
     }
 
     const GenderChart = () => {
-        const labels = ["Masculino", "Feminino"];
+		ChartJS.register(ArcElement, Tooltip, Legend);
+		
+		const data = {
+		  labels: ['Masculino', 'Feminino', 'Não informado'],
+		  datasets: [
+		    {
+		      label: 'Clientes quanto a gênero',
+		      data: [1237, 418, 12],
+		      backgroundColor: [
+		        'rgba(0, 153, 255, 0.2)',
+		        'rgba(54, 162, 255, 0.2)',
+		        'rgba(153, 0, 0, 0.2)',
+		      ],
+		      borderColor: [
+		        'rgba(0, 52, 255, 1)',
+		        'rgba(255, 0, 102, 1)',
+		        'rgba(128, 0, 0, 1)',
+		      ],
+		      borderWidth: 1,
+		    },
+		  ],
+		};
 
-        return(
-            <Line
-                datasetIdKey='id'
-                data={{
-                    labels: labels,
-                    datasets: [
-                        {
-                            label: "",
-                            data: labels.map(() => fakerPT_BR.datatype.number({ min: -1000, max: 1000 })),
-                            borderColor: 'rgb(255, 99, 132)',
-                            backgroundColor: 'rgba(255, 99, 132, 0.5)',
-                        },
-                    ],
-                }}
-            />
-        )
+        return <Doughnut data={data} />
+    }
+	
+    const AgeChart = () => {
+		ChartJS.register(ArcElement, Tooltip, Legend);
+		
+		const data = {
+		  labels: ['0 a 9', '10 a 16', '16 a 18', '19 a 30', '30 a 55', '55+'],
+		  datasets: [
+		    {
+		      label: 'Clientes quanto a faixa etária',
+		      data: [12, 19, 3, 5, 2, 3],
+		      backgroundColor: [
+		        'rgba(255, 99, 132, 0.2)',
+		        'rgba(54, 162, 235, 0.2)',
+		        'rgba(255, 206, 86, 0.2)',
+		        'rgba(75, 192, 192, 0.2)',
+		        'rgba(153, 102, 255, 0.2)',
+		        'rgba(255, 159, 64, 0.2)',
+		      ],
+		      borderColor: [
+		        'rgba(255, 99, 132, 1)',
+		        'rgba(54, 162, 235, 1)',
+		        'rgba(255, 206, 86, 1)',
+		        'rgba(75, 192, 192, 1)',
+		        'rgba(153, 102, 255, 1)',
+		        'rgba(255, 159, 64, 1)',
+		      ],
+		      borderWidth: 1,
+		    },
+		  ],
+		};
+
+        return <Doughnut data={data} />
     }
 
     return(
@@ -54,7 +85,7 @@ export default function Analytics(){
                 <GenderChart/>
             </RenderChart>
             <RenderChart title="Faixa Etária">
-                <></>
+                <AgeChart/>
             </RenderChart>
             <RenderChart title="Região">
                 <></>
