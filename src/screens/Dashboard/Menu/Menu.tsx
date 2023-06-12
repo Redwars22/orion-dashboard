@@ -72,7 +72,9 @@ export default function Menu() {
                     display: "flex",
                     gap: "0.5rem",
                     justifyContent: "flex-start"
-                }}>
+                }}
+                onClick={() => navigate("/analytics")}
+                >
                     <BarChartIcon />
                     Relatório
                 </Button>

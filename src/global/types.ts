@@ -30,4 +30,5 @@ export type IProjects = {
 	owner: string;
 	description: string;
 	status: "todo" | "doing" | "done";
+	date: string;
 }

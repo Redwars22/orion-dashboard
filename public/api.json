@@ -27,19 +27,22 @@
                 "title": "Lorem Ipsum",
                 "owner": "Bruce Wayne",
                 "description": "Lorem ipsum dolor sit amet amen.",
-                "status": "todo"
+                "status": "todo",
+                "date": "19/03/2023"
             },
             {
                 "title": "Lorem Ipsum 2",
                 "owner": "Damian Wayne",
                 "description": "Lorem ipsum dolor sit amet amen.",
-                "status": "done"
+                "status": "done",
+                "date": "28/05/2023"
             },
             {
                 "title": "Lorem Ipsum 3",
                 "owner": "Bruce Wayne",
                 "description": "Lorem ipsum dolor sit amet amen.",
-                "status": "doing"
+                "status": "doing",
+                "date": "24/06/2023"
             }
         ],
         "finances": [
