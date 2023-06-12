@@ -14,8 +14,8 @@ export default function Analytics(){
         }}>
             <h2>{props?.title}</h2>
             <div style={{
-                maxWidth: "150px",
-                maxHeight: "150px"
+                maxWidth: "300px",
+                maxHeight: "300px"
             }}>{props?.children}</div>
         </div>);
     }
@@ -30,14 +30,14 @@ export default function Analytics(){
 		      label: 'Clientes quanto a gênero',
 		      data: [1237, 418, 12],
 		      backgroundColor: [
-		        'rgba(0, 153, 255, 0.2)',
-		        'rgba(54, 162, 255, 0.2)',
-		        'rgba(153, 0, 0, 0.2)',
+		        'rgba(255, 99, 132, 0.2)',
+		        'rgba(54, 162, 235, 0.2)',
+		        'rgba(255, 206, 86, 0.2)'
 		      ],
 		      borderColor: [
-		        'rgba(0, 52, 255, 1)',
-		        'rgba(255, 0, 102, 1)',
-		        'rgba(128, 0, 0, 1)',
+		        'rgba(255, 99, 132, 1)',
+		        'rgba(54, 162, 235, 1)',
+		        'rgba(255, 206, 86, 1)'
 		      ],
 		      borderWidth: 1,
 		    },
