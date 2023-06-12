@@ -5,7 +5,7 @@ export default function Analytics(){
         title: string;
         children: React.ReactNode;
     }) => {
-        return(<div styles={{
+        return(<div style={{
             margin: "0.75rem"
         }}>
             <h2>{props?.title}</h2>
