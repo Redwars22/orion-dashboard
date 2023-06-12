@@ -51,7 +51,7 @@ export default function Analytics(){
             <h2>Relatórios</h2>
             <p>Resumo do perfil dos clientes que consomem seus produtos</p>
             <RenderChart title="Gênero">
-                <></>
+                <GenderChart/>
             </RenderChart>
             <RenderChart title="Faixa Etária">
                 <></>
