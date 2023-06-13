@@ -10,12 +10,15 @@ export default function Analytics(){
         children: React.ReactNode;
     }) => {
         return(<div style={{
-            margin: "0.75rem"
+            margin: "0.75rem",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center"
         }}>
             <h2>{props?.title}</h2>
             <div style={{
                 maxWidth: "300px",
-                maxHeight: "300px"
+                maxHeight: "300px",
             }}>{props?.children}</div>
         </div>);
     }
@@ -80,6 +83,107 @@ export default function Analytics(){
         return <Doughnut data={data} />
     }
 
+    const GeographyChart = () => {
+		ChartJS.register(ArcElement, Tooltip, Legend);
+		
+		const data = {
+		  labels: ['Sul', 'Norte', 'Nordeste', 'Sudeste', 'Centro-Oeste', 'Fora do Brasil'],
+		  datasets: [
+		    {
+		      label: 'Clientes quanto a região',
+		      data: [19987, 8192, 4317, 9872, 2215, 3219],
+		      backgroundColor: [
+		        'rgba(255, 99, 132, 0.2)',
+		        'rgba(54, 162, 235, 0.2)',
+		        'rgba(255, 206, 86, 0.2)',
+		        'rgba(75, 192, 192, 0.2)',
+		        'rgba(153, 102, 255, 0.2)',
+		        'rgba(255, 159, 64, 0.2)',
+		      ],
+		      borderColor: [
+		        'rgba(255, 99, 132, 1)',
+		        'rgba(54, 162, 235, 1)',
+		        'rgba(255, 206, 86, 1)',
+		        'rgba(75, 192, 192, 1)',
+		        'rgba(153, 102, 255, 1)',
+		        'rgba(255, 159, 64, 1)',
+		      ],
+		      borderWidth: 1,
+		    },
+		  ],
+		};
+
+        return <Doughnut data={data} />
+    }
+
+    
+    const PlataformChart = () => {
+		ChartJS.register(ArcElement, Tooltip, Legend);
+		
+		const data = {
+		  labels: ['Site Desktop', 'Site Móvel', 'Aplicativo Android', 'Aplicativo iOS', 'Parceiros', 'Loja Física'],
+		  datasets: [
+		    {
+		      label: 'Clientes quanto a plataforma que usaram para adquirir os produtos',
+		      data: [2980, 987, 19876, 1892, 8215, 7219],
+		      backgroundColor: [
+		        'rgba(255, 99, 132, 0.2)',
+		        'rgba(54, 162, 235, 0.2)',
+		        'rgba(255, 206, 86, 0.2)',
+		        'rgba(75, 192, 192, 0.2)',
+		        'rgba(153, 102, 255, 0.2)',
+		        'rgba(255, 159, 64, 0.2)',
+		      ],
+		      borderColor: [
+		        'rgba(255, 99, 132, 1)',
+		        'rgba(54, 162, 235, 1)',
+		        'rgba(255, 206, 86, 1)',
+		        'rgba(75, 192, 192, 1)',
+		        'rgba(153, 102, 255, 1)',
+		        'rgba(255, 159, 64, 1)',
+		      ],
+		      borderWidth: 1,
+		    },
+		  ],
+		};
+
+        return <Doughnut data={data} />
+    }
+
+
+    const RatingsChart = () => {
+		ChartJS.register(ArcElement, Tooltip, Legend);
+		
+		const data = {
+		  labels: ['Péssimo', 'Ruim', 'Regular', 'Bom', 'Ótimo', 'Excelente'],
+		  datasets: [
+		    {
+		      label: 'Satisfação dos usuários em relação aos serviços prestados',
+		      data: [987, 89192, 4317, 19872, 92215, 3219],
+		      backgroundColor: [
+		        'rgba(255, 99, 132, 0.2)',
+		        'rgba(54, 162, 235, 0.2)',
+		        'rgba(255, 206, 86, 0.2)',
+		        'rgba(75, 192, 192, 0.2)',
+		        'rgba(153, 102, 255, 0.2)',
+		        'rgba(255, 159, 64, 0.2)',
+		      ],
+		      borderColor: [
+		        'rgba(255, 99, 132, 1)',
+		        'rgba(54, 162, 235, 1)',
+		        'rgba(255, 206, 86, 1)',
+		        'rgba(75, 192, 192, 1)',
+		        'rgba(153, 102, 255, 1)',
+		        'rgba(255, 159, 64, 1)',
+		      ],
+		      borderWidth: 1,
+		    },
+		  ],
+		};
+
+        return <Doughnut data={data} />
+    }
+
     return(
         <div className={styles.dashboard}>
             <h2>Relatórios</h2>
@@ -91,15 +195,25 @@ export default function Analytics(){
                 <AgeChart/>
             </RenderChart>
             <RenderChart title="Região">
-                <></>
+                <GeographyChart/>
             </RenderChart>
             <RenderChart title="Plataforma">
-                <></>
+                <PlataformChart/>
             </RenderChart>
             <RenderChart title="Avaliações">
-                <></>
+                <RatingsChart/>
             </RenderChart>
-            <h2>Comentários</h2>
+			<div>
+        <h2>Comentários</h2>
+				<div>
+					<span>
+						<strong>Naruto Uzumaki</strong>
+					</span>
+					<p>
+						Lorem ipsum dolor sit amet amen lorem ipsum dolor sit amet.
+					</p>
+				</div>
+			</div>
         </div>
     );
 }
