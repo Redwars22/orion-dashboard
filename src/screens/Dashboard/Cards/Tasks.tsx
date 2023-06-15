@@ -14,7 +14,7 @@ export default function TasksComponent(props: {
         }}>
             <h2>Tarefas</h2>
             <ol>
-                <>{props.data.map((item: IProjects) => <li>{item?.title}</li>)}</>
+                <>{props.data!.map((item: IProjects) => <li>{item?.title}</li>)}</>
             </ol>
         </Card>
     );
