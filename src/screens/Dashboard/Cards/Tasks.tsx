@@ -5,12 +5,6 @@ import React from "react";
 export default function TasksComponent(props: {
     data: IProjects[]
 }){
-    const [events, setEvents] = React.useState<string[] | []>([]);
-
-    if(props.data.length > 0)
-        for(let i = 0; i < props.data.length; i++)
-            setEvents([...events, props.data[i]);
-
     return(
         <Card variant={"outlined"} sx={{
             paddingLeft: "0.5rem",
@@ -20,7 +14,7 @@ export default function TasksComponent(props: {
         }}>
             <h2>Tarefas</h2>
             <ol>
-                <>{events.map((item) => <li>{item}</li>)}</>
+                <>{props.data.map((item: IProjects) => <li>{item?.title}</li>)}</>
             </ol>
         </Card>
     );
