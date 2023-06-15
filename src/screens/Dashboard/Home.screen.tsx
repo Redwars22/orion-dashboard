@@ -8,6 +8,7 @@ import FinancesChartComponent from './Cards/FinancesChart';
 import TasksComponent from './Cards/Tasks';
 import EventsComponent from './Cards/Events';
 import {IOrionAPI} from "../../global/types";
+import LockPersonIcon from '@mui/icons-material/LockPerson';
 
 export default function HomeScreen() {
     const [data, setData] = useState<null | {
@@ -26,6 +27,12 @@ export default function HomeScreen() {
     }, [])
 
     return (<div className={styles.dashboard}>
+        <div>
+            <LockPersonIcon/>
+            <span>
+                Você está no modo somente visualização porque sua conta não tem permissões de edição. Contate seu administrador.
+            </span>
+        </div>
         <div className={styles.row} style={{
             marginLeft: "auto",
             marginRight: "auto"
