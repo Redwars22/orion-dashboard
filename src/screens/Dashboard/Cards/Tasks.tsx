@@ -9,7 +9,7 @@ export default function TasksComponent(props: {
 
     if(props.data.length > 0)
         for(let i = 0; i < props.data.length; i++)
-            events.push(props.data[i].title);
+            setEvents((s) => [...s, props.data[i]);
 
     return(
         <Card variant={"outlined"} sx={{
