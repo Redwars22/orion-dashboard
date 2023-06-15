@@ -47,7 +47,7 @@ export default function HomeScreen() {
             <FinancesChartComponent />
         </div>
         <div className={styles.row}>
-            <TasksComponent data={data?.business?.projects}/>
+            <TasksComponent data={data?.business?.projects!}/>
             <EventsComponent />
         </div>
     </div>
