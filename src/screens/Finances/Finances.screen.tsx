@@ -3,7 +3,6 @@ import { IFinances, IOrionAPI } from "../../global/types";
 import styles from "../../styles/dashboard.module.scss"
 import React from "react";
 import FinancesTable from "./Finances.table";
-import { IFinances } from "../../global/types";
 import SystemUpdateAltIcon from '@mui/icons-material/SystemUpdateAlt';
 
 export default function FinancesScreen() {
