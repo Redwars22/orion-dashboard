@@ -10,7 +10,7 @@ export default function ClientsTable(props: {
         <span>{props.data.length} cliente(s) encontrado(s)</span>
             <div style={{
                 display: "grid",
-                gridTemplateColumns: "30% 13% 36% 10% 10%",
+                gridTemplateColumns: "27% 13% 36% 18% 8%",
                 justifyItems: "start",
                 fontWeight: "bold",
                 borderBottomWidth: "1px",
@@ -26,7 +26,7 @@ export default function ClientsTable(props: {
             <>{props.data.map((item: IClients) =>
                 <div style={{
                     display: "grid",
-                    gridTemplateColumns: "30% 13% 36% 10% 10%",
+                    gridTemplateColumns: "27% 13% 36% 18% 8%",
                     justifyItems: "start",
                     alignItems: "center"
                 }}>

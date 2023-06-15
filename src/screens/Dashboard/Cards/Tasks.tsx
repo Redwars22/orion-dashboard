@@ -1,6 +1,16 @@
 import Card from "@mui/material/Card";
+import { IProjects } from "../../../global/types";
+import React from "react";
 
-export default function TasksComponent(){
+export default function TasksComponent(props: {
+    data: IProjects[]
+}){
+    const [events, setEvents] = React.useState<string[] | []>([]);
+
+    if(props.data.length > 0)
+        for(let i = 0; i < props.data.length; i++)
+            events.push(props.data[i].title);
+
     return(
         <Card variant={"outlined"} sx={{
             paddingLeft: "0.5rem",
@@ -10,9 +20,7 @@ export default function TasksComponent(){
         }}>
             <h2>Tarefas</h2>
             <ol>
-                <li>Tarefa 1</li>
-                <li>Tarefa 2</li>
-                <li>Tarefa 3</li>
+                <>{events.map((item) => <li>{item}</li>)}</>
             </ol>
         </Card>
     );

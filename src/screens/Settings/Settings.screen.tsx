@@ -27,13 +27,6 @@ export default function SettingsScreen() {
       >
         <h2>Configurações</h2>
       </div>
-      <hr
-        style={{
-          padding: "0.5rem",
-          color: "grey",
-          width: "1px",
-        }}
-      />
       <div>
         <h3>Detalhes da Empresa</h3>
         <div

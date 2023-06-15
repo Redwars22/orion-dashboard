@@ -3,6 +3,8 @@ import { IFinances, IOrionAPI } from "../../global/types";
 import styles from "../../styles/dashboard.module.scss"
 import React from "react";
 import FinancesTable from "./Finances.table";
+import { IFinances } from "../../global/types";
+import SystemUpdateAltIcon from '@mui/icons-material/SystemUpdateAlt';
 
 export default function FinancesScreen() {
     const [data, setData] = React.useState<IFinances[] | []>([]);
@@ -25,12 +27,11 @@ export default function FinancesScreen() {
                 marginRight: "auto"
             }}>
                 <h2>Detalhes financeiros</h2>
+                <Button variant="contained" onClick={() => window.open("")}>
+                    <SystemUpdateAltIcon />
+                    Baixar relatório completo
+                </Button>
             </div>
-            <hr style={{
-                padding: "0.5rem",
-                color: "grey",
-                width: "1px",
-            }} />
             <FinancesTable data={data} />
         </div>
     )
