@@ -1,0 +1,25 @@
+{
+    "andrewnation_sftw": {
+        "gender": {
+            "labels": ["Masculino", "Feminino", "Não informado"],
+            "data": [9876, 15423, 264]
+        },
+        "age": {
+            "labels": ["0 a 9", "10 a 16", "16 a 18", "19 a 30", "30 a 55", "55+"],
+            "data": [12, 419, 7651, 98765, 102499, 86543]
+        },
+        "region": {
+            "labels": ["Sul", "Norte", "Nordeste", "Sudeste", "Centro-Oeste", "Fora do Brasil"],
+            "data": [9134, 1100, 23004, 42030, 56600, 9809]
+        },
+        "platform": {
+            "labels": ["Site desktop", "Site móvel", "Aplicativo Android", "Aplicativo iOS", "Parceiros", "Loja físia"],
+            "data": [713, 515, 98765, 15432, 27653, 9875]
+        },
+        "ratings": {
+            "labels": ["Péssimo", "Ruim", "Regular", "Bom", "Ótimo", "Excelente"],
+            "data": [981, 765, 113, 9871, 98712, 109113]
+        },
+        "comments": []
+    }
+}
