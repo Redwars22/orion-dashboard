@@ -8,7 +8,7 @@ import SportsScoreIcon from '@mui/icons-material/SportsScore';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { useNavigate } from "react-router-dom";
-import ReadOnly from "./global/ReadOnly";
+import ReadOnly from "../../../global/ReadOnly";
 
 export default function Menu() {
     //const [path, setPath] = useState("");
