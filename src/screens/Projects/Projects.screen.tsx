@@ -116,13 +116,15 @@ export default function ProjectsScreen() {
           display: "flex",
           marginLeft: "auto",
           marginRight: "auto",
+          maxWidth: "375px"
         }}
       >
         <TextField
           id="filled-basic"
           label="Digite aqui para pesquisar"
           variant="standard"
-          width="375px"
+          fullWidth
+          size="small"
         />
       </div>}
       <div
