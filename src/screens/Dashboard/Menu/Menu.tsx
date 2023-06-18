@@ -11,7 +11,6 @@ import { useNavigate } from "react-router-dom";
 import ReadOnly from "../../../global/ReadOnly";
 
 export default function Menu() {
-    //const [path, setPath] = useState("");
     const navigate = useNavigate();
 
     return (
@@ -92,8 +91,9 @@ export default function Menu() {
                     <SettingsIcon />
                     Configurações
                 </Button>
-                {true && <div style={{marginLeft: "auto"}}><ReadOnly/></div>}
+                
             </Stack>
+            {true && <div style={{marginLeft: "auto", marginRight: "auto"}}><ReadOnly/></div>}
         </div>
     )
 }
