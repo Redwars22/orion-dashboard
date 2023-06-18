@@ -6,6 +6,7 @@ import AddIcon from '@mui/icons-material/Add';
 import AddBoxIcon from '@mui/icons-material/AddBox';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import SearchIcon from '@mui/icons-material/Search';
+import {toast } from 'react-toastify';
 
 export default function ProjectsScreen() {
   const [data, setData] = React.useState<{
@@ -112,6 +113,8 @@ export default function ProjectsScreen() {
       <div
         style={{
           display: "flex",
+          marginLeft: "auto",
+          marginRight: "auto"
         }}
       >
         <TextField
@@ -119,9 +122,6 @@ export default function ProjectsScreen() {
           label="Digite aqui para pesquisar"
           variant="filled"
         />
-        <Button variant="contained">Pesquisar</Button>
-        <Button variant="contained">Novo Item</Button>
-        <Button variant="contained" color="error">Lixeira</Button>
       </div>
       <div
         style={{
@@ -202,18 +202,26 @@ export default function ProjectsScreen() {
           {
             key: "newitem",
             icon: <AddBoxIcon />,
-            name: "Novo Item"
+            name: "Novo Item",
+            action: () => {
+              toast("Você não pode adicionar um novo item no modo somente leitura!")
+            }
           },
           {
             key: "lixeira",
             icon: <DeleteOutlineIcon />,
-            name: "Lixeira"
+            name: "Lixeira",
+            action: () => {
+              toast("Não há nenhum item na lixeira")
+            }
           }
         ].map((action) => (
           <SpeedDialAction
             key={action.name}
             icon={action.icon}
             tooltipTitle={action.name}
+            tooltipOpen
+            onClick={() => action.action()}
           />
         ))}
       </SpeedDial>

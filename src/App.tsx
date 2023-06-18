@@ -35,6 +35,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SettingsScreen from './screens/Settings/Settings.screen';
 import AnalyticsScreen from "./screens/Analytics/Analytics.screen";
 import ProjectsScreen from "./screens/Projects/Projects.screen";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [logged, setLogged] = useState(true);
@@ -50,6 +52,7 @@ function App() {
 
   return (
     <div className="App">
+      <ToastContainer />
       <Router>
         <Routes>
           <Route path="/" element={<LoginScreen />} />
