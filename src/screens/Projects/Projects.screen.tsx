@@ -9,6 +9,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import {toast } from 'react-toastify';
 
 export default function ProjectsScreen() {
+  const [searchMode, setSearchMode] = React.useState(false);
   const [data, setData] = React.useState<{
     todo: IProjects[] | [];
     doing: IProjects[] | [];
@@ -110,7 +111,7 @@ export default function ProjectsScreen() {
         <h2>Projetos</h2>
       </div>
       <hr />
-      <div
+      {searchMode && <div
         style={{
           display: "flex",
           marginLeft: "auto",
@@ -122,7 +123,7 @@ export default function ProjectsScreen() {
           label="Digite aqui para pesquisar"
           variant="filled"
         />
-      </div>
+      </div>}
       <div
         style={{
           display: "grid",
@@ -197,7 +198,8 @@ export default function ProjectsScreen() {
           {
             key: "search",
             icon: <SearchIcon/>,
-            name: "Pesquisar"
+            name: "Pesquisar",
+            action: () => setSearchMode(true)
           },
           {
             key: "newitem",
@@ -221,7 +223,7 @@ export default function ProjectsScreen() {
             icon={action.icon}
             tooltipTitle={action.name}
             tooltipOpen
-            onClick={() => action.action()}
+            onClick={() => action?.action()}
           />
         ))}
       </SpeedDial>
