@@ -9,7 +9,7 @@ export default function Analytics(){
 	const [data, setData] = React.useState<IAthenaAPI>();
 	const [username, setUsername] = React.useState("andrewnation_sftw");
 
-	useEffect(()=>{
+	React.useEffect(()=>{
 		async function getAnalytics(){
 			const analytics = await fetch("./athenaAPI.json");
 			const res = await analytics.json();
