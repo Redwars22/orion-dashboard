@@ -91,9 +91,8 @@ export default function Menu() {
                     <SettingsIcon />
                     Configurações
                 </Button>
-                
+                {true && <div><ReadOnly/></div>}
             </Stack>
-            {true && <div style={{marginLeft: "auto", marginRight: "auto"}}><ReadOnly/></div>}
         </div>
     )
 }
