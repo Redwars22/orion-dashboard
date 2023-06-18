@@ -34,7 +34,7 @@ export type IProjects = {
 }
 
 export interface IAthenaData {
-	labes: string[];
+	labels: string[];
 	data: number[]| string[];
 }
 
