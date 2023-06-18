@@ -191,17 +191,17 @@ export default function ProjectsScreen() {
           {
             key: "search",
             icon: "magnifier",
-            tooltipTitle: "Pesquisar"
+            name: "Pesquisar"
           },
           {
             key: "newitem",
             icon: "plus",
-            tooltipTitle: "Novo Item"
+            name: "Novo Item"
           },
           {
             key: "lixeira",
             icon: "trashbin",
-            tooltipTitle: "Lixeira"
+            name: "Lixeira"
           }
         ].map((action) => (
           <SpeedDialAction
