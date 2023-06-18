@@ -136,7 +136,8 @@ export default function ProjectsScreen() {
         }}>
           <ColumnHeader status={"todo"} amount={data.todo?.length} />
           <>{data.todo?.map((item) => <div style={{
-            backgroundColor: "#f5c56d",
+            backgroundColor: "#ff5722",
+            color: "white",
             padding: "10px",
             borderRadius: "5px",
             margin: "5px",
@@ -154,7 +155,8 @@ export default function ProjectsScreen() {
         }}>
           <ColumnHeader status={"doing"} amount={data.doing?.length} />
           <>{data.doing?.map((item) => <div style={{
-            backgroundColor: "#96c9e7",
+            backgroundColor: "#00bcd4",
+            color: "white",
             padding: "10px",
             borderRadius: "5px",
             margin: "5px",
@@ -173,7 +175,8 @@ export default function ProjectsScreen() {
         }}>
           <ColumnHeader status={"done"} amount={data.done?.length} />
           <>{data.done?.map((item) => <div style={{
-            backgroundColor: "#8af98a",
+            backgroundColor: "#009688",
+            color: "white",
             padding: "10px",
             borderRadius: "5px",
             margin: "5px",
