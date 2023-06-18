@@ -116,7 +116,9 @@ export default function ProjectsScreen() {
           display: "flex",
           marginLeft: "auto",
           marginRight: "auto",
-          maxWidth: "375px"
+          width: "375px",
+          marginTop: "-25px",
+          marginBottom: "25px"
         }}
       >
         <TextField
