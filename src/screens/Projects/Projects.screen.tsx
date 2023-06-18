@@ -204,9 +204,18 @@ export default function ProjectsScreen() {
           {
             key: "newitem",
             icon: <AddBoxIcon />,
-            name: "Novo Item",
+            name: "Novo",
             action: () => {
-              toast("Você não pode adicionar um novo item no modo somente leitura!")
+              toast.error("Você não pode adicionar um novo item no modo somente leitura!", {
+                position: "top-center",
+                autoClose: false,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                })
             }
           },
           {
@@ -214,7 +223,16 @@ export default function ProjectsScreen() {
             icon: <DeleteOutlineIcon />,
             name: "Lixeira",
             action: () => {
-              toast("Não há nenhum item na lixeira")
+              toast.error("Não há nenhum item na lixeira", {
+                position: "top-center",
+                autoClose: false,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                })
             }
           }
         ].map((action) => (
