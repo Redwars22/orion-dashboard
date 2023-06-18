@@ -115,13 +115,14 @@ export default function ProjectsScreen() {
         style={{
           display: "flex",
           marginLeft: "auto",
-          marginRight: "auto"
+          marginRight: "auto",
         }}
       >
         <TextField
           id="filled-basic"
           label="Digite aqui para pesquisar"
-          variant="filled"
+          variant="standard"
+          width="375px"
         />
       </div>}
       <div
