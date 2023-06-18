@@ -3,6 +3,9 @@ import styles from "../../styles/dashboard.module.scss";
 import React from "react";
 import { IProjects } from "../../global/types";
 import AddIcon from '@mui/icons-material/Add';
+import AddBoxIcon from '@mui/icons-material/AddBox';
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import SearchIcon from '@mui/icons-material/Search';
 
 export default function ProjectsScreen() {
   const [data, setData] = React.useState<{
@@ -190,17 +193,17 @@ export default function ProjectsScreen() {
         {[
           {
             key: "search",
-            icon: "magnifier",
+            icon: <SearchIcon/>,
             name: "Pesquisar"
           },
           {
             key: "newitem",
-            icon: "plus",
+            icon: <AddBoxIcon />,
             name: "Novo Item"
           },
           {
             key: "lixeira",
-            icon: "trashbin",
+            icon: <DeleteOutlineIcon />,
             name: "Lixeira"
           }
         ].map((action) => (
