@@ -32,3 +32,19 @@ export type IProjects = {
 	status: "todo" | "doing" | "done";
 	date: string;
 }
+
+export interface IAthenaData {
+	labes: string[];
+	data: number[]| string[];
+}
+
+export interface IAthenaComment {}
+
+export interface IAthenaAPI {
+	gender: IAthenaData;
+	age: IAthenaData;
+	region: IAthenaData;
+	platform: IAthenaData;
+	ratings: IAthenaData;
+	comments: any[];
+}

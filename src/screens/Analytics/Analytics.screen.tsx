@@ -3,8 +3,20 @@ import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 import { fakerPT_BR } from '@faker-js/faker';
+import {IAthenaAPI} from "../../global/types"
 
 export default function Analytics(){
+	const [data, setData] = React.useState<IAthenaAPI>();
+	const [username, setUsername] = React.useState("andrewnation_sftw");
+
+	useEffect(()=>{
+		async function getAnalytics(){
+			const analytics = await fetch("./athenaAPI.json");
+			const res = await analytics.json();
+			setData(res[username]);
+		}
+	}, [])
+
     const RenderChart = (props: {
         title: string;
         children: React.ReactNode;
@@ -27,11 +39,11 @@ export default function Analytics(){
 		ChartJS.register(ArcElement, Tooltip, Legend);
 		
 		const data = {
-		  labels: ['Masculino', 'Feminino', 'Não informado'],
+		  labels: data?.clients?.labels!,
 		  datasets: [
 		    {
 		      label: 'Clientes quanto a gênero',
-		      data: [1237, 418, 12],
+		      data: data?.clients?.data!,
 		      backgroundColor: [
 		        'rgba(255, 99, 132, 0.2)',
 		        'rgba(54, 162, 235, 0.2)',
