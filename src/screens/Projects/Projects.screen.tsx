@@ -2,6 +2,7 @@ import { Button, TextField, SpeedDial, SpeedDialAction } from "@mui/material";
 import styles from "../../styles/dashboard.module.scss";
 import React from "react";
 import { IProjects } from "../../global/types";
+import AddIcon from '@mui/icons-material/Add';
 
 export default function ProjectsScreen() {
   const [data, setData] = React.useState<{
@@ -182,34 +183,34 @@ export default function ProjectsScreen() {
         </div>
       </div>
       <SpeedDial
-  ariaLabel="SpeedDial basic example"
-  sx={{ position: 'absolute', bottom: 16, right: 16 }}
-  icon={<SpeedDialIcon />}
->
-  {[
-    {
-      key: "search",
-      icon: "magnifier",
-      tooltipTitle: "Pesquisar"
-    },
-    {
-      key: "newitem",
-      icon: "plus",
-      tooltipTitle: "Novo Item"
-    },
-    {
-      key: "lixeira",
-      icon: "trashbin",
-      tooltipTitle: "Lixeira"
-    }
-  ].map((action) => (
-    <SpeedDialAction
-      key={action.name}
-      icon={action.icon}
-      tooltipTitle={action.name}
-    />
-  ))}
-</SpeedDial>
+        ariaLabel="SpeedDial basic example"
+        sx={{ position: 'absolute', bottom: 16, right: 16 }}
+        icon={<AddIcon />}
+      >
+        {[
+          {
+            key: "search",
+            icon: "magnifier",
+            tooltipTitle: "Pesquisar"
+          },
+          {
+            key: "newitem",
+            icon: "plus",
+            tooltipTitle: "Novo Item"
+          },
+          {
+            key: "lixeira",
+            icon: "trashbin",
+            tooltipTitle: "Lixeira"
+          }
+        ].map((action) => (
+          <SpeedDialAction
+            key={action.name}
+            icon={action.icon}
+            tooltipTitle={action.name}
+          />
+        ))}
+      </SpeedDial>
     </div>
   );
 }
