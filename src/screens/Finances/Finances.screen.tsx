@@ -23,7 +23,9 @@ export default function FinancesScreen() {
         <div className={styles.dashboard}>
             <div className={styles.row} style={{
                 marginLeft: "auto",
-                marginRight: "auto"
+                marginRight: "auto",
+                display: "flex",
+                flexDirection: "column"
             }}>
                 <h2>Detalhes financeiros</h2>
                 <Button variant="contained" onClick={() => window.open("")}>
