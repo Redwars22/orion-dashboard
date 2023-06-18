@@ -45,7 +45,7 @@ function App() {
       <div style={{ display: "flex", maxWidth: "100vw", maxHeight: "100vh" }}>
         <Menu />
         <div style={{display: "flex", flexDirection: "column"}}>
-        {true && <ReadOnly/>}
+        {true && <div style={{marginLeft: "auto"}}><ReadOnly/></div>}
         {children}
         </div>
       </div>
