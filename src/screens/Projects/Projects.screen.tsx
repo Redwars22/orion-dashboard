@@ -156,7 +156,7 @@ export default function ProjectsScreen() {
           size="small"
         value={query}
         onChange={(q) => {
-          if(q != ""){
+          if(q !== ""){
             setQuery(q);
           }
         }}
