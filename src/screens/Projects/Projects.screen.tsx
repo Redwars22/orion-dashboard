@@ -23,6 +23,10 @@ export default function ProjectsScreen() {
   });
   
   React.useEffect(()=>{
+      async function getBusinessData() {
+      const data = await fetch("./api.json");
+      const response = await data.json();
+          
     const todoItems = response.business.projects.filter(
       (item: IProjects) => item.status === "todo"
     );
@@ -38,6 +42,9 @@ export default function ProjectsScreen() {
       doing: doingItems,
       done: doneItems,
     }));
+      }
+    
+    getBusinessData();
   }, [query])
 
   React.useEffect(() => {
