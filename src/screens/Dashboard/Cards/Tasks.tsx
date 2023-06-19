@@ -27,7 +27,9 @@ export default function TasksComponent(props: {
             <div style={{
                 display: "flex",
                     flexDirection: "column",
-                        gap: "0.5rem"
+                        gap: "0.5rem",
+                     alignItems: "flex-start",
+                     marginLeft: "0.5rem"
             }}>
                 {props.data && props.data!.map((item: IProjects) => <span>
                   {getTaskStatus(item.status)} - {item?.title} ({item?.owner})
