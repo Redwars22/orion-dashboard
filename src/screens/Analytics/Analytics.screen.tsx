@@ -3,7 +3,8 @@ import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 import { fakerPT_BR } from '@faker-js/faker';
-import {IAthenaAPI} from "../../global/types"
+import {IAthenaAPI} from "../../global/types";
+import {IAthenaComment} from "../../global/types";
 
 export default function Analytics(){
 	const [analyticsData, setAnalyticsData] = React.useState<IAthenaAPI>();
@@ -218,12 +219,13 @@ export default function Analytics(){
 			<div>
         <h2>Comentários</h2>
 				<div>
-					<span>
-						<strong>Naruto Uzumaki</strong>
-					</span>
-					<p>
-						Lorem ipsum dolor sit amet amen lorem ipsum dolor sit amet.
-					</p>
+        {analyticsData.comments.length > 0 && analyticsData.comments.map((comment: IAthenaComment) => <CommentCard
+          name={comment.name}
+          rating={comment.rating}
+          date={comment.date}
+          comment={comment.comment}
+          uuid={comment.uuid}
+          />)}
 				</div>
 			</div>
         </div>

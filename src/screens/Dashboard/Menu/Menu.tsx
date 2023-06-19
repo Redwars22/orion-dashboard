@@ -9,6 +9,7 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { useNavigate } from "react-router-dom";
 import ReadOnly from "../../../global/ReadOnly";
+import LogoutIcon from '@mui/icons-material/Logout';
 
 export default function Menu() {
     const navigate = useNavigate();
@@ -101,7 +102,7 @@ export default function Menu() {
                 }}
                 onClick={() => navigate("/")}
                 >
-                    <SettingsIcon />
+                    <LogoutIcon />
                     Sair
                 </Button>
                 {true && <div><ReadOnly/></div>}

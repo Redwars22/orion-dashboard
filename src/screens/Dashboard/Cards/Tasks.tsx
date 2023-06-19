@@ -15,23 +15,38 @@ export default function TasksComponent(props: {
         {status === "todo" ? "NÃO INICIADO" : status === "doing" ? "EM PROGRESSO" : status === "done" ? "CONCLUÍDO" : ""}
       </strong>
     }
+    
+    const tasks = () => {
+      const _tasks: IProjects[] = [];
+      
+      for(let i = 0; i < 3; i++){
+        if(props.data[i]){
+          _tasks.push(props.data[i]);
+        } else {
+          break;
+        }
+      }
+      
+      return _tasks;
+    }
   
     return(
         <Card variant={"outlined"} sx={{
             paddingLeft: "0.5rem",
             paddingRight: "0.5rem",
+            paddingBottom: "0.5rem",
             borderRadius: "10px",
             flex: 1
         }}>
             <h2>Tarefas</h2>
             <div style={{
                 display: "flex",
-                    flexDirection: "column",
-                        gap: "0.5rem",
-                     alignItems: "flex-start",
-                     marginLeft: "0.5rem"
+                flexDirection: "column",
+                gap: "0.5rem",
+                alignItems: "flex-start",
+                marginLeft: "0.5rem"
             }}>
-                {props.data && props.data!.map((item: IProjects) => <span>
+                {props.data && tasks()!.map((item: IProjects) => <span>
                   {getTaskStatus(item.status)} - {item?.title} ({item?.owner})
                 </span>)}
             </div>

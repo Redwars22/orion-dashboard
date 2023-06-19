@@ -23,6 +23,7 @@ export type IOrionAPI = {
 	tasks: [];
 	finances?: IFinances[];
 	projects?: IProjects[] | [];
+  comments: IAthenaComment[];
 }
 
 export type IFinances = {
@@ -45,7 +46,13 @@ export interface IAthenaData {
 	data: number[]| string[];
 }
 
-export interface IAthenaComment {}
+export interface IAthenaComment {
+    name: string;
+    date: string;
+    rating: number;
+    comment: string;
+    uuid: string;
+}
 
 export interface IAthenaAPI {
 	gender: IAthenaData;
@@ -53,5 +60,5 @@ export interface IAthenaAPI {
 	region: IAthenaData;
 	platform: IAthenaData;
 	ratings: IAthenaData;
-	comments: any[];
+	comments: IAthenaAPI[];
 }

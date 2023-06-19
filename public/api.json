@@ -63,6 +63,15 @@
                 "month": "Janeiro",
                 "amount": -981717.13
             }
+        ],
+        "comments": [
+          {
+            "name": "Naruto Uzumaki",
+            "rating": 5,
+            "comment": "Lorem ipsum dolor sit amet",
+            "uuid": "",
+            "date": "19/06/2023"
+          }
         ]
     }
 }
