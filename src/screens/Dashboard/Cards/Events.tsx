@@ -27,7 +27,7 @@ export default function EventsComponent(props: {
                 maxWidth: "150px"
               }}>
                 <DatePicker value={date} onChange={(value)=> {
-                    setDate(value);    
+                    setDate(value ? value : ");    
                     window.alert(value)
                 }}
                 />
