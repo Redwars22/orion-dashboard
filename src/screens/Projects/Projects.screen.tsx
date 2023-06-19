@@ -21,41 +21,7 @@ export default function ProjectsScreen() {
     doing: [],
     done: [],
   });
-  
-  React.useEffect(()=>{
-      async function getBusinessData() {
-      const data = await fetch("./api.json");
-      const response = await data.json();
-        
-            let todoItems = response.business.projects.filter(
-      (item: IProjects) => item.status === "todo"
-    );
-    let doingItems = response.business.projects.filter(
-      (item: IProjects) => item.status === "doing"
-    );
-    let doneItems = response.business.projects.filter(
-      (item: IProjects) => item.status === "done"
-    );
-          
-     todoItems = response.business.projects.filter(
-      (item: IProjects) => item.status === "todo"
-    );
-    doingItems = response.business.projects.filter(
-      (item: IProjects) => item.status === "doing"
-    );
-    doneItems = response.business.projects.filter(
-      (item: IProjects) => item.status === "done"
-    );
 
-    setData((s) => ({
-      todo: todoItems,
-      doing: doingItems,
-      done: doneItems,
-    }));
-      }
-    
-    getBusinessData();
-  }, [query])
 
   React.useEffect(() => {
     async function getBusinessData() {
@@ -63,13 +29,13 @@ export default function ProjectsScreen() {
       const response = await data.json();
 
       const todoItems = response.business.projects.filter(
-        (item: IProjects) => item.title.includes(query.toLowerCase()) || item.description.includes(query.toLowerCase()) || item.owner.includes(query.toLowerCase())
+        (item: IProjects) => item.status === "todo")
       );
       const doingItems = response.business.projects.filter(
-        (item: IProjects) => item.title.includes(query.toLowerCase()) || item.description.includes(query.toLowerCase()) || item.owner.includes(query.toLowerCase())
+        (item: IProjects) => item.status === "doing")
       );
       const doneItems = response.business.projects.filter(
-        (item: IProjects) => item.title.includes(query.toLowerCase()) || item.description.includes(query.toLowerCase()) || item.owner.includes(query.toLowerCase())
+        (item: IProjects) => item.status === "done")
       );
 
       setData((s) => ({
