@@ -24,7 +24,9 @@ export default function EventsComponent(props: {
             <h2>Eventos</h2>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <div style={{
-                maxWidth: "150px"
+                maxWidth: "150px",
+                marginLeft: "auto",
+                marginRight: "auto"
               }}>
                 <DatePicker value={date} onChange={(value)=> {
                     setDate(value ? value : "");    
