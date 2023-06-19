@@ -51,14 +51,24 @@ export default function ProjectsScreen() {
     async function getBusinessData() {
       const data = await fetch("./api.json");
       const response = await data.json();
+      
+    let todoItems = response.business.projects.filter(
+      (item: IProjects) => item.status === "todo"
+    );
+    let doingItems = response.business.projects.filter(
+      (item: IProjects) => item.status === "doing"
+    );
+    let doneItems = response.business.projects.filter(
+      (item: IProjects) => item.status === "done"
+    );
 
-      const todoItems = response.business.projects.filter(
+      todoItems = response.business.projects.filter(
         (item: IProjects) => item.title.includes(query.toLowerCase()) || item.description.includes(query.toLowerCase()) || item.owner.includes(query.toLowerCase())
       );
-      const doingItems = response.business.projects.filter(
+      doingItems = response.business.projects.filter(
         (item: IProjects) => item.title.includes(query.toLowerCase()) || item.description.includes(query.toLowerCase()) || item.owner.includes(query.toLowerCase())
       );
-      const doneItems = response.business.projects.filter(
+      doneItems = response.business.projects.filter(
         (item: IProjects) => item.title.includes(query.toLowerCase()) || item.description.includes(query.toLowerCase()) || item.owner.includes(query.toLowerCase())
       );
 
