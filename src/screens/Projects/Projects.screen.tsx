@@ -29,13 +29,13 @@ export default function ProjectsScreen() {
       const response = await data.json();
 
       const todoItems = response.business.projects.filter(
-        (item: IProjects) => item.status === "todo")
+        (item: IProjects) => item.status === "todo"
       );
       const doingItems = response.business.projects.filter(
-        (item: IProjects) => item.status === "doing")
+        (item: IProjects) => item.status === "doing"
       );
       const doneItems = response.business.projects.filter(
-        (item: IProjects) => item.status === "done")
+        (item: IProjects) => item.status === "done"
       );
 
       setData((s) => ({
