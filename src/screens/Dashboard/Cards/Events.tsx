@@ -2,7 +2,7 @@ import { TextField, Button, Stack, Card } from '@mui/material';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import {IEvent} from "../../../types";
+import {IEvent} from "../../../global/types";
 
 export default function EventsComponent(props: {
     data: IEvent[]
