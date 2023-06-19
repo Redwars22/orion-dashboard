@@ -24,11 +24,15 @@ export default function TasksComponent(props: {
             flex: 1
         }}>
             <h2>Tarefas</h2>
-            <ol>
-                <>{props.data && props.data!.map((item: IProjects) => <span>
+            <div style={{
+                display: "flex",
+                    flexDirection: "column",
+                        gap: "0.5rem"
+            }}>
+                {props.data && props.data!.map((item: IProjects) => <span>
                   {getTaskStatus(item.status)} - {item?.title} ({item?.owner})
-                </span>)}</>
-            </ol>
+                </span>)}
+            </div>
         </Card>
     );
 }
