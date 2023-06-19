@@ -39,11 +39,11 @@ export default function Analytics(){
 		ChartJS.register(ArcElement, Tooltip, Legend);
 		
 		const data = {
-		  labels: analyticsData?.gender?.labels!,
+		  labels: ["Masculino", "Feminino", "Não identificado"],
 		  datasets: [
 		    {
 		      label: 'Clientes quanto a gênero',
-		      data: analyticsData?.gender?.data!,
+		      data: [99871, 85432, 987],
 		      backgroundColor: [
 		        'rgba(255, 99, 132, 0.2)',
 		        'rgba(54, 162, 235, 0.2)',

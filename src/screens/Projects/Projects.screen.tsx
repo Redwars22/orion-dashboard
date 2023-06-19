@@ -10,6 +10,8 @@ import {toast } from 'react-toastify';
 
 export default function ProjectsScreen() {
   const [searchMode, setSearchMode] = React.useState(false);
+  const [query, setQuery] = React.useState<string>("");
+  
   const [data, setData] = React.useState<{
     todo: IProjects[] | [];
     doing: IProjects[] | [];
@@ -19,6 +21,24 @@ export default function ProjectsScreen() {
     doing: [],
     done: [],
   });
+  
+  React.useEffect(()=>{
+    const todoItems = response.business.projects.filter(
+      (item: IProjects) => item.status === "todo"
+    );
+    const doingItems = response.business.projects.filter(
+      (item: IProjects) => item.status === "doing"
+    );
+    const doneItems = response.business.projects.filter(
+      (item: IProjects) => item.status === "done"
+    );
+
+    setData((s) => ({
+      todo: todoItems,
+      doing: doingItems,
+      done: doneItems,
+    }));
+  }, [query])
 
   React.useEffect(() => {
     async function getBusinessData() {
@@ -26,13 +46,13 @@ export default function ProjectsScreen() {
       const response = await data.json();
 
       const todoItems = response.business.projects.filter(
-        (item: IProjects) => item.status === "todo"
+        (item: IProjects) => item.title.includes(query.toLowerCase()) || item.description.includes(query.toLowerCase()) || item.owner.includes(query.toLowerCase())
       );
       const doingItems = response.business.projects.filter(
-        (item: IProjects) => item.status === "doing"
+        (item: IProjects) => item.title.includes(query.toLowerCase()) || item.description.includes(query.toLowerCase()) || item.owner.includes(query.toLowerCase())
       );
       const doneItems = response.business.projects.filter(
-        (item: IProjects) => item.status === "done"
+        (item: IProjects) => item.title.includes(query.toLowerCase()) || item.description.includes(query.toLowerCase()) || item.owner.includes(query.toLowerCase())
       );
 
       setData((s) => ({
@@ -127,6 +147,12 @@ export default function ProjectsScreen() {
           variant="standard"
           fullWidth
           size="small"
+        value={query}
+        onChange={(q) => {
+          if(q != ""){
+            setQuery(q);
+          }
+        }}
         />
       </div>}
       <div

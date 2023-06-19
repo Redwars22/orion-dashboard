@@ -6,13 +6,20 @@ export type IClients = {
 	phoneNumber: string;
 }
 
+export interface IEvent {
+	title: string;
+	date: string;
+	description: string;
+	uuid: string;
+}
+
 export type IOrionAPI = {
 	companyName: string;
 	dailyGainsOrLosses: number;
 	dailyAverage: number;
 	annualGainsOrLosses: number;
 	clients: IClients[];
-	events: [];
+	events: IEvent[];
 	tasks: [];
 	finances?: IFinances[];
 	projects?: IProjects[] | [];

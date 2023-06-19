@@ -20,8 +20,10 @@ export default function Menu() {
             borderRightColor: "#e5e5e5",
             padding: "1rem",
             height: "calc(100vh - 2rem)",
+            maxHeight: "calc(100vh - 2rem)",
             backgroundColor: "#2577fa",
-            maxWidth: "20vw"
+            maxWidth: "20vw",
+            overflowY: "auto"
         }}>
             <Stack spacing={2}>
                 <Brand isBlue={false} />
@@ -90,6 +92,17 @@ export default function Menu() {
                 >
                     <SettingsIcon />
                     Configurações
+                </Button>
+                <Button sx={{
+                    color: "#fff",
+                    display: "flex",
+                    gap: "0.5rem",
+                    justifyContent: "flex-start"
+                }}
+                onClick={() => navigate("/")}
+                >
+                    <SettingsIcon />
+                    Sair
                 </Button>
                 {true && <div><ReadOnly/></div>}
             </Stack>

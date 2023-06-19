@@ -20,7 +20,14 @@
                 "phoneNumber": "(42) 98417-6363"
             }
         ],
-        "events": [],
+        "events": [
+            {
+                "title": "",
+                "date": "",
+                "description": "",
+                "uuid": ""
+            }
+        ],
         "tasks": [],
         "projects": [
             {

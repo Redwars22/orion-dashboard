@@ -42,7 +42,7 @@ export default function HomeScreen() {
         </div>
         <div className={styles.row}>
             <TasksComponent data={data?.business?.projects!}/>
-            <EventsComponent />
+            <EventsComponent data={data?.business?.events!}/>
         </div>
     </div>
     )
