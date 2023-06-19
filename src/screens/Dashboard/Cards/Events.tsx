@@ -28,7 +28,7 @@ export default function EventsComponent(props: {
                 <DatePicker value={date} onChange={(value)=> {
                     setDate(value);    
                     window.alert(value)
-                }
+                }}
                 />
               </div>
             </LocalizationProvider>
