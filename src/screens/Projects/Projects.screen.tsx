@@ -26,14 +26,24 @@ export default function ProjectsScreen() {
       async function getBusinessData() {
       const data = await fetch("./api.json");
       const response = await data.json();
-          
-    const todoItems = response.business.projects.filter(
+        
+            let todoItems = response.business.projects.filter(
       (item: IProjects) => item.status === "todo"
     );
-    const doingItems = response.business.projects.filter(
+    let doingItems = response.business.projects.filter(
       (item: IProjects) => item.status === "doing"
     );
-    const doneItems = response.business.projects.filter(
+    let doneItems = response.business.projects.filter(
+      (item: IProjects) => item.status === "done"
+    );
+          
+     todoItems = response.business.projects.filter(
+      (item: IProjects) => item.status === "todo"
+    );
+    doingItems = response.business.projects.filter(
+      (item: IProjects) => item.status === "doing"
+    );
+    doneItems = response.business.projects.filter(
       (item: IProjects) => item.status === "done"
     );
 
@@ -51,24 +61,14 @@ export default function ProjectsScreen() {
     async function getBusinessData() {
       const data = await fetch("./api.json");
       const response = await data.json();
-      
-    let todoItems = response.business.projects.filter(
-      (item: IProjects) => item.status === "todo"
-    );
-    let doingItems = response.business.projects.filter(
-      (item: IProjects) => item.status === "doing"
-    );
-    let doneItems = response.business.projects.filter(
-      (item: IProjects) => item.status === "done"
-    );
 
-      todoItems = response.business.projects.filter(
+      const todoItems = response.business.projects.filter(
         (item: IProjects) => item.title.includes(query.toLowerCase()) || item.description.includes(query.toLowerCase()) || item.owner.includes(query.toLowerCase())
       );
-      doingItems = response.business.projects.filter(
+      const doingItems = response.business.projects.filter(
         (item: IProjects) => item.title.includes(query.toLowerCase()) || item.description.includes(query.toLowerCase()) || item.owner.includes(query.toLowerCase())
       );
-      doneItems = response.business.projects.filter(
+      const doneItems = response.business.projects.filter(
         (item: IProjects) => item.title.includes(query.toLowerCase()) || item.description.includes(query.toLowerCase()) || item.owner.includes(query.toLowerCase())
       );
 
