@@ -35,16 +35,7 @@ export default function CommentCard(props: IAthenaComment) {
         </div>
       </CardContent>
       <CardActions>
-        <div style={{
-          display: "flex", 
-          alignItems: "center", 
-          gap: "0.5rem"
-        }}>
           <Button size="small">Responder</Button>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            {props.date}
-          </Typography>
-        </div>
       </CardActions>
     </Card>
   );
