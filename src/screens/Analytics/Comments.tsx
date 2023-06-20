@@ -3,7 +3,8 @@ import {IAthenaComment} from "../../global/types";
 
 export default function CommentCard(props: IAthenaComment){
     return(
-        <Card sx={{ maxWidth: "375px",             marginLeft: "auto",
+        <Card sx={{ maxWidth: "425px", 
+                   marginLeft: "auto",
             marginRight: "auto",
             marginBottom: "0.25rem" }}>
         <CardContent>
@@ -20,6 +21,7 @@ export default function CommentCard(props: IAthenaComment){
             {props.name}
           </Typography>
             <Rating name="read-only" value={props.rating} readOnly />
+            <br/>
           <Typography sx={{ mb: 1.5 }} color="text.secondary">
             {props.date}
           </Typography>
