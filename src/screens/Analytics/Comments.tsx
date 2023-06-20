@@ -11,7 +11,7 @@ export default function CommentCard(props: IAthenaComment){
           <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
             {props.name}
           </Typography>
-            <Rating name="read-only" value={props.value} readOnly />
+            <Rating name="read-only" value={props.rating} readOnly />
           <Typography sx={{ mb: 1.5 }} color="text.secondary">
             {props.date}
           </Typography>
