@@ -3,7 +3,7 @@ import {IAthenaComment} from "../../global/types";
 
 export default function CommentCard(props: IAthenaComment){
     return(
-        <Card sx={{ minWidth: 275 }}>
+        <Card sx={{ maxWidth: 275 }}>
         <CardContent>
         <div style={{
             display: "flex",
