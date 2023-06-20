@@ -8,6 +8,7 @@ export default function CommentCard(props: IAthenaComment){
         <div style={{
             display: "flex",
             justifyContent: "flex-start",
+            alignItems: "center",
             gap: "0.25rem"
         }}><Avatar sx={{ bgcolor: `#${Math.floor(Math.random() * 16777215).toString(16)}` }}>
             {props.name.split(" ").map((char) => char.charAt(0)).join("")}
@@ -22,7 +23,8 @@ export default function CommentCard(props: IAthenaComment){
             </div>
             <div style={{
             display: "flex",
-            justifyContent: "flex-start"
+            justifyContent: "flex-start",
+            alignItems: "flex-start"
             }}>
           <Typography variant="body2">
               {props.comment}
