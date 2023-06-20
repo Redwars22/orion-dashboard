@@ -5,7 +5,7 @@ import { Doughnut } from 'react-chartjs-2';
 import { fakerPT_BR } from '@faker-js/faker';
 import {IAthenaAPI} from "../../global/types";
 import {IAthenaComment} from "../../global/types";
-import CommentCard from "./comments";
+import CommentCard from "./Comments";
 
 export default function Analytics(){
 	const [analyticsData, setAnalyticsData] = React.useState<IAthenaAPI>();
