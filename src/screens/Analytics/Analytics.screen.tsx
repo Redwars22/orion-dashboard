@@ -17,6 +17,8 @@ export default function Analytics(){
 			const res = await analytics.json();
 			setAnalyticsData(res.business);
 		}
+
+		getAnalytics()
 	}, [])
 
     const RenderChart = (props: {
