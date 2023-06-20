@@ -69,8 +69,8 @@ export default function SettingsScreen() {
               }))}
               fullWidth
             >
-              <MenuItem value={true}>Habilitado</MenuItem>
-              <MenuItem value={false}>Desabilitado</MenuItem>
+              <MenuItem value={"true"}>Habilitado</MenuItem>
+              <MenuItem value={"false"}>Desabilitado</MenuItem>
             </Select>
             <InputLabel id="demo-simple-select-label">
               Escolher administrador
