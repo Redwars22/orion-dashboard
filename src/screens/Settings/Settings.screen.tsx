@@ -27,7 +27,11 @@ export default function SettingsScreen() {
       >
         <h2>Configurações</h2>
       </div>
-        <Stack spacing={2}>
+        <Stack spacing={2} sx={{
+          marginLeft: "auto",
+          marginRight: "auto",
+          maxWidth: "375px"
+        }}>
       <div>
         <h3>Detalhes da Empresa</h3>
         <div
@@ -42,8 +46,9 @@ export default function SettingsScreen() {
             id="filled-basic"
             label="Nome da Empresa"
             variant="filled"
+            fullWidth
           />
-          <TextField id="filled-basic" label="Filled" variant="filled" />
+          <TextField id="filled-basic" label="Filled" variant="filled" fullWidth/>
           <InputLabel id="demo-simple-select-label">
             Habilitar autenticação de dois fatores
           </InputLabel>
@@ -53,6 +58,7 @@ export default function SettingsScreen() {
             value={""}
             label="Habilitar autenticação de dois fatores"
             onChange={() => {}}
+            fullWidth
           >
             <MenuItem value={10}>Sim</MenuItem>
             <MenuItem value={20}>Não</MenuItem>
@@ -80,12 +86,16 @@ export default function SettingsScreen() {
             label="Senha antiga"
             variant="filled"
             type="password"
+            fullWidth
+            disabled
           />
           <TextField
             id="filled-basic"
             label="Senha nova"
             variant="filled"
             type="password"
+            fullWidth
+            disabled
           />
           <Button variant="outlined" color="success" disabled>
             Alterar Senha
