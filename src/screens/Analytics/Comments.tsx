@@ -5,7 +5,11 @@ export default function CommentCard(props: IAthenaComment){
     return(
         <Card sx={{ minWidth: 275 }}>
         <CardContent>
-        <Avatar sx={{ bgcolor: `#${Math.floor(Math.random() * 16777215).toString(16)}` }}>
+        <div style={{
+            display: "flex",
+            justifyContent: "flex-start",
+            gap: "0.25rem"
+        }}><Avatar sx={{ bgcolor: `#${Math.floor(Math.random() * 16777215).toString(16)}` }}>
             {props.name.split(" ").map((char) => char.charAt(0)).join("")}
         </Avatar>
           <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
@@ -15,9 +19,15 @@ export default function CommentCard(props: IAthenaComment){
           <Typography sx={{ mb: 1.5 }} color="text.secondary">
             {props.date}
           </Typography>
+            </div>
+            <div style={{
+            display: "flex",
+            justifyContent: "flex-start"
+            }}>
           <Typography variant="body2">
               {props.comment}
           </Typography>
+                </div>
         </CardContent>
         <CardActions>
           <Button size="small">Responder</Button>
