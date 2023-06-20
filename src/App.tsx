@@ -45,7 +45,7 @@ function App() {
     return (
       <div style={{ display: "flex", maxWidth: "100vw", maxHeight: "100vh" }}>
         <Menu />
-        <div style={{backgroundColor: "#e3e3e3"}}>{children}</div>
+        <div style={{ backgroundColor: "#e3e3e3" }}>{children}</div>
       </div>
     )
   }
@@ -56,12 +56,12 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<LoginScreen />} />
-          <Route path="/dashboard" element={<ScreenWithMenu children={<HomeScreen/>} />} />
-          <Route path="/clients" element={<ScreenWithMenu children={<ClientsScreen/>} />} />
-          <Route path="/finances" element={<ScreenWithMenu children={<FinancesScreen/>} />} />
-          <Route path="/settings" element={<ScreenWithMenu children={<SettingsScreen/>} />} />
-          <Route path="/analytics" element={<ScreenWithMenu children={<AnalyticsScreen/>} />} />
-          <Route path="/projects" element={<ScreenWithMenu children={<ProjectsScreen/>} />} />
+          <Route path="/dashboard" element={<ScreenWithMenu children={<HomeScreen />} />} />
+          <Route path="/clients" element={<ScreenWithMenu children={<ClientsScreen />} />} />
+          <Route path="/finances" element={<ScreenWithMenu children={<FinancesScreen />} />} />
+          <Route path="/settings" element={<ScreenWithMenu children={<SettingsScreen />} />} />
+          <Route path="/analytics" element={<ScreenWithMenu children={<AnalyticsScreen />} />} />
+          <Route path="/projects" element={<ScreenWithMenu children={<ProjectsScreen />} />} />
         </Routes>
       </Router>
     </div>

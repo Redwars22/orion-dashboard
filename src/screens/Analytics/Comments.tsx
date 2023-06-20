@@ -35,7 +35,7 @@ export default function CommentCard(props: IAthenaComment) {
         </div>
       </CardContent>
       <CardActions>
-          <Button size="small">Responder</Button>
+        <Button size="small">Responder</Button>
       </CardActions>
     </Card>
   );
