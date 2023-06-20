@@ -21,10 +21,6 @@ export default function CommentCard(props: IAthenaComment){
             {props.name}
           </Typography>
             <Rating name="read-only" value={props.rating} readOnly />
-            <br/>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            {props.date}
-          </Typography>
             </div>
             <div style={{
             display: "flex",
@@ -38,6 +34,9 @@ export default function CommentCard(props: IAthenaComment){
         </CardContent>
         <CardActions>
           <Button size="small">Responder</Button>
+        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+            {props.date}
+          </Typography>
         </CardActions>
       </Card>
     );
