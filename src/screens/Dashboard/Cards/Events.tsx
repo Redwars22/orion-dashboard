@@ -15,7 +15,7 @@ export default function EventsComponent(props: {
         <Card variant={"outlined"} sx={{
             paddingLeft: "0.5rem",
             paddingRight: "0.5rem",
-            paddingBottom: "0.5rem"
+            paddingBottom: "0.5rem",
             borderRadius: "10px",
             flex: 1,
             display: "flex",
