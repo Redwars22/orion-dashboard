@@ -1,4 +1,4 @@
-import {Avatar, Card, CardContent, Typography, CardAction, Button} from "@mui/material";
+import {Avatar, Card, CardContent, Typography, CardAction, Button, Rating, CardActions} from "@mui/material";
 import {IAthenaComment} from "../../global/types";
 
 export default function CommentCard(props: IAthenaComment){
