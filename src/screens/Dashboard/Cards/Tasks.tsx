@@ -1,11 +1,14 @@
 import Card from "@mui/material/Card";
 import { IProjects } from "../../../global/types";
 import React from "react";
+import {Button} from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 export default function TasksComponent(props: {
     data: IProjects[]
 }){
-  
+    const navigate = useNavigate();
+
     const getTaskStatus = (status: string) => {
       return <strong
       style={{
@@ -50,6 +53,9 @@ export default function TasksComponent(props: {
                   {getTaskStatus(item.status)} - {item?.title} ({item?.owner})
                 </span>)}
             </div>
+            <Button type="submit" variant="contained" color="primary" onClick={() => navigate("/projects")}>
+              Ver todas as tarefas
+            </Button>
         </Card>
     );
 }
