@@ -220,7 +220,7 @@ export default function Analytics(){
 			<div>
         <h2>Comentários</h2>
 				<div>
-        {analyticsData.comments.length > 0 && analyticsData.comments.map((comment: IAthenaComment) => <CommentCard
+        {analyticsData?.comments?.length > 0 && analyticsData.comments.map((comment: IAthenaComment) => <CommentCard
           name={comment.name}
           rating={comment.rating}
           date={comment.date}
