@@ -3,19 +3,19 @@ import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 import { fakerPT_BR } from '@faker-js/faker';
-import {IAthenaAPI} from "../../global/types";
+import {IOrionAPI} from "../../global/types";
 import {IAthenaComment} from "../../global/types";
 import CommentCard from "./Comments";
 
 export default function Analytics(){
-	const [analyticsData, setAnalyticsData] = React.useState<IAthenaAPI>();
+	const [analyticsData, setAnalyticsData] = React.useState<IOrionAPI>();
 	const [username, setUsername] = React.useState("andrewnation_sftw");
 
 	React.useEffect(()=>{
 		async function getAnalytics(){
-			const analytics = await fetch("./athenaAPI.json");
+			const analytics = await fetch("./api.json");
 			const res = await analytics.json();
-			setAnalyticsData(res[username]);
+			setAnalyticsData(res.business);
 		}
 	}, [])
 
