@@ -32,7 +32,7 @@ export default function CommentCard(props: IAthenaComment){
           </Typography>
                 </div>
         </CardContent>
-        <CardActions>
+        <CardActions sx={{display: "flex", alignItems: "center", gap: "0.5rem"}}>
           <Button size="small">Responder</Button>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
             {props.date}
