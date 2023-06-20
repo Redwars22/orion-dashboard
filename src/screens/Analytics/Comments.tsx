@@ -1,12 +1,13 @@
 import {Avatar, Card, CardContent, Typography, CardAction, Button} from "@mui/material";
 import {IAthenaComment} from "../../global/types";
-import {stringAvatar} from '@mui/material/Avatar';
 
 export default function CommentCard(props: IAthenaComment){
     return(
         <Card sx={{ minWidth: 275 }}>
         <CardContent>
-        <Avatar {...stringAvatar(props.name)} />
+        <Avatar sx={{ bgcolor: `#${Math.floor(Math.random() * 16777215).toString(16)}` }}>
+            {props.name.split(" ").map((char) => char.charAt(0)).join("")}
+        </Avatar>
           <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
             {props.name}
           </Typography>
