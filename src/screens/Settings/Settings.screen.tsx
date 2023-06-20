@@ -65,7 +65,7 @@ export default function SettingsScreen() {
               label="Habilitar autenticação de dois fatores"
               onChange={(e) => setFormData((s)=>({
                 ...s,
-                twoFactorAuth: e.target.value
+                twoFactorAuth: Boolean(e.target.value === "true")
               }))}
               fullWidth
             >
