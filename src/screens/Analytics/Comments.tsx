@@ -3,13 +3,16 @@ import {IAthenaComment} from "../../global/types";
 
 export default function CommentCard(props: IAthenaComment){
     return(
-        <Card sx={{ maxWidth: 275 }}>
+        <Card sx={{ maxWidth: 375 }}>
         <CardContent>
         <div style={{
             display: "flex",
             justifyContent: "flex-start",
             alignItems: "center",
-            gap: "0.25rem"
+            gap: "0.25rem",
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginBottom: "0.25rem",
         }}><Avatar sx={{ bgcolor: `#${Math.floor(Math.random() * 16777215).toString(16)}` }}>
             {props.name.split(" ").map((char) => char.charAt(0)).join("")}
         </Avatar>
