@@ -5,9 +5,13 @@ import { Stack, Button, InputLabel, MenuItem, Select, TextField } from "@mui/mat
 export default function SettingsScreen() {
   const [data, setData] = React.useState({});
   const [form, setFormData] = React.useState<{
-    twoFactorAuth: boolean
+    twoFactorAuth: boolean;
+    admin: string[];
+    selectedAdmin: string;
   }>({
-    twoFactorAuth: true
+    twoFactorAuth: true,
+    admin: [],
+    selectedAdmin: ""
   });
 
   React.useEffect(() => {
@@ -15,7 +19,7 @@ export default function SettingsScreen() {
       const data = await fetch("./api.json");
       const response = await data.json();
 
-      setData(response.business);
+      setFormData(response.business.settings);
     }
 
     getBusinessData();
@@ -45,6 +49,7 @@ export default function SettingsScreen() {
               gap: "0.3rem",
               flexDirection: "column",
               alignItems: "flex-start",
+              justifyContent: "center"
             }}
           >
             <TextField
@@ -52,18 +57,19 @@ export default function SettingsScreen() {
               label="Nome da Empresa"
               variant="filled"
               fullWidth
+              value={form.businessName}
             />
             <TextField id="filled-basic" label="Filled" variant="filled" fullWidth />
+            <h3>Segurança</h3>
             <InputLabel id="demo-simple-select-label">
               Habilitar autenticação de dois fatores
             </InputLabel>
-            <h3>Segurança</h3>
             <Select
               labelId="demo-simple-select-label"
               id="demo-simple-select"
               value={form.twoFactorAuth}
               label="Habilitar autenticação de dois fatores"
-              onChange={(e) => setFormData((s)=>({
+              onChange={(e) => setFormData((s) => ({
                 ...s,
                 twoFactorAuth: Boolean(e.target.value === "true")
               }))}
@@ -78,13 +84,14 @@ export default function SettingsScreen() {
             <Select
               labelId="demo-simple-select-label"
               id="demo-simple-select"
-              value={""}
+              value={form.selectedAdmin}
               label="Administrador"
-              onChange={() => { }}
+              onChange={(e) => setFormData((s) => ({
+                ...s,
+                selectedAdmin: e.target.value
+              }))}
             >
-              <MenuItem value={10}>1</MenuItem>
-              <MenuItem value={20}>2</MenuItem>
-              <MenuItem value={30}>3</MenuItem>
+              {form.admin.map((item) => <MenuItem value={item}>{item}</MenuItem>)}
             </Select>
             <TextField
               id="filled-basic"

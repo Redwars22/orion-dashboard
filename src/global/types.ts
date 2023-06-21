@@ -20,17 +20,17 @@ export type IOrionAPI = {
 	annualGainsOrLosses: number;
 	clients: IClients[];
 	events: IEvent[];
-	tasks: [];
 	finances?: IFinances[];
 	projects?: IProjects[] | [];
-  comments: IAthenaComment[];
+	comments: IAthenaComment[];
+	settings: ISettings;
 }
 
 export type IFinances = {
-    year: string;
-    month: string;
-    amount: number;
-    fileURL: string;
+	year: string;
+	month: string;
+	amount: number;
+	fileURL: string;
 }
 
 export type IProjects = {
@@ -43,15 +43,15 @@ export type IProjects = {
 
 export interface IAthenaData {
 	labels: string[];
-	data: number[]| string[];
+	data: number[] | string[];
 }
 
 export interface IAthenaComment {
-    name: string;
-    date: string;
-    rating: number;
-    comment: string;
-    uuid: string;
+	name: string;
+	date: string;
+	rating: number;
+	comment: string;
+	uuid: string;
 }
 
 export interface IAthenaAPI {
@@ -61,4 +61,10 @@ export interface IAthenaAPI {
 	platform: IAthenaData;
 	ratings: IAthenaData;
 	comments: IAthenaAPI[];
+}
+
+export interface ISettings {
+	admin: string[];
+	businessName: string;
+	twoFactorAuth: boolean;
 }

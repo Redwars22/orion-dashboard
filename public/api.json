@@ -28,7 +28,6 @@
                 "uuid": ""
             }
         ],
-        "tasks": [],
         "projects": [
             {
                 "title": "Lorem Ipsum 4",
@@ -79,6 +78,11 @@
             "uuid": "",
             "date": "19/06/2023"
           }
-        ]
+        ],
+        "settings": {
+            "admin": [],
+            "twoFactorAuth": false,
+            "businessName": "AndrewNation Software"
+        }
     }
 }
