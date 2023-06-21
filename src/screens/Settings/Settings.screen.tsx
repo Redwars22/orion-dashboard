@@ -91,9 +91,11 @@ export default function SettingsScreen() {
                 ...s,
                 selectedAdmin: e.target.value
               }))}
+              fullWidth
             >
               <>{form.admin.map((item) => <MenuItem value={item}>{item}</MenuItem>)}</>
             </Select>
+            <br/>
             <TextField
               id="filled-basic"
               label="Senha antiga"
@@ -113,6 +115,7 @@ export default function SettingsScreen() {
             <Button variant="outlined" color="success" disabled>
               Salvar
             </Button>
+            <br/>
             <h3>Ativação e Backup</h3>
             <span>
               O Orionboard está ativado até 08/06/2024!
