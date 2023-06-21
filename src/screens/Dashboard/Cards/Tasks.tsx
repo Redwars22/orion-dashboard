@@ -53,7 +53,7 @@ export default function TasksComponent(props: {
           {getTaskStatus(item.status)} - {item?.title} ({item?.owner})
         </span>)}
       </div>
-      <Button sx={{ marginTop: "0.5rem" }} type="submit" variant="contained" color="primary" onClick={() => navigate("/projects")}>
+      <Button sx={{ marginTop: "0.75rem" }} type="submit" variant="contained" color="primary" onClick={() => navigate("/projects")}>
         Ver todas as tarefas
       </Button>
     </Card>

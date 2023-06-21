@@ -93,7 +93,7 @@ export default function SettingsScreen() {
                 selectedAdmin: e.target.value
               }))}
             >
-              {form.admin.map((item) => <MenuItem value={item}>{item}</MenuItem>)}
+              <>{form.admin.map((item) => <MenuItem value={item}>{item}</MenuItem>)}</>
             </Select>
             <TextField
               id="filled-basic"
