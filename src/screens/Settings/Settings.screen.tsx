@@ -93,7 +93,7 @@ export default function SettingsScreen() {
               }))}
               fullWidth
             >
-              <>{form.admin.map((item) => <MenuItem value={item}>{item}</MenuItem>)}</>
+              <>{form.admin.map((item) => <MenuItem value={`${item}`}>{item}</MenuItem>)}</>
             </Select>
             <br/>
             <TextField
