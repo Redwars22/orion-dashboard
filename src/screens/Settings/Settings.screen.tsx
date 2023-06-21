@@ -13,7 +13,7 @@ export default function SettingsScreen() {
     twoFactorAuth: true,
     admin: [],
     selectedAdmin: "",
-    businessName: string,
+    businessName: "",
   });
 
   React.useEffect(() => {
