@@ -50,8 +50,7 @@ export default function SettingsScreen() {
               display: "flex",
               gap: "0.3rem",
               flexDirection: "column",
-              alignItems: "flex-start",
-              justifyContent: "center"
+              alignItems: "center"
             }}
           >
             <TextField

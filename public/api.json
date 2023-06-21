@@ -80,7 +80,7 @@
           }
         ],
         "settings": {
-            "admin": [],
+            "admin": ["Noah Jordanson", "Michael de la Santa", "Franklin Klakswolff"],
             "twoFactorAuth": false,
             "businessName": "AndrewNation Software"
         }
