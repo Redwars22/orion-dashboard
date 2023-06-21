@@ -30,7 +30,9 @@ export default function LoginScreen() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <Stack className={"login-form"} spacing={2}>
+      <Stack className={"login-form"} sx={{
+        justifyContent: "center"
+      }} spacing={2}>
         <Brand isBlue />
         <TextField
           label="Username"
@@ -54,7 +56,7 @@ export default function LoginScreen() {
           Login
         </Button>
         <span>Esqueceu seu login ou senha?</span>
-        <a href="">Entre em contato com o administrador</a>
+        <a href="https://andrewnationdev.vercel.app/docs/projects/orionboard">Entre em contato com o administrador</a>
       </Stack>
     </form>
   )

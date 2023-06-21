@@ -39,8 +39,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  const [logged, setLogged] = useState(true);
-
   const ScreenWithMenu = ({ children }: { children: React.ReactNode }) => {
     return (
       <div style={{ display: "flex", maxWidth: "100vw", maxHeight: "100vh" }}>
