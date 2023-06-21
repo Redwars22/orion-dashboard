@@ -8,10 +8,12 @@ export default function SettingsScreen() {
     twoFactorAuth: boolean;
     admin: string[];
     selectedAdmin: string;
+    businessName: string;
   }>({
     twoFactorAuth: true,
     admin: [],
-    selectedAdmin: ""
+    selectedAdmin: "",
+    businessName: string,
   });
 
   React.useEffect(() => {
