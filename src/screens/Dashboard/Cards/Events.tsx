@@ -36,8 +36,10 @@ export default function EventsComponent(props: {
                       return val2;
                     }
 
+                    const val = handleVal();
+
                     setDate(value ? value : "");    
-                    window.alert(handleVal())
+                    window.alert(val)
                 }}
                 />
               </div>
