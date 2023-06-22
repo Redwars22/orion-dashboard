@@ -62,7 +62,7 @@ export default function SettingsScreen() {
               fullWidth
               value={form.businessName}
             />
-            <TextField id="filled-basic" label="Filled" variant="filled" fullWidth value={form.CNPJ}/>
+            <TextField id="filled-basic" label="CNPJ" variant="filled" fullWidth value={form.CNPJ}/>
             <h3>Segurança</h3>
             <InputLabel id="demo-simple-select-label">
               Habilitar autenticação de dois fatores
