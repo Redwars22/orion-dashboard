@@ -32,7 +32,7 @@ export default function EventsComponent(props: {
                 <DatePicker value={date} onChange={(value)=> {
                     const handleVal = () => {
                       let val = value!.split(" ");
-                      val2 = [val[1], val[2], val[3]]; 
+                      let val2 = [val[1], val[2], val[3]]; 
                       return val2;
                     }
 
