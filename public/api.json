@@ -82,7 +82,8 @@
         "settings": {
             "admin": ["Noah Jordanson", "Michael de la Santa", "Franklin Klakswolff"],
             "twoFactorAuth": false,
-            "businessName": "AndrewNation Software"
+            "businessName": "AndrewNation Software",
+            "CNPJ": "75.157.211/0001-31"
         }
     }
 }
