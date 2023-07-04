@@ -140,7 +140,7 @@
                 "uuid": ""
             }
         ],
-        "projects":  [
+        "projects": [
             {
                 "title": "Redesign do Website",
                 "owner": "João Silva",
@@ -215,22 +215,166 @@
         "finances": [
             {
                 "year": "2023",
-                "month": "Fevereiro",
-                "amount": 981717127.81
+                "month": "June",
+                "amount": 561235798.12
             },
             {
                 "year": "2023",
-                "month": "Janeiro",
-                "amount": -981717.13
+                "month": "May",
+                "amount": -2617731.56
+            },
+            {
+                "year": "2023",
+                "month": "April",
+                "amount": 814925673.43
+            },
+            {
+                "year": "2023",
+                "month": "March",
+                "amount": 137256489.29
+            },
+            {
+                "year": "2023",
+                "month": "February",
+                "amount": -3148726.98
+            },
+            {
+                "year": "2023",
+                "month": "January",
+                "amount": 957618274.21
+            },
+            {
+                "year": "2022",
+                "month": "December",
+                "amount": 618240138.10
+            },
+            {
+                "year": "2022",
+                "month": "November",
+                "amount": -5829612.45
+            },
+            {
+                "year": "2022",
+                "month": "October",
+                "amount": 751820542.76
+            },
+            {
+                "year": "2022",
+                "month": "September",
+                "amount": 112937425.03
+            },
+            {
+                "year": "2022",
+                "month": "August",
+                "amount": -2157143.92
+            },
+            {
+                "year": "2022",
+                "month": "July",
+                "amount": 841925617.30
+            },
+            {
+                "year": "2022",
+                "month": "June",
+                "amount": -1586317.56
+            },
+            {
+                "year": "2022",
+                "month": "May",
+                "amount": 721536189.41
             }
         ],
         "comments": [
             {
-                "name": "Naruto Uzumaki",
+                "name": "John Doe",
+                "rating": 4,
+                "comment": "Great service! I'm satisfied with the results.",
+                "uuid": "73b3186e-5124-4f43-8d7a-61a4d7c2905a",
+                "date": "23/06/2023"
+            },
+            {
+                "name": "Mariana Silva",
                 "rating": 5,
-                "comment": "Lorem ipsum dolor sit amet",
-                "uuid": "",
+                "comment": "Excelente atendimento! Recomendo a todos.",
+                "uuid": "c0f34219-6a49-4dd7-84d0-1b6b94c1e68c",
+                "date": "21/06/2023"
+            },
+            {
+                "name": "Carlos López",
+                "rating": 3,
+                "comment": "Buen servicio, pero podría mejorar la puntualidad.",
+                "uuid": "37e1f6e3-9db5-4ab1-a3d7-4c2736b06c52",
                 "date": "19/06/2023"
+            },
+            {
+                "name": "Giulia Rossi",
+                "rating": 5,
+                "comment": "Servizio eccellente! Personale cortese e competente.",
+                "uuid": "a3908b4e-8af7-4325-b44c-815ed6a0376c",
+                "date": "17/06/2023"
+            },
+            {
+                "name": "Pedro Sousa",
+                "rating": 4,
+                "comment": "Bom atendimento. Fiquei satisfeito com o resultado.",
+                "uuid": "64bea47e-7d88-4f4d-a02e-62c16e8e83c4",
+                "date": "15/06/2023"
+            },
+            {
+                "name": "Laura Fernández",
+                "rating": 4,
+                "comment": "Buen servicio al cliente. Rápido y eficiente.",
+                "uuid": "9c6714a5-8117-48a6-81e4-6a4af6f8ff75",
+                "date": "13/06/2023"
+            },
+            {
+                "name": "Antonio Ricci",
+                "rating": 5,
+                "comment": "Ottimo servizio! Professionisti competenti e cordiali.",
+                "uuid": "5831ed4e-2b95-40b1-bb53-0f2d16f4ce41",
+                "date": "11/06/2023"
+            },
+            {
+                "name": "Sophie Martin",
+                "rating": 4,
+                "comment": "Great customer service! Prompt and helpful.",
+                "uuid": "ea23b568-ba6f-4e63-aa0a-c2671659ee7e",
+                "date": "09/06/2023"
+            },
+            {
+                "name": "João Santos",
+                "rating": 5,
+                "comment": "Ótimo atendimento! Equipe muito prestativa e profissional.",
+                "uuid": "f543af36-b862-4a34-afdc-cfe462da14b0",
+                "date": "07/06/2023"
+            },
+            {
+                "name": "Federico Russo",
+                "rating": 3,
+                "comment": "Buon servizio, ma un po' costoso per la qualità offerta.",
+                "uuid": "2f0b6821-c18e-48d7-9cb6-2538c4f365b3",
+                "date": "05/06/2023"
+            },
+            {
+                "name": "Juliana Silva",
+                "rating": 5,
+                "comment": "Serviço excelente! Superou minhas expectativas.",
+                "uuid": "bfd0d076-6b52-4a27-8a27-99b60a89062f",
+                "date": "03/06/2023"
+            },
+            {
+                "name": "María García",
+                "rating": 4,
+                "comment": "Buen servicio. Resultados satisfactorios.",
+                "uuid": "a92b6475-4c06-4856-80b3-4fc69a3df68f",
+                "date": "01/06/2023"
+            },
+            {
+                "name": "Giovanni Ferrari",
+                "rating": 5,
+                "comment": "Servizio impeccabile! Personale competente e gentile.",
+                "uuid": "9f0e215d-9f5b-4b0f-b60e-7a81a07efc3d",
+                "date": "30/05/2023"
             }
         ],
         "settings": {
