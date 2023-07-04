@@ -1,9 +1,9 @@
 {
     "business": {
         "companyName": "AndrewNation Software",
-        "dailyGainsOrLosses": 9876543.99,
-        "dailyAverage": 761611.89,
-        "annualGainsOrLosses": 19991919191.17,
+        "dailyGainsOrLosses": 98763.99,
+        "dailyAverage": 7611.89,
+        "annualGainsOrLosses": 2199919192.17,
         "clients": [
             {
                 "name": "Mário Donetzki",
@@ -18,6 +18,118 @@
                 "uuid": "736bfe62-efe6-444c-9225-3bf68e4f9425",
                 "address": "Rua Siqueira Campos, 213, Cará-Cará",
                 "phoneNumber": "(42) 98417-6363"
+            },
+            {
+                "name": "John Smith",
+                "CPF": "123.456.789-01",
+                "uuid": "c8e17c18-6c7e-4e7a-8f4b-8436f9e5a3ad",
+                "address": "123 Main Street, Cityville",
+                "phoneNumber": "(123) 456-7890"
+            },
+            {
+                "name": "Alice Johnson",
+                "CPF": "987.654.321-09",
+                "uuid": "3aeb8c46-37e2-4d4a-a715-907c1ac36578",
+                "address": "456 Elm Street, Townsville",
+                "phoneNumber": "(987) 654-3210"
+            },
+            {
+                "name": "Michael Davis",
+                "CPF": "246.813.579-02",
+                "uuid": "b9142e13-2a5f-4e2f-a0d3-1b548c0e0cc6",
+                "address": "789 Oak Avenue, Villageton",
+                "phoneNumber": "(246) 813-5790"
+            },
+            {
+                "name": "Emily Wilson",
+                "CPF": "135.792.468-08",
+                "uuid": "f9f2a0d6-7b3b-4d86-81d3-876289234f2c",
+                "address": "321 Maple Lane, Hamletville",
+                "phoneNumber": "(135) 792-4680"
+            },
+            {
+                "name": "Daniel Johnson",
+                "CPF": "864.209.753-03",
+                "uuid": "897792b1-6b49-4b78-8c6f-47c1e3db9472",
+                "address": "654 Pine Road, Villageburg",
+                "phoneNumber": "(864) 209-7530"
+            },
+            {
+                "name": "Olivia Anderson",
+                "CPF": "753.951.286-07",
+                "uuid": "b2d6c932-c274-4989-87fd-2eaa0f708b9c",
+                "address": "987 Cedar Court, Townville",
+                "phoneNumber": "(753) 951-2860"
+            },
+            {
+                "name": "David Martinez",
+                "CPF": "402.158.674-04",
+                "uuid": "7d4ccdb5-9744-4e89-91c7-c6d09efb7f96",
+                "address": "147 Willow Avenue, Cityburg",
+                "phoneNumber": "(402) 158-6740"
+            },
+            {
+                "name": "Sophia Taylor",
+                "CPF": "819.567.240-06",
+                "uuid": "610d1aa3-c2fe-45f3-90ef-014b43b297c7",
+                "address": "258 Birch Street, Villagetown",
+                "phoneNumber": "(819) 567-2400"
+            },
+            {
+                "name": "Matthew Brown",
+                "CPF": "537.824.691-05",
+                "uuid": "e12235f5-0ff5-4a89-b7d3-15a3ff6c058d",
+                "address": "369 Oak Avenue, Hamletburg",
+                "phoneNumber": "(537) 824-6910"
+            },
+            {
+                "name": "Ava Davis",
+                "CPF": "951.357.862-00",
+                "uuid": "3814577b-54c0-4e9b-84e6-02b7c92d2a4e",
+                "address": "852 Elm Street, Cityton",
+                "phoneNumber": "(951) 357-8620"
+            },
+            {
+                "name": "Josephine Wilson",
+                "CPF": "586.479.213-09",
+                "uuid": "9003bc1b-ff0e-4f5d-9a3f-46f2397b86b1",
+                "address": "741 Maple Lane, Villaburg",
+                "phoneNumber": "(586) 479-2130"
+            },
+            {
+                "name": "Benjamin Thompson",
+                "CPF": "246.802.357-01",
+                "uuid": "ef99d57b-5e8e-4b64-9bca-0ab35a10858e",
+                "address": "963 Pine Road, Hamletville",
+                "phoneNumber": "(246) 802-3570"
+            },
+            {
+                "name": "Charlotte Garcia",
+                "CPF": "789.012.345-07",
+                "uuid": "16625372-f27d-4b68-983c-d846417b96af",
+                "address": "582 Cedar Court, Townburg",
+                "phoneNumber": "(789) 012-3450"
+            },
+            {
+                "name": "Daniel Wilson",
+                "CPF": "531.742.689-02",
+                "uuid": "a1459d0e-b1d1-46d6-b06c-0d5cc1f013c4",
+                "address": "985 Willow Avenue, Cityville",
+                "phoneNumber": "(531) 742-6890"
+            },
+            {
+                "name": "Lily Smith",
+                "CPF": "891.234.567-08",
+                "uuid": "3581f7ad-3e52-4d09-bd3c-08f84571b163",
+                "address": "214 Birch Street, Villaton",
+                "phoneNumber": "(891) 234-5670"
+            },
+            {
+                "name": "Oliver Johnson",
+                "CPF": "217.530.946-03",
+                "uuid": "82b3ae6e-fc92-445e-a8a3-8ea59ed82a3d",
+                "address": "548 Oak Avenue, Cityville",
+                "phoneNumber": "(217) 530-9460"
             }
         ],
         "events": [
@@ -71,16 +183,20 @@
             }
         ],
         "comments": [
-          {
-            "name": "Naruto Uzumaki",
-            "rating": 5,
-            "comment": "Lorem ipsum dolor sit amet",
-            "uuid": "",
-            "date": "19/06/2023"
-          }
+            {
+                "name": "Naruto Uzumaki",
+                "rating": 5,
+                "comment": "Lorem ipsum dolor sit amet",
+                "uuid": "",
+                "date": "19/06/2023"
+            }
         ],
         "settings": {
-            "admin": ["Noah Jordanson", "Michael de la Santa", "Franklin Klakswolff"],
+            "admin": [
+                "Noah Jordanson",
+                "Michael de la Santa",
+                "Franklin Klakswolff"
+            ],
             "twoFactorAuth": false,
             "businessName": "AndrewNation Software",
             "CNPJ": "75.157.211/0001-31"
