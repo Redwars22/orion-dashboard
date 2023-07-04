@@ -140,34 +140,76 @@
                 "uuid": ""
             }
         ],
-        "projects": [
+        "projects":  [
             {
-                "title": "Lorem Ipsum 4",
-                "owner": "Marcus Lucius Maximus",
-                "description": "Lorem ipsum dolor sit amet amen discipuli sunt pigri.",
+                "title": "Redesign do Website",
+                "owner": "João Silva",
+                "description": "Redesenhar o site da empresa para melhorar a experiência do usuário e modernizar o design.",
                 "status": "todo",
-                "date": "21/03/2023"
+                "date": "10/02/2023"
             },
             {
-                "title": "Lorem Ipsum",
-                "owner": "Bruce Wayne",
-                "description": "Lorem ipsum dolor sit amet amen.",
-                "status": "todo",
-                "date": "19/03/2023"
-            },
-            {
-                "title": "Lorem Ipsum 2",
-                "owner": "Damian Wayne",
-                "description": "Lorem ipsum dolor sit amet amen.",
-                "status": "done",
-                "date": "28/05/2023"
-            },
-            {
-                "title": "Lorem Ipsum 3",
-                "owner": "Bruce Wayne",
-                "description": "Lorem ipsum dolor sit amet amen.",
+                "title": "Desenvolvimento de Aplicativo Mobile",
+                "owner": "Maria Santos",
+                "description": "Desenvolver um aplicativo mobile para as plataformas iOS e Android para aumentar o engajamento dos clientes.",
                 "status": "doing",
-                "date": "24/06/2023"
+                "date": "15/03/2023"
+            },
+            {
+                "title": "Campanha de Marketing",
+                "owner": "Alexandre Almeida",
+                "description": "Planejar e executar uma campanha de marketing abrangente para aumentar o reconhecimento da marca e atrair novos clientes.",
+                "status": "done",
+                "date": "05/04/2023"
+            },
+            {
+                "title": "Design de Embalagem de Produto",
+                "owner": "Mariana Costa",
+                "description": "Criar uma embalagem visualmente atraente e de fácil utilização para o lançamento de um novo produto.",
+                "status": "todo",
+                "date": "22/04/2023"
+            },
+            {
+                "title": "Programa de Treinamento de Vendas",
+                "owner": "Fernando Oliveira",
+                "description": "Desenvolver um programa de treinamento para aprimorar as habilidades e técnicas de vendas da equipe de vendas.",
+                "status": "doing",
+                "date": "10/05/2023"
+            },
+            {
+                "title": "Estratégia de Mídias Sociais",
+                "owner": "Carolina Ferreira",
+                "description": "Criar uma estratégia abrangente de mídias sociais para aumentar a visibilidade e o engajamento da marca.",
+                "status": "done",
+                "date": "18/06/2023"
+            },
+            {
+                "title": "Criação de Conteúdo",
+                "owner": "Rodrigo Santos",
+                "description": "Produzir conteúdo de alta qualidade e envolvente para o blog da empresa e canais de mídias sociais.",
+                "status": "todo",
+                "date": "05/07/2023"
+            },
+            {
+                "title": "Pesquisa de Satisfação do Cliente",
+                "owner": "Isabela Lima",
+                "description": "Realizar uma pesquisa de satisfação do cliente para coletar feedback e melhorar a experiência do cliente.",
+                "status": "doing",
+                "date": "15/07/2023"
+            },
+            {
+                "title": "Atualização da Infraestrutura de TI",
+                "owner": "Gabriel Costa",
+                "description": "Atualizar a infraestrutura de TI da empresa para melhorar o desempenho e a segurança.",
+                "status": "todo",
+                "date": "01/08/2023"
+            },
+            {
+                "title": "Programa de Treinamento para Funcionários",
+                "owner": "Beatriz Oliveira",
+                "description": "Desenvolver um programa de treinamento para aprimorar as habilidades dos funcionários e o desenvolvimento profissional.",
+                "status": "done",
+                "date": "10/08/2023"
             }
         ],
         "finances": [
