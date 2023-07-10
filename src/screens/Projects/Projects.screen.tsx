@@ -1,5 +1,6 @@
 import { Button, TextField, SpeedDial, SpeedDialAction } from "@mui/material";
 import styles from "../../styles/dashboard.module.scss";
+import boardStyle from "../../styles/layout.module.scss";
 import React from "react";
 import { IProjects } from "../../global/types";
 import AddIcon from '@mui/icons-material/Add';
@@ -139,11 +140,7 @@ export default function ProjectsScreen() {
         />
       </div>}
       <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "33% 33% 33%",
-          columnGap: "10px"
-        }}
+        className={boardStyle.projectsBoard}
       >
         <div style={{
           backgroundColor: "#ebe9e9",
