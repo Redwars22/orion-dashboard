@@ -28,7 +28,7 @@ export default function Menu() {
                 onClick={()=> navigate("/dashboard")}
                 >
                     <PieChartIcon />
-                    <span class="menu-label">Dashboard</span>
+                    <span className={styles.menuLabel}>Dashboard</span>
                 </Button>
                 <Button sx={{
                     color: "#fff",
@@ -39,7 +39,7 @@ export default function Menu() {
                 onClick={()=> navigate("/clients")}
                 >
                     <FaceIcon />
-                    <span class="menu-label">Clientes</span>
+                    <span className={styles.menuLabel}>Clientes</span>
                 </Button>
                 <Button sx={{
                     color: "#fff",
@@ -50,7 +50,7 @@ export default function Menu() {
                 onClick={()=> navigate("/finances")}
                 >
                     <PollIcon />
-                    <span class="menu-label">Financeiro</span>
+                    <span className={styles.menuLabel}>Financeiro</span>
                 </Button>
                 <Button sx={{
                     color: "#fff",
@@ -61,7 +61,7 @@ export default function Menu() {
                 onClick={() => navigate("/projects")}    
                 >
                     <SportsScoreIcon />
-                    <span class="menu-label">Projetos</span>
+                    <span className={styles.menuLabel}>Projetos</span>
                 </Button>
                 <Button sx={{
                     color: "#fff",
@@ -72,7 +72,7 @@ export default function Menu() {
                 onClick={() => navigate("/analytics")}
                 >
                     <BarChartIcon />
-                    <span class="menu-label">Relatório</span>
+                    <span className={styles.menuLabel}>Relatório</span>
                 </Button>
                 <Button sx={{
                     color: "#fff",
@@ -94,7 +94,7 @@ export default function Menu() {
                 onClick={() => navigate("/")}
                 >
                     <LogoutIcon />
-                    <span class="menu-label">Sair</span>
+                    <span className={styles.menuLabel}>Sair</span>
                 </Button>
                 {true && <div><ReadOnly/></div>}
             </Stack>
