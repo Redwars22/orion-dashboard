@@ -1,7 +1,7 @@
 .projectsBoard {
     display: grid;
-    grid-template-columns: "33% 33% 33%";
-    column-gap: "10px"
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 10px;
 }
 
 @media screen and (max-width: 768px){
