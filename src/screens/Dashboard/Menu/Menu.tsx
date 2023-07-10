@@ -10,7 +10,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import { useNavigate } from "react-router-dom";
 import ReadOnly from "../../../global/ReadOnly";
 import LogoutIcon from '@mui/icons-material/Logout';
-import * as styles from "../../../styles/menu.module.scss";
+import styles from "../../../styles/menu.module.scss";
 
 export default function Menu() {
     const navigate = useNavigate();
