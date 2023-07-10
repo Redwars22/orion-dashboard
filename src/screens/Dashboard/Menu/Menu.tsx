@@ -18,7 +18,7 @@ export default function Menu() {
     return (
         <div className={styles.menu}>
             <Stack spacing={2}>
-                <Brand isBlue={false} />
+                <div className={styles.menuLabel}><Brand isBlue={false} /></div>
                 <Button variant="text" sx={{
                     color: "#fff",
                     display: "flex",
@@ -83,7 +83,7 @@ export default function Menu() {
                 onClick={() => navigate("/settings")}
                 >
                     <SettingsIcon />
-                    Configurações
+                    <span className={styles.menuLabel}>Configurações</span>
                 </Button>
                 <Button sx={{
                     color: "#fff",
@@ -96,7 +96,7 @@ export default function Menu() {
                     <LogoutIcon />
                     <span className={styles.menuLabel}>Sair</span>
                 </Button>
-                {true && <div><ReadOnly/></div>}
+                {true && <div className={styles.menuLabel}><ReadOnly/></div>}
             </Stack>
         </div>
     )
