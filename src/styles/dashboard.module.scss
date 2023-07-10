@@ -5,6 +5,12 @@
     width: fill-parent;
 }
 
+@media screen and (max-width: 500px){
+    .row {
+        flex-direction: column;
+    }
+}
+
 .dashboard {
     padding: 1.5rem;
     display: flex;

@@ -1,0 +1,21 @@
+.menu {
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: #e5e5e5;
+    padding: 1rem;
+    height: calc(100vh - 2rem);
+    max-height: calc(100vh - 2rem);
+    background-color: #2577fa;
+    max-width: 20vw;
+    overflow-y: auto;
+}
+
+.button {}
+
+@media screen and (max-width: 500px) {
+    .menu-label {
+        display: none;
+    }
+}
+
+.readOnlyNotice {}

@@ -10,22 +10,13 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import { useNavigate } from "react-router-dom";
 import ReadOnly from "../../../global/ReadOnly";
 import LogoutIcon from '@mui/icons-material/Logout';
+import * as styles from "../../../styles/menu.module.scss";
 
 export default function Menu() {
     const navigate = useNavigate();
 
     return (
-        <div style={{
-            borderRightWidth: "2px",
-            borderRightStyle: "solid",
-            borderRightColor: "#e5e5e5",
-            padding: "1rem",
-            height: "calc(100vh - 2rem)",
-            maxHeight: "calc(100vh - 2rem)",
-            backgroundColor: "#2577fa",
-            maxWidth: "20vw",
-            overflowY: "auto"
-        }}>
+        <div className={styles.menu}>
             <Stack spacing={2}>
                 <Brand isBlue={false} />
                 <Button variant="text" sx={{
@@ -37,7 +28,7 @@ export default function Menu() {
                 onClick={()=> navigate("/dashboard")}
                 >
                     <PieChartIcon />
-                    Dashboard
+                    <span class="menu-label">Dashboard</span>
                 </Button>
                 <Button sx={{
                     color: "#fff",
@@ -48,7 +39,7 @@ export default function Menu() {
                 onClick={()=> navigate("/clients")}
                 >
                     <FaceIcon />
-                    Clientes
+                    <span class="menu-label">Clientes</span>
                 </Button>
                 <Button sx={{
                     color: "#fff",
@@ -59,7 +50,7 @@ export default function Menu() {
                 onClick={()=> navigate("/finances")}
                 >
                     <PollIcon />
-                    Financeiro
+                    <span class="menu-label">Financeiro</span>
                 </Button>
                 <Button sx={{
                     color: "#fff",
@@ -70,7 +61,7 @@ export default function Menu() {
                 onClick={() => navigate("/projects")}    
                 >
                     <SportsScoreIcon />
-                    Projetos
+                    <span class="menu-label">Projetos</span>
                 </Button>
                 <Button sx={{
                     color: "#fff",
@@ -81,7 +72,7 @@ export default function Menu() {
                 onClick={() => navigate("/analytics")}
                 >
                     <BarChartIcon />
-                    Relatório
+                    <span class="menu-label">Relatório</span>
                 </Button>
                 <Button sx={{
                     color: "#fff",
@@ -103,7 +94,7 @@ export default function Menu() {
                 onClick={() => navigate("/")}
                 >
                     <LogoutIcon />
-                    Sair
+                    <span class="menu-label">Sair</span>
                 </Button>
                 {true && <div><ReadOnly/></div>}
             </Stack>
