@@ -5,7 +5,7 @@ export default function ReadOnly() {
         <div>
         <Alert severity="info">
             <AlertTitle>Modo somente leitura</AlertTitle>
-            Você está no modo somente visualização porque sua conta não tem permissões de edição. Contate seu administrador.
+            Sua conta não tem permissões de edição. Contate seu administrador.
         </Alert>
         </div>
     )
