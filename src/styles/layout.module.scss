@@ -1,7 +1,53 @@
+@mixin dataTable {
+    display: grid;
+    justify-items: start;
+    align-items: center;
+}
+
+@mixin dataTableHeader {
+    display: grid;
+    font-weight: bold;
+    justify-items: start;
+    border-bottom-width: 1px;
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+}
+
 .projectsBoard {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     column-gap: 10px;
+}
+
+.clientsTableHeader, .financialDataTableHeader {
+    @include dataTableHeader;
+}
+
+.clientsTable, .financialDataTable {
+    @include dataTable;
+    border-bottom: 1px dashed grey;
+}
+
+@media screen and (min-width: 680px) {
+    .financialDataTable {
+        grid-template-columns: repeat(4, 25%);
+    }
+
+    .financialDataTableHeader {
+        @include dataTableHeader;
+        grid-template-columns: repeat(4, 25%);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .clientsTable {
+        grid-template-columns: 25% 15% 36% 18% 8%;
+    }
+
+    .clientsTableHeader {
+        @include dataTableHeader;
+        grid-template-columns: 25% 15% 36% 18% 8%;
+    }
 }
 
 @media screen and (max-width: 768px){
