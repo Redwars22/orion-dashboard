@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { IClients } from "../../global/types";
-import styles from "../../styles/layout.module.css";
+import styles from "../../styles/layout.module.scss";
 
 export default function ClientsTable(props: {
     data: IClients[]

@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import { IFinances } from "../../global/types";
 import SystemUpdateAltIcon from '@mui/icons-material/SystemUpdateAlt';
-import styles from "../../styles/layout.module.css";
+import styles from "../../styles/layout.module.scss";
 
 export default function FinancesTable(props: { data: IFinances[] }) {
     return (
