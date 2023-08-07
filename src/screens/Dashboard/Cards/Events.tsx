@@ -30,16 +30,8 @@ export default function EventsComponent(props: {
                 marginRight: "auto"
               }}>
                 <DatePicker value={date} onChange={(value)=> {
-                    const handleVal = () => {
-                      let val = value!.split(" ");
-                      let val2 = [val[1], val[2], val[3]]; 
-                      return val2;
-                    }
-
-                    const val = handleVal();
-
                     setDate(value ? value : "");    
-                    window.alert(val)
+                    window.alert(value)
                 }}
                 />
               </div>
