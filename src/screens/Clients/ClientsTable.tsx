@@ -6,11 +6,24 @@ import styles from "../../styles/layout.module.scss";
 export default function ClientsTable(props: {
     data: IClients[]
 }) {
+    const clientsTableData: IClients[] = props.data.sort((a, b) => {
+        const clientA = a.name.toUpperCase();
+        const clientB = b.name.toUpperCase();
+        
+        if (clientA < clientB) {
+          return -1;
+        }
+        if (clientA > clientB) {
+          return 1;
+        }
+        return 0;
+      });
+
     return (
-        <>{props.data.length < 1
+        <>{clientsTableData.length < 1
             ? <span>Nenhum cliente foi encontrado!</span>
             : <>
-                <span>{props.data.length} cliente(s) encontrado(s)</span>
+                <span>{clientsTableData.length} cliente(s) encontrado(s)</span>
                 <div className={styles.clientsTableHeader}>
                     <span>Nome</span>
                     <span>CPF</span>
@@ -18,7 +31,7 @@ export default function ClientsTable(props: {
                     <span>Telefone</span>
                     <span>Contato</span>
                 </div>
-                <>{props.data.map((item: IClients) =>
+                <>{clientsTableData.map((item: IClients) =>
                     <div className={styles.clientsTable}>
                         <span>{item?.name!}</span>
                         <span>{item?.CPF!}</span>
