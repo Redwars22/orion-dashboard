@@ -31,6 +31,7 @@ export default function EventsComponent(props: {
               }}>
                 <DatePicker value={date} onChange={(value)=> {
                     setDate(value ? value : "");    
+                    console.log(value?.split(" "))
                     window.alert(value)
                 }}
                 />
