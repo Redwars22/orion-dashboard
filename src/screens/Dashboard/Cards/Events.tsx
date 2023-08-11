@@ -19,7 +19,7 @@ export default function EventsComponent(props: {
     const eventsFiltered: IEvent[] = events?.filter((i: IEvent) => i.date === date);
 
     setEventsInThatDate(eventsFiltered);
-  }, [date])
+  }, [date, events])
 
   const getEventCards = React.useCallback(() => <></>, [eventsInThatDate])
 
