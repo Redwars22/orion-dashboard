@@ -10,7 +10,7 @@ export default function EventsComponent(props: {
   data: IEvent[]
 }) {
   const [date, setDate] = React.useState("");
-  const [eventsInThatDate, setEventsInThatDate] = React.useState([]);
+  const [eventsInThatDate, setEventsInThatDate] = React.useState<IEvent[] | []>([]);
 
   const events: IEvent[] = props.data;
 
