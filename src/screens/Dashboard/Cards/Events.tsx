@@ -1,5 +1,6 @@
 import { TextField, Button, Stack, Card } from '@mui/material';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import {IEvent} from "../../../global/types";
@@ -23,13 +24,16 @@ export default function EventsComponent(props: {
             gap: "0.5rem"
         }}>
             <h2>Eventos</h2>
-            <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <LocalizationProvider dateAdapter={AdapterDateFns}>
               <div style={{
                 maxWidth: "150px",
                 marginLeft: "auto",
                 marginRight: "auto"
               }}>
-                <DatePicker value={date} onChange={(value)=> {
+                <DatePicker 
+                  value={date} 
+                  mask="__/__/____"
+                  onChange={(value)=> {
                     setDate(value ? value : "");    
                     window.alert(value)
                     console.log(value)
