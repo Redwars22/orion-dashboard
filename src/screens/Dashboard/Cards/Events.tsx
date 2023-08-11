@@ -15,7 +15,7 @@ export default function EventsComponent(props: {
   const events: IEvent[] = props.data;
 
   const updateFilteredEvents = React.useCallback(() => {
-    const eventsFiltered: IEvent[] = props.events.filter((i: IEvent) => i.date === date);
+    const eventsFiltered: IEvent[] = events.filter((i: IEvent) => i.date === date);
 
     setEventsInThatDate(eventsFiltered);
   }, [date])
