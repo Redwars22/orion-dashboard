@@ -52,7 +52,7 @@ export default function EventsComponent(props: {
           />
         </div>
       </LocalizationProvider>
-      {eventsInThatDate.length === 0 ?
+      {eventsInThatDate?.length === 0 ?
         <span>Nenhuma data selecionada ou não há nenhum evento previsto para a data selecionada!</span> :
         <>{getEventCards()}</>}
     </Card>
