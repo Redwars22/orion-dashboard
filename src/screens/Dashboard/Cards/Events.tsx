@@ -14,13 +14,13 @@ export default function EventsComponent(props: {
 
   const events: IEvent[] = props.data;
 
-  const updateFilteredEvents = useCallback(() => {
+  const updateFilteredEvents = React.useCallback(() => {
     const eventsFiltered: IEvent[] = props.events.filter((i: IEvent) => i.date === date);
 
     setEventsInThatDate(eventsFiltered);
   }, [date])
 
-  const getEventCards = useCallback(() => <></>, [eventsInThatDate])
+  const getEventCards = React.useCallback(() => <></>, [eventsInThatDate])
 
   return (
     <Card variant={"outlined"} sx={{
@@ -44,14 +44,15 @@ export default function EventsComponent(props: {
             setDate(value ? value : "");
 
             if (value) {
-              const formattedDate = dayjs(value).format('MM-DD-YYYY'); // Format the date
+              const formattedDate = dayjs(value).format('MM-DD-YYYY');
               updateFilteredEvents();
             }
           }}
           />
         </div>
       </LocalizationProvider>
-      {eventsInThatDate.length === 0 ? <span>Nenhuma data selecionada ou não há nenhum evento previsto para a data selecionada!</span> :
+      {eventsInThatDate.length === 0 ?
+        <span>Nenhuma data selecionada ou não há nenhum evento previsto para a data selecionada!</span> :
         <>{getEventCards()}</>}
     </Card>
   )
