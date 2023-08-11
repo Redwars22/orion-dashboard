@@ -42,11 +42,10 @@ export default function EventsComponent(props: {
           marginRight: "auto"
         }}>
           <DatePicker value={date} onChange={(value) => {
-            setDate(value ? value : "");
-
             if (value) {
               const formattedDate = dayjs(value).format('MM-DD-YYYY');
-              updateFilteredEvents();
+              setDate(formattedDate)
+              updateFilteredEvents(formattedDate);
             }
           }}
           />
