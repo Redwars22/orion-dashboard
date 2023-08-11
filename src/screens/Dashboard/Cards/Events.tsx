@@ -10,7 +10,15 @@ export default function EventsComponent(props: {
     data: IEvent[]
 }) {
     const [date, setDate] = React.useState("");
-    const [event, setEvent] = React.useState([]);
+    const [eventsInThatDate, setEventsInThatDate] = React.useState([]);
+
+    const events: IEvent[] = props.data;
+
+    const eventsInThatDate = useCallback(()=>{
+      const eventsFiltered: IEvent[] = props.events.filter((i: IEvent) => i.date === date);
+
+      setEventsInThatDate(eventsFiltered);
+    }, [date])
     
     return (
         <Card variant={"outlined"} sx={{
@@ -42,7 +50,7 @@ export default function EventsComponent(props: {
                 />
               </div>
             </LocalizationProvider>
-            <span>Nenhuma data selecionada ou não há nenhum evento previsto para a data selecionada!</span>
+            {eventsFiltered.length === 0 && <span>Nenhuma data selecionada ou não há nenhum evento previsto para a data selecionada!</span>}
         </Card>
     )
 }
