@@ -136,64 +136,64 @@
             {
                 "title": "Reunião Equipe de Design",
                 "date": "08-11-2023",
-                "description": "Descrição do Evento 1",
+                "description": "Discussão mensal da equipe de design para revisar o progresso, compartilhar ideias e alinhar os próximos passos do projeto atual.",
                 "uuid": "57444cae-78b4-4107-9009-9a4056da64a9"
             },
             {
                 "title": "Apresentação de Projeto",
                 "date": "15-09-2023",
-                "description": "Descrição do Evento 2",
+                "description": "Apresentação detalhada do projeto em desenvolvimento, abordando os desafios enfrentados, as soluções propostas e os resultados esperados.",
                 "uuid": "8c0e4ab7-2d42-4c12-a4f0-7a8728f44b84"
             },
             {
                 "title": "Workshop de Design Thinking",
                 "date": "27-07-2023",
-                "description": "Descrição do Evento 3",
+                "description": "Sessão interativa de um dia, focada em aplicar princípios de design thinking para resolver problemas complexos, com atividades práticas e colaborativas.",
                 "uuid": "f19d0450-1e7a-49bf-80e5-3781e19332a0"
             },
             {
                 "title": "Conferência de Inovação",
                 "date": "02-10-2023",
-                "description": "Descrição do Evento 4",
+                "description": "Evento de dois dias que reúne especialistas em inovação e tecnologia para compartilhar insights sobre as últimas tendências e práticas de vanguarda.",
                 "uuid": "b3aef5f0-86e5-4354-9e2a-2994a81d0b54"
             },
             {
                 "title": "Sessão de Brainstorming",
                 "date": "18-08-2023",
-                "description": "Descrição do Evento 5",
+                "description": "Encontro dinâmico e criativo para gerar uma ampla gama de ideias visando alimentar a inovação, com a participação de toda a equipe.",
                 "uuid": "6d9a0e5a-4681-45b9-b657-5f09f76e3a96"
             },
             {
                 "title": "Reunião de Planejamento",
                 "date": "09-06-2023",
-                "description": "Descrição do Evento 6",
+                "description": "Reunião estratégica para definir metas, prioridades e estratégias de curto e médio prazo, buscando otimizar o uso de recursos da equipe.",
                 "uuid": "a9c9b0ae-946f-4e5f-9d90-c3a3a0c8e89d"
             },
             {
                 "title": "Palestra sobre UX Design",
                 "date": "08-11-2023",
-                "description": "Descrição do Evento 7",
+                "description": "Apresentação envolvente de um especialista em experiência do usuário, explorando os princípios do UX design e compartilhando casos de sucesso.",
                 "uuid": "f8f0ceac-25a9-4ae9-923f-3f81c6a7f508"
             },
             {
                 "title": "Hackathon de Inovação",
                 "date": "12-07-2023",
-                "description": "Descrição do Evento 8",
+                "description": "Competição de 48 horas que reúne mentes criativas para desenvolver soluções inovadoras para desafios específicos, promovendo o pensamento disruptivo.",
                 "uuid": "db995baf-5b69-4215-a27a-0635a5a1a98f"
             },
             {
                 "title": "Apresentação de Resultados",
                 "date": "30-09-2023",
-                "description": "Descrição do Evento 9",
+                "description": "Mostra dos resultados alcançados em um projeto recente, destacando métricas-chave, lições aprendidas e os impactos na organização e no mercado.",
                 "uuid": "a28e92f5-68db-4c8f-99ed-0db06e0fbc36"
             },
             {
                 "title": "Workshop de Criatividade",
                 "date": "08-11-2023",
-                "description": "Descrição do Evento 10",
+                "description": "Oficina prática que explora técnicas e métodos para estimular a criatividade e a geração de ideias inovadoras, aplicáveis aos desafios do dia a dia.",
                 "uuid": "d31c5b73-97a3-4e57-8e89-8a6e6d77c39f"
             }
-        ],        
+        ],               
         "projects": [
             {
                 "title": "Redesign do Website",
