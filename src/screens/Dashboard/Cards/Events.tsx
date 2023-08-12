@@ -21,7 +21,9 @@ export default function EventsComponent(props: {
     setEventsInThatDate(eventsFiltered);
   }, [date, events])
 
-  const getEventCards = React.useCallback(() => <></>, [eventsInThatDate])
+  const getEventCards = React.useCallback(() => <>
+    {eventsInThatDate?.map((i: IEvent) => <span>${i.title} - ${i.description}</span>)}
+  </>, [eventsInThatDate])
 
   return (
     <Card variant={"outlined"} sx={{
