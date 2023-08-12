@@ -9,7 +9,7 @@ interface IEventCardData {
     description: string;
 }
 
-export default function EventCard(props: IEventCardData){
+export default function EventCard(props: IEventCardData) {
     const handleInfoButton = () => {
         alert(props.description);
     }
@@ -18,16 +18,17 @@ export default function EventCard(props: IEventCardData){
         window.open(`https://andreweventscalendar.tk/events/uuid=${props.uuid}`);
     }
 
-    return(
+    return (
         <div className={styles.eventsContainer}>
-            <CalendarMonthIcon/>
+            <CalendarMonthIcon />
             <span className={styles.eventTitle}>{props.title}</span>
-            <button onClick={handleInfoButton}>
-                <InfoIcon/>
-            </button>
-            <button onClick={handleOpenInCalendar}>
-                <VisibilityIcon/>
-            </button>
+            <IconButton aria-label="delete" size="large" onClick={handleInfoButton}>
+                <InfoIcon fontSize="inherit" />
+            </IconButton>
+            <InfoIcon />
+            <IconButton aria-label="delete" size="large" onClick={handleOpenInCalendar}>
+                <VisibilityIcon fontSize="inherit" />
+            </IconButton>
         </div>
     )
 }
