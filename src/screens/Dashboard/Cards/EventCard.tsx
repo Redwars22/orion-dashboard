@@ -23,7 +23,7 @@ export default function EventCard(props: IEventCardData) {
         <div className={styles.eventsContainer}>
             <CalendarMonthIcon />
             <span className={styles.eventTitle}>{props.title}</span>
-            <IconButton aria-label="delete" size="large" color="secundary" onClick={handleInfoButton}>
+            <IconButton aria-label="delete" size="large" color="secondary" onClick={handleInfoButton}>
                 <InfoIcon fontSize="inherit" />
             </IconButton>
             <IconButton aria-label="delete" size="large" color="primary" onClick={handleOpenInCalendar}>
