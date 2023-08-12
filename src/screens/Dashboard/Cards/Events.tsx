@@ -5,6 +5,7 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { IEvent } from "../../../global/types";
 import React from "react";
 import dayjs from 'dayjs';
+import EventCard from "./EventCard";
 
 export default function EventsComponent(props: {
   data: IEvent[]
@@ -22,7 +23,7 @@ export default function EventsComponent(props: {
   }, [date, events])
 
   const getEventCards = React.useCallback(() => <>
-    {eventsInThatDate?.map((i: IEvent) => <span>${i.title} - ${i.description}</span>)}
+    {eventsInThatDate?.map((i: IEvent) => <EventCard title={i.title} uuid={i.uuid} description={i.description} />)}
   </>, [eventsInThatDate])
 
   return (
