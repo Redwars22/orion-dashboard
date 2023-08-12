@@ -24,7 +24,7 @@ export default function SalesComponent(props: {
             margin: "0.75rem"
         }}>{props?.gainsOrLosses > 0 ? <TrendingUpIcon fontSize='large' color="success" /> : <TrendingDownIcon fontSize="large" color="warning" />}</div>
         <span className={props?.gainsOrLosses > 0 ? styles.moneyGreen : styles.moneyRed}>+R$ {props.gainsOrLosses}</span>
-        <span>Média diária: +R$987711,99</span>
-        <span>Total anual: +RS91919199191991912,99</span>
+        <span className={props?.dailyAverage > 0 ? styles.moneyGreen : styles.moneyRed}>Média diária: +R$ {props.dailyAverage}</span>
+        <span className={props?.annualGainsOrLosses > 0 ? styles.moneyGreen : styles.moneyRed}>Total anual: +RS {props.annualGainsOrLosses}</span>
     </Card>)
 }
