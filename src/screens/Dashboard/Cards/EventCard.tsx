@@ -2,6 +2,7 @@ import styles from "../../../styles/eventscard.module.scss";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import InfoIcon from '@mui/icons-material/Info';
 import VisibilityIcon from '@mui/icons-material/Visibility';
+import IconButton from '@mui/material/IconButton';
 
 interface IEventCardData {
     uuid: string;
