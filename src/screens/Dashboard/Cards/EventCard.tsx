@@ -21,7 +21,7 @@ export default function EventCard(props: IEventCardData){
     return(
         <div className={styles.eventsContainer}>
             <CalendarMonthIcon/>
-            <span className={styles.eventTitle}>${props.title}</span>
+            <span className={styles.eventTitle}>{props.title}</span>
             <button onClick={handleInfoButton}>
                 <InfoIcon/>
             </button>
