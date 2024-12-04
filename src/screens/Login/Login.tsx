@@ -52,7 +52,7 @@ export default function LoginScreen() {
         {invalid && <span style={{
           color: "red"
         }}>Nenhum usuário com essas informações foi encontrado. Tente novamente!</span>}
-        <Button type="submit" variant="contained" color="primary">
+        <Button type="submit" variant="contained" color="danger">
           Login
         </Button>
         <span>Esqueceu seu login ou senha?</span>

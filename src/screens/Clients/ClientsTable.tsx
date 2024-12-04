@@ -37,7 +37,7 @@ export default function ClientsTable(props: {
                         <span>{item?.CPF!}</span>
                         <span>{item?.address!}</span>
                         <span>{item?.phoneNumber!}</span>
-                        <Button variant="text" onClick={() => {
+                        <Button variant="success" onClick={() => {
                             window.open(
                                 `https://wa.me/${item?.phoneNumber?.replace("(", "")
                                     .replace(")", "")
@@ -45,7 +45,7 @@ export default function ClientsTable(props: {
                                     .replace(" ", "")}`
                             )
                         }}>
-                            <WhatsAppIcon color="success" />
+                            <WhatsAppIcon color="#fff" />
                         </Button>
                     </div>
                 )}

@@ -114,7 +114,7 @@ export default function SettingsScreen() {
               fullWidth
               disabled
             />
-            <Button variant="outlined" color="success" disabled>
+            <Button variant="contained" color="success" disabled>
               Salvar
             </Button>
             <br/>
@@ -124,14 +124,14 @@ export default function SettingsScreen() {
               <br />
               Chave de produto: 9KDE4-9YOP2-5643W-NDKJP-Z345I
             </span>
-            <Button variant="outlined" color="info" disabled>
+            <Button variant="contained" color="danger" disabled>
               Alterar chave de produto
             </Button>
             <hr />
-            <Button variant="outlined" color="secondary">
+            <Button variant="contained" color="danger">
               Exportar todos os dados
             </Button>
-            <Button variant="outlined" color="warning" disabled>
+            <Button variant="contained" color="warning" disabled>
               Excluir empresa
             </Button>
           </div>

@@ -4,6 +4,7 @@ import React from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
+import AssignmentTurnedInIcon from '@mui/icons-material/AssignmentTurnedIn';
 
 export default function TasksComponent(props: {
   data: IProjects[]
@@ -52,7 +53,7 @@ export default function TasksComponent(props: {
         marginLeft: "0.5rem"
       }}>
         {props.data && tasks()!.map((item: IProjects) => <span>
-          {getTaskStatus(item.status)} - {item?.title} ({item?.owner})
+          <AssignmentTurnedInIcon/> - {getTaskStatus(item.status)} - {item?.title} ({item?.owner})
         </span>)}
       </div>
       <Button sx={{ marginTop: "0.75rem" }} startIcon={<TaskAltIcon />} type="submit" variant="contained" color="error" onClick={() => navigate("/projects")}>
