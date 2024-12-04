@@ -45,7 +45,7 @@ export default function ClientsTable(props: {
                                     .replace(" ", "")}`
                             )
                         }}>
-                            <WhatsAppIcon color="#fff" />
+                            <WhatsAppIcon color="primary" />
                         </Button>
                     </div>
                 )}
