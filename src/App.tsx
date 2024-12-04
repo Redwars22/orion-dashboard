@@ -43,7 +43,7 @@ function App() {
     return (
       <div style={{ display: "flex", maxWidth: "100vw", maxHeight: "100vh" }}>
         <Menu />
-        <div style={{ backgroundColor: "#e3e3e3" }}>{children}</div>
+        <div style={{ backgroundColor: "#141414" }}>{children}</div>
       </div>
     )
   }

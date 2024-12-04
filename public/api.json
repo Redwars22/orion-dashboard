@@ -439,7 +439,9 @@
             ],
             "twoFactorAuth": false,
             "businessName": "AndrewNation Software",
-            "CNPJ": "75.157.211/0001-31"
+            "CNPJ": "75.157.211/0001-31",
+            "productKey": "",
+            "expiryDate": ""
         }
     }
 }
