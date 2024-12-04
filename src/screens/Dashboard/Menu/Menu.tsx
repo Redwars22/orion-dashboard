@@ -19,6 +19,7 @@ export default function Menu() {
         <div className={styles.menu}>
             <Stack spacing={2}>
                 <div className={styles.menuLabel}><Brand isBlue={false} /></div>
+                <Typography>Versão 2025.1</Typography>
                 <Button variant="text" sx={{
                     color: "#fff",
                     display: "flex",
@@ -30,7 +31,6 @@ export default function Menu() {
                     <PieChartIcon />
                     <span className={styles.menuLabel}>Dashboard</span>
                 </Button>
-                <Typography>Versão 2025.1</Typography>
                 <Button sx={{
                     color: "#fff",
                     display: "flex",
