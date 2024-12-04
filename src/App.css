@@ -19,6 +19,10 @@
   color: #fff;
 }
 
+h1, h2, span, p {
+  color: #fff;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
