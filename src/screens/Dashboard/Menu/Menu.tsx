@@ -1,4 +1,4 @@
-import { Stack, Button } from "@mui/material";
+import { Stack, Button, Typography } from "@mui/material";
 import Brand from "../../../global/Brand";
 import BubbleChartIcon from '@mui/icons-material/BubbleChart';
 import PieChartIcon from '@mui/icons-material/PieChart';
@@ -30,6 +30,7 @@ export default function Menu() {
                     <PieChartIcon />
                     <span className={styles.menuLabel}>Dashboard</span>
                 </Button>
+                <Typography>Versão 2025.1</Typography>
                 <Button sx={{
                     color: "#fff",
                     display: "flex",
