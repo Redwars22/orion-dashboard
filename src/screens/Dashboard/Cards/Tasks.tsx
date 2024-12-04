@@ -3,6 +3,7 @@ import { IProjects } from "../../../global/types";
 import React from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import TaskAltIcon from '@mui/icons-material/TaskAlt';
 
 export default function TasksComponent(props: {
   data: IProjects[]
@@ -54,7 +55,7 @@ export default function TasksComponent(props: {
           {getTaskStatus(item.status)} - {item?.title} ({item?.owner})
         </span>)}
       </div>
-      <Button sx={{ marginTop: "0.75rem" }} type="submit" variant="outlined" color="error" onClick={() => navigate("/projects")}>
+      <Button sx={{ marginTop: "0.75rem" }} startIcon={<TaskAltIcon />} type="submit" variant="contained" color="error" onClick={() => navigate("/projects")}>
         Ver todas as tarefas
       </Button>
     </Card>
