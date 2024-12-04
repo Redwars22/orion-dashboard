@@ -19,7 +19,7 @@ export default function Menu() {
         <div className={styles.menu}>
             <Stack spacing={2}>
                 <div className={styles.menuLabel}><Brand isBlue={false} /></div>
-                <Typography>Versão 2025.1</Typography>
+                <Typography>v2025.1</Typography>
                 <Button variant="text" sx={{
                     color: "#fff",
                     display: "flex",
