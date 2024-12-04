@@ -39,7 +39,8 @@ export default function TasksComponent(props: {
       paddingRight: "0.5rem",
       paddingBottom: "0.5rem",
       borderRadius: "10px",
-      flex: 1
+      flex: 1,
+      backgroundColor: "#151b1c"
     }}>
       <h2>Tarefas</h2>
       <div style={{
