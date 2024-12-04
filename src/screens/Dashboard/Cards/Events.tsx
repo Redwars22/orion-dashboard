@@ -37,6 +37,7 @@ export default function EventsComponent(props: {
       flexDirection: "column",
       gap: "0.5rem",
       backgroundColor: "#151b1c"
+      color: "#fff"
     }}>
       <h2>Eventos</h2>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
