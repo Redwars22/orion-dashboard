@@ -15,7 +15,8 @@ export default function SalesComponent(props: {
         display: "flex",
         flexDirection: "column",
         gap: "1rem",
-        flex: 1
+        flex: 1,
+        backgroundColor: "#151b1c"
     }}>
         <h2>Resumo de vendas</h2>
         <div style={{
