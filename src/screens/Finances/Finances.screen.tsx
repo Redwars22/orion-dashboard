@@ -28,7 +28,7 @@ export default function FinancesScreen() {
                 flexDirection: "column"
             }}>
                 <h2>Detalhes financeiros</h2>
-                <Button variant="contained" color="danger" onClick={() => window.open("")}>
+                <Button variant="contained" color="error" onClick={() => window.open("")}>
                     <SystemUpdateAltIcon />
                     Baixar relatório completo
                 </Button>
