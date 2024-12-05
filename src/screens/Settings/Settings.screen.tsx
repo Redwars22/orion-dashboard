@@ -124,11 +124,11 @@ export default function SettingsScreen() {
               <br />
               Chave de produto: 9KDE4-9YOP2-5643W-NDKJP-Z345I
             </span>
-            <Button variant="contained" color="danger" disabled>
+            <Button variant="contained" color="error" disabled>
               Alterar chave de produto
             </Button>
             <hr />
-            <Button variant="contained" color="danger">
+            <Button variant="contained" color="error">
               Exportar todos os dados
             </Button>
             <Button variant="contained" color="warning" disabled>
