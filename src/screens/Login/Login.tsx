@@ -1,4 +1,4 @@
-import { Stack, TextField, Button } from "@mui/material";
+import { Stack, TextField, Button, Typography } from "@mui/material";
 import { useState } from "react";
 import Brand from "../../global/Brand";
 import { useNavigate } from "react-router-dom";
@@ -40,6 +40,7 @@ export default function LoginScreen() {
           onChange={handleUsernameChange}
           fullWidth
           margin="normal"
+          color="error"
         />
         <TextField
           label="Password"
@@ -48,6 +49,7 @@ export default function LoginScreen() {
           onChange={handlePasswordChange}
           fullWidth
           margin="normal"
+          color="error"
         />
         {invalid && <span style={{
           color: "red"
@@ -55,7 +57,7 @@ export default function LoginScreen() {
         <Button type="submit" variant="contained" color="error">
           Login
         </Button>
-        <span>Esqueceu seu login ou senha?</span>
+        <Typography>Esqueceu seu login ou senha?</Typography>
         <a href="https://andrewnationdev.vercel.app/docs/projects/orionboard">Entre em contato com o administrador</a>
       </Stack>
     </form>
