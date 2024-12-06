@@ -33,7 +33,7 @@ export default function LoginScreen() {
       <Stack className={"login-form"} sx={{
         justifyContent: "center"
       }} spacing={2}>
-        <Brand isBlue />
+        <Brand isBlue={false} />
         <TextField
           label="Username"
           value={username}
@@ -53,14 +53,16 @@ export default function LoginScreen() {
           color="error"
           focused
         />
-        {invalid && <span style={{
-          color: "red"
-        }}>Nenhum usuário com essas informações foi encontrado. Tente novamente!</span>}
+        {invalid && <Typography style={{
+          color: "#FD6060"
+        }}>Nenhum usuário com essas informações foi encontrado. Tente novamente!</Typography>}
         <Button type="submit" variant="contained" color="error">
           Login
         </Button>
         <Typography>Esqueceu seu login ou senha?</Typography>
-        <a href="https://andrewnationdev.vercel.app/docs/projects/orionboard">Entre em contato com o administrador</a>
+        <a style={{
+          color: "#FD6060"
+        }} href="https://andrewnationdev.vercel.app/docs/projects/orionboard">Entre em contato com o administrador</a>
       </Stack>
     </form>
   )
