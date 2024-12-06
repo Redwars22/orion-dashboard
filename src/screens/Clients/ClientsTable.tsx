@@ -37,7 +37,7 @@ export default function ClientsTable(props: {
                         <span>{item?.CPF!}</span>
                         <span>{item?.address!}</span>
                         <span>{item?.phoneNumber!}</span>
-                        <Button variant="contained" color="success" onClick={() => {
+                        <Button variant="outlined" color="success" onClick={() => {
                             window.open(
                                 `https://wa.me/${item?.phoneNumber?.replace("(", "")
                                     .replace(")", "")
