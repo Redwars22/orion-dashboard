@@ -21,7 +21,8 @@ export default function ClientsScreen() {
         <div className={styles.dashboard}>
             <div className={styles.row} style={{
                 marginLeft: "auto",
-                marginRight: "auto"
+                marginRight: "auto",
+                padding: "12px"
             }}>
                 <h2>Lista de Clientes</h2>
             </div>
