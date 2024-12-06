@@ -41,7 +41,7 @@ export default function LoginScreen() {
           fullWidth
           margin="normal"
           color="error"
-          variant="outlined"
+          variant="contained"
         />
         <TextField
           label="Password"
@@ -51,7 +51,7 @@ export default function LoginScreen() {
           fullWidth
           margin="normal"
           color="error"
-          variant="outlined"
+          variant="contained"
         />
         {invalid && <span style={{
           color: "red"
