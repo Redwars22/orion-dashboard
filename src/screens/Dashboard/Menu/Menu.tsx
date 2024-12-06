@@ -18,14 +18,14 @@ export default function Menu() {
     return (
         <div className={styles.menu}>
             <Stack spacing={2}>
-                <div className={styles.menuLabel}><Brand isBlue={false} /><Typography>v2025.1</Typography></div>
+                <div className={styles.menuLabel}><Brand isBlue={false} /></div>
                 <Button variant="text" sx={{
                     color: "#fff",
                     display: "flex",
                     gap: "0.5rem",
                     justifyContent: "flex-start"
                 }}
-                onClick={()=> navigate("/dashboard")}
+                    onClick={() => navigate("/dashboard")}
                 >
                     <PieChartIcon />
                     <span className={styles.menuLabel}>Dashboard</span>
@@ -36,7 +36,7 @@ export default function Menu() {
                     gap: "0.5rem",
                     justifyContent: "flex-start"
                 }}
-                onClick={()=> navigate("/clients")}
+                    onClick={() => navigate("/clients")}
                 >
                     <FaceIcon />
                     <span className={styles.menuLabel}>Clientes</span>
@@ -47,7 +47,7 @@ export default function Menu() {
                     gap: "0.5rem",
                     justifyContent: "flex-start"
                 }}
-                onClick={()=> navigate("/finances")}
+                    onClick={() => navigate("/finances")}
                 >
                     <PollIcon />
                     <span className={styles.menuLabel}>Financeiro</span>
@@ -58,7 +58,7 @@ export default function Menu() {
                     gap: "0.5rem",
                     justifyContent: "flex-start"
                 }}
-                onClick={() => navigate("/projects")}    
+                    onClick={() => navigate("/projects")}
                 >
                     <SportsScoreIcon />
                     <span className={styles.menuLabel}>Projetos</span>
@@ -69,7 +69,7 @@ export default function Menu() {
                     gap: "0.5rem",
                     justifyContent: "flex-start"
                 }}
-                onClick={() => navigate("/analytics")}
+                    onClick={() => navigate("/analytics")}
                 >
                     <BarChartIcon />
                     <span className={styles.menuLabel}>Relatório</span>
@@ -80,7 +80,7 @@ export default function Menu() {
                     gap: "0.5rem",
                     justifyContent: "flex-start"
                 }}
-                onClick={() => navigate("/settings")}
+                    onClick={() => navigate("/settings")}
                 >
                     <SettingsIcon />
                     <span className={styles.menuLabel}>Configurações</span>
@@ -91,12 +91,12 @@ export default function Menu() {
                     gap: "0.5rem",
                     justifyContent: "flex-start"
                 }}
-                onClick={() => navigate("/")}
+                    onClick={() => navigate("/")}
                 >
                     <LogoutIcon />
                     <span className={styles.menuLabel}>Sair</span>
                 </Button>
-                {true && <div className={styles.menuLabel}><ReadOnly/></div>}
+                {true && <div className={styles.menuLabel}><ReadOnly /></div>}
             </Stack>
         </div>
     )
