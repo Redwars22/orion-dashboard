@@ -29,7 +29,7 @@ export default function LoginScreen() {
   };
 
   return (
-    <form onSubmit={handleSubmit} sx={{
+    <form onSubmit={handleSubmit} style={{
       marginTop: "125px"
     }}>
       <Stack className={"login-form"} sx={{
