@@ -29,7 +29,9 @@ export default function LoginScreen() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} sx={{
+      marginTop: "125px"
+    }}>
       <Stack className={"login-form"} sx={{
         justifyContent: "center"
       }} spacing={2}>
