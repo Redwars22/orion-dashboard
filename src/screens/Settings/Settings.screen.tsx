@@ -59,12 +59,16 @@ export default function SettingsScreen() {
               id="filled-basic"
               label="Nome da Empresa"
               variant="filled"
+              color="red"
+              focused
               fullWidth
               value={form.businessName}
             />
-            <TextField id="filled-basic" label="CNPJ" variant="filled" fullWidth value={form.CNPJ}/>
+            <TextField id="filled-basic" label="CNPJ" variant="filled" color="red"
+              focused fullWidth value={form.CNPJ}/>
             <h3>Segurança</h3>
-            <InputLabel id="demo-simple-select-label">
+            <InputLabel id="demo-simple-select-label" color="red"
+              focused>
               Habilitar autenticação de dois fatores
             </InputLabel>
             <Select
@@ -77,6 +81,8 @@ export default function SettingsScreen() {
                 twoFactorAuth: Boolean(e.target.value === "true")
               }))}
               fullWidth
+              color="red"
+              focused
             >
               <MenuItem value={"true"}>Habilitado</MenuItem>
               <MenuItem value={"false"}>Desabilitado</MenuItem>
@@ -94,6 +100,8 @@ export default function SettingsScreen() {
                 selectedAdmin: e.target.value
               }))}
               fullWidth
+              color="red"
+              focused
             >
               <>{form.admin.map((item) => <MenuItem value={`${item}`}>{item}</MenuItem>)}</>
             </Select>
@@ -105,6 +113,8 @@ export default function SettingsScreen() {
               type="password"
               fullWidth
               disabled
+              color="red"
+              focused
             />
             <TextField
               id="filled-basic"
@@ -113,6 +123,8 @@ export default function SettingsScreen() {
               type="password"
               fullWidth
               disabled
+              color="red"
+              focused
             />
             <Button variant="contained" color="success" disabled>
               Salvar
