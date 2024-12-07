@@ -44,6 +44,10 @@ export default function LoginScreen() {
           margin="normal"
           color="error"
           focused
+          sx={{
+            backgroundColor: "#fff",
+            color: "red"
+          }}
         />
         <TextField
           label="Password"
@@ -54,6 +58,10 @@ export default function LoginScreen() {
           margin="normal"
           color="error"
           focused
+          sx={{
+            backgroundColor: "#fff",
+            color: "red"
+          }}
         />
         {invalid && <Typography style={{
           color: "#FD6060"
