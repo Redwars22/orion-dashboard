@@ -24,7 +24,7 @@ export default function ClientsScreen() {
                 marginRight: "auto",
                 padding: "12px"
             }}>
-                <h2>Lista de Clientes</h2>
+                <h2>LISTA DE CLIENTES</h2>
             </div>
             <ClientsTable data={data} />
         </div>

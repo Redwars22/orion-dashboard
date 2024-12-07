@@ -38,7 +38,7 @@ export default function SettingsScreen() {
           marginRight: "auto",
         }}
       >
-        <h2>Configurações</h2>
+        <h2>CONFIGURAÇÕES</h2>
       </div>
       <Stack spacing={2} sx={{
         marginLeft: "auto",

@@ -31,7 +31,7 @@ export default function HomeScreen() {
             marginLeft: "auto",
             marginRight: "auto"
         }}>
-            <h2>Painel de controle da {data?.business?.companyName}</h2>
+            <h2>PAINEL DE CONTROLE DA {{data?.business?.companyName}.toUpperCase()}</h2>
         </div>
         <div className={styles.row}>
             <SalesComponent gainsOrLosses={data?.business?.dailyGainsOrLosses!}

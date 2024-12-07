@@ -112,7 +112,7 @@ export default function ProjectsScreen() {
           marginRight: "auto",
         }}
       >
-        <h2>Projetos</h2>
+        <h2>PROJETOS</h2>
       </div>
       <hr />
       {searchMode && <div
