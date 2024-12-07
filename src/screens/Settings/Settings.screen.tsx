@@ -63,9 +63,14 @@ export default function SettingsScreen() {
               focused
               fullWidth
               value={form.businessName}
+              sx={{
+                backgroundColor: "#2d2b2b",
+              }}
             />
             <TextField id="filled-basic" label="CNPJ" variant="filled" color="error"
-              focused fullWidth value={form.CNPJ}/>
+              focused fullWidth value={form.CNPJ} sx={{
+                backgroundColor: "#2d2b2b",
+              }}/>
             <h3>Segurança</h3>
             <InputLabel id="demo-simple-select-label" color="error"
               focused>
@@ -82,11 +87,14 @@ export default function SettingsScreen() {
               }))}
               fullWidth
               color="error"
+              sx={{
+                backgroundColor: "#2d2b2b",
+              }}
             >
               <MenuItem value={"true"}>Habilitado</MenuItem>
               <MenuItem value={"false"}>Desabilitado</MenuItem>
             </Select>
-            <InputLabel id="demo-simple-select-label">
+            <InputLabel id="demo-simple-select-label" color="error">
               Escolher administrador
             </InputLabel>
             <Select
@@ -100,6 +108,9 @@ export default function SettingsScreen() {
               }))}
               fullWidth
               color="error"
+              sx={{
+                backgroundColor: "#2d2b2b",
+              }}
             >
               <>{form.admin.map((item) => <MenuItem value={`${item}`}>{item}</MenuItem>)}</>
             </Select>
@@ -124,7 +135,7 @@ export default function SettingsScreen() {
               color="error"
               focused
             />
-            <Button variant="contained" color="success" disabled>
+            <Button variant="contained" color="success">
               Salvar
             </Button>
             <br/>
@@ -134,14 +145,14 @@ export default function SettingsScreen() {
               <br />
               Chave de produto: 9KDE4-9YOP2-5643W-NDKJP-Z345I
             </span>
-            <Button variant="contained" color="error" disabled>
+            <Button variant="contained" color="error">
               Alterar chave de produto
             </Button>
             <hr />
             <Button variant="contained" color="error">
               Exportar todos os dados
             </Button>
-            <Button variant="contained" color="warning" disabled>
+            <Button variant="contained" color="warning">
               Excluir empresa
             </Button>
           </div>
