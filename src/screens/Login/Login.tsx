@@ -37,30 +37,26 @@ export default function LoginScreen() {
       }} spacing={2}>
         <Brand isBlue={false} />
         <TextField
-          label="Username"
+          label="Nome de Usuário"
           value={username}
           onChange={handleUsernameChange}
           fullWidth
           margin="normal"
           color="error"
-          focused
           sx={{
-            backgroundColor: "#fff",
-            color: "red"
+            backgroundColor: "#2d2b2b",
           }}
         />
         <TextField
-          label="Password"
+          label="Senha"
           type="password"
           value={password}
           onChange={handlePasswordChange}
           fullWidth
           margin="normal"
           color="error"
-          focused
           sx={{
-            backgroundColor: "#fff",
-            color: "red"
+            backgroundColor: "#2d2b2b"
           }}
         />
         {invalid && <Typography style={{
