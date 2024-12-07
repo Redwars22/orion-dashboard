@@ -56,11 +56,11 @@ export default function ProjectsScreen() {
     const title = () => {
       switch (props.status) {
         case "todo":
-          return "Não iniciado";
+          return "NÃO INICIADO;
         case "doing":
-          return "Em progresso";
+          return "EM PROGRESSO";
         case "done":
-          return "Concluído";
+          return "CONCLUÍDO";
       }
     };
 
@@ -77,7 +77,7 @@ export default function ProjectsScreen() {
             borderRadius: "5px",
             backgroundColor:
               props.status === "todo"
-                ? "#eba11a"
+                ? "#ff1744"
                 : props.status === "doing"
                   ? "#2d63dd"
                   : props.status === "done"
