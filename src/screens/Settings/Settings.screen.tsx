@@ -59,15 +59,15 @@ export default function SettingsScreen() {
               id="filled-basic"
               label="Nome da Empresa"
               variant="filled"
-              color="red"
+              color="error"
               focused
               fullWidth
               value={form.businessName}
             />
-            <TextField id="filled-basic" label="CNPJ" variant="filled" color="red"
+            <TextField id="filled-basic" label="CNPJ" variant="filled" color="error"
               focused fullWidth value={form.CNPJ}/>
             <h3>Segurança</h3>
-            <InputLabel id="demo-simple-select-label" color="red"
+            <InputLabel id="demo-simple-select-label" color="error"
               focused>
               Habilitar autenticação de dois fatores
             </InputLabel>
@@ -81,7 +81,7 @@ export default function SettingsScreen() {
                 twoFactorAuth: Boolean(e.target.value === "true")
               }))}
               fullWidth
-              color="red"
+              color="error"
               focused
             >
               <MenuItem value={"true"}>Habilitado</MenuItem>
@@ -100,7 +100,7 @@ export default function SettingsScreen() {
                 selectedAdmin: e.target.value
               }))}
               fullWidth
-              color="red"
+              color="error"
               focused
             >
               <>{form.admin.map((item) => <MenuItem value={`${item}`}>{item}</MenuItem>)}</>
@@ -113,7 +113,7 @@ export default function SettingsScreen() {
               type="password"
               fullWidth
               disabled
-              color="red"
+              color="error"
               focused
             />
             <TextField
@@ -123,7 +123,7 @@ export default function SettingsScreen() {
               type="password"
               fullWidth
               disabled
-              color="red"
+              color="error"
               focused
             />
             <Button variant="contained" color="success" disabled>
