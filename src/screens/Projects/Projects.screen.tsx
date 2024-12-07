@@ -143,7 +143,7 @@ export default function ProjectsScreen() {
         className={boardStyle.projectsBoard}
       >
         <div style={{
-          backgroundColor: "#ebe9e9",
+          backgroundColor: "#151b1c",
           borderRadius: "10px"
         }}>
           <ColumnHeader status={"todo"} amount={data.todo?.length} />
@@ -162,7 +162,7 @@ export default function ProjectsScreen() {
           </div>)}</>
         </div>
         <div style={{
-          backgroundColor: "#ebe9e9",
+          backgroundColor: "#151b1c",
           borderRadius: "10px"
         }}>
           <ColumnHeader status={"doing"} amount={data.doing?.length} />
@@ -181,7 +181,7 @@ export default function ProjectsScreen() {
           </div>)}</>
         </div>
         <div style={{
-          backgroundColor: "#ebe9e9",
+          backgroundColor: "#151b1c",
           borderRadius: "10px",
           cursor: "move"
         }}>
