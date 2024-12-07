@@ -79,9 +79,9 @@ export default function ProjectsScreen() {
               props.status === "todo"
                 ? "#ff1744"
                 : props.status === "doing"
-                  ? "#2d63dd"
+                  ? "#2979ff"
                   : props.status === "done"
-                    ? "#37d360"
+                    ? "#4caf50"
                     : "black",
             color: "white",
           }}
@@ -167,7 +167,7 @@ export default function ProjectsScreen() {
         }}>
           <ColumnHeader status={"doing"} amount={data.doing?.length} />
           <>{data.doing?.map((item) => <div style={{
-            backgroundColor: "#00bcd4",
+            backgroundColor: "#2979ff",
             color: "white",
             padding: "10px",
             borderRadius: "5px",
@@ -187,7 +187,7 @@ export default function ProjectsScreen() {
         }}>
           <ColumnHeader status={"done"} amount={data.done?.length} />
           <>{data.done?.map((item) => <div style={{
-            backgroundColor: "#009688",
+            backgroundColor: "#4caf50",
             color: "white",
             padding: "10px",
             borderRadius: "5px",
