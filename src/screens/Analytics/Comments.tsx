@@ -7,7 +7,8 @@ export default function CommentCard(props: IAthenaComment) {
       maxWidth: "425px",
       marginLeft: "auto",
       marginRight: "auto",
-      marginBottom: "0.25rem"
+      marginBottom: "0.25rem",
+      backgroundColor: "#151b1c"
     }}>
       <CardContent>
         <div style={{
@@ -35,7 +36,7 @@ export default function CommentCard(props: IAthenaComment) {
         </div>
       </CardContent>
       <CardActions>
-        <Button size="small" variant="contained" color="primary">Responder</Button>
+        <Button size="small" variant="contained" color="error">Responder</Button>
       </CardActions>
     </Card>
   );

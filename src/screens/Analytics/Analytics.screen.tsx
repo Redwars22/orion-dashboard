@@ -202,7 +202,7 @@ export default function Analytics(){
 
     return(
         <div className={styles.dashboard}>
-            <h2>Relatórios</h2>
+            <h2>RELATÓRIOS</h2>
             <p>Resumo do perfil dos clientes que consomem seus produtos</p>
             <RenderChart title="Gênero">
                 <GenderChart/>
