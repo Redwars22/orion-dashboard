@@ -128,15 +128,16 @@ export default function ProjectsScreen() {
         <TextField
           id="filled-basic"
           label="Digite aqui para pesquisar"
-          variant="standard"
+          variant="contained"
           fullWidth
           size="small"
-        value={query}
-        onChange={(q) => {
-          if(q.target.value !== ""){
-            setQuery(q.target.value);
-          }
-        }}
+          color="error"
+          value={query}
+          onChange={(q) => {
+            if(q.target.value !== ""){
+              setQuery(q.target.value);
+            }
+          }}
         />
       </div>}
       <div
@@ -203,6 +204,7 @@ export default function ProjectsScreen() {
       <SpeedDial
         ariaLabel="SpeedDial basic example"
         sx={{ position: 'absolute', bottom: 16, right: 16 }}
+        color="error"
         icon={<AddIcon />}
       >
         {[
