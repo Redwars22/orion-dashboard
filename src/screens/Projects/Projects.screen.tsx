@@ -56,7 +56,7 @@ export default function ProjectsScreen() {
     const title = () => {
       switch (props.status) {
         case "todo":
-          return "NÃO INICIADO;
+          return "NÃO INICIADO";
         case "doing":
           return "EM PROGRESSO";
         case "done":
