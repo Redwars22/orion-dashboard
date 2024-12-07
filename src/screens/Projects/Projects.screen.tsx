@@ -128,7 +128,7 @@ export default function ProjectsScreen() {
         <TextField
           id="filled-basic"
           label="Digite aqui para pesquisar"
-          variant="contained"
+          variant="filled"
           fullWidth
           size="small"
           color="error"
