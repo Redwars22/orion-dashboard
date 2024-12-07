@@ -82,7 +82,6 @@ export default function SettingsScreen() {
               }))}
               fullWidth
               color="error"
-              focused
             >
               <MenuItem value={"true"}>Habilitado</MenuItem>
               <MenuItem value={"false"}>Desabilitado</MenuItem>
@@ -101,7 +100,6 @@ export default function SettingsScreen() {
               }))}
               fullWidth
               color="error"
-              focused
             >
               <>{form.admin.map((item) => <MenuItem value={`${item}`}>{item}</MenuItem>)}</>
             </Select>
