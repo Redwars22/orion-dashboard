@@ -148,7 +148,7 @@ export default function ProjectsScreen() {
         }}>
           <ColumnHeader status={"todo"} amount={data.todo?.length} />
           <>{data.todo?.map((item) => <div style={{
-            backgroundColor: "#ff5722",
+            backgroundColor: "#ff1744",
             color: "white",
             padding: "10px",
             borderRadius: "5px",
