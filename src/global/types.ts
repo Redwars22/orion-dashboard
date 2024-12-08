@@ -67,6 +67,10 @@ export interface ISettings {
 	admin: string[];
 	businessName: string;
 	twoFactorAuth: boolean;
+	CNPJ: string;
+	productKey: string;
+	expiryDate: string;
+	readOnly: boolean;
 }
 
 export interface IPDFReport {}
