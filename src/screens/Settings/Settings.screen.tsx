@@ -14,7 +14,7 @@ export default function SettingsScreen() {
     CNPJ: string;
     productKey: string;
     expiryDate: string;
-    readonly: boolean;
+    readOnly: boolean;
   }>({
     twoFactorAuth: true,
     admin: [],
