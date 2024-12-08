@@ -159,7 +159,7 @@ export default function ProjectsScreen() {
           }}>
             <span style={{ fontSize: "12px" }}><strong>{item?.title.toUpperCase()}</strong></span>
             <p style={{ fontSize: "12px" }}>{item?.description}</p>
-            <span style={{ fontSize: "10px" }}>{item?.date} - {item?.owner}</span>
+            <span style={{ fontSize: "10px" }}>{item?.date.toUpperCase()} - {item?.owner.toUpperCase()}</span>
           </div>)}</>
         </div>
         <div style={{
@@ -178,7 +178,7 @@ export default function ProjectsScreen() {
           }}>
             <span style={{ fontSize: "12px" }}><strong>{item?.title.toUpperCase()}</strong></span>
             <p style={{ fontSize: "12px" }}>{item?.description}</p>
-            <span style={{ fontSize: "10px" }}>{item?.date} - {item?.owner}</span>
+            <span style={{ fontSize: "10px" }}>{item?.date.toUpperCase()} - {item?.owner.toUpperCase()}</span>
           </div>)}</>
         </div>
         <div style={{
@@ -197,7 +197,7 @@ export default function ProjectsScreen() {
           }}>
             <span style={{ fontSize: "12px" }}><strong>{item?.title.toUpperCase()}</strong></span>
             <p style={{ fontSize: "12px" }}>{item?.description}</p>
-            <span style={{ fontSize: "10px" }}>{item?.date} - {item?.owner}</span>
+            <span style={{ fontSize: "10px" }}>{item?.date.toUpperCase()} - {item?.owner.toUpperCase()}</span>
           </div>)}</>
         </div>
       </div>
