@@ -143,13 +143,15 @@ export default function SettingsScreen() {
               color="error"
               focused
             />
-            <Button variant="contained" color="success">
+            <Button variant="contained" color="success" onClick={() => {
+              if(form.readOnly) triggerToast(ERROR_CODES.COULD_NOT_SAVE)  
+            }}>
               Salvar
             </Button>
             <br/>
             <h3>Ativação e Backup</h3>
             <span>
-              O Orionboard está ativado até 08/06/2024!
+              O Orionboard está ativado até {form.expiryDate}!
               <br />
               Chave de produto: {form.productKey}
             </span>
@@ -158,7 +160,9 @@ export default function SettingsScreen() {
             }}>
               Alterar chave de produto
             </Button>
-            <Button variant="contained" color="error">
+            <Button variant="contained" color="error" onClick={() => {
+              if(form.readOnly) triggerToast(ERROR_CODES.UNAVAILABLE_ACTION_READ_MODE)  
+            }}>
               Exportar todos os dados
             </Button>
             <Button variant="contained" color="warning" onClick={() => {
