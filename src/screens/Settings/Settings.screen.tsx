@@ -10,12 +10,18 @@ export default function SettingsScreen() {
     selectedAdmin: string;
     businessName: string;
     CNPJ: string;
+    productKey: string;
+    expiryDate: string;
+    readonly: boolean;
   }>({
     twoFactorAuth: true,
     admin: [],
     selectedAdmin: "",
     businessName: "",
-    CNPJ: ""
+    CNPJ: "",
+    productKey: "",
+    expiryDate: "",
+    readOnly: false
   });
 
   React.useEffect(() => {
@@ -143,9 +149,9 @@ export default function SettingsScreen() {
             <span>
               O Orionboard está ativado até 08/06/2024!
               <br />
-              Chave de produto: 9KDE4-9YOP2-5643W-NDKJP-Z345I
+              Chave de produto: {form.productKey}
             </span>
-            <Button variant="contained" color="error">
+            <Button variant="contained" color="error" >
               Alterar chave de produto
             </Button>
             <Button variant="contained" color="error">
