@@ -157,7 +157,7 @@ export default function ProjectsScreen() {
             textAlign: "left",
             cursor: "move"
           }}>
-            <span style={{ fontSize: "12px" }}><strong>{item?.title}</strong></span>
+            <span style={{ fontSize: "12px" }}><strong>{item?.title.toUpperCase()}</strong></span>
             <p style={{ fontSize: "12px" }}>{item?.description}</p>
             <span style={{ fontSize: "10px" }}>{item?.date} - {item?.owner}</span>
           </div>)}</>
@@ -176,7 +176,7 @@ export default function ProjectsScreen() {
             textAlign: "left",
             cursor: "move"
           }}>
-            <span style={{ fontSize: "12px" }}><strong>{item?.title}</strong></span>
+            <span style={{ fontSize: "12px" }}><strong>{item?.title.toUpperCase()}</strong></span>
             <p style={{ fontSize: "12px" }}>{item?.description}</p>
             <span style={{ fontSize: "10px" }}>{item?.date} - {item?.owner}</span>
           </div>)}</>
@@ -195,7 +195,7 @@ export default function ProjectsScreen() {
             margin: "5px",
             textAlign: "left"
           }}>
-            <span style={{ fontSize: "12px" }}><strong>{item?.title}</strong></span>
+            <span style={{ fontSize: "12px" }}><strong>{item?.title.toUpperCase()}</strong></span>
             <p style={{ fontSize: "12px" }}>{item?.description}</p>
             <span style={{ fontSize: "10px" }}>{item?.date} - {item?.owner}</span>
           </div>)}</>

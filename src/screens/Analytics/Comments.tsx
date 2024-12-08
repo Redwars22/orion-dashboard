@@ -23,7 +23,6 @@ export default function CommentCard(props: IAthenaComment) {
           <Typography sx={{ fontSize: 14, color: "#fff", fontWeight: 900 }} gutterBottom>
             {props.name.toUpperCase()}
           </Typography>
-          <Rating name="read-only" value={props.rating} readOnly />
         </div>
         <div style={{
           display: "flex",
@@ -35,6 +34,7 @@ export default function CommentCard(props: IAthenaComment) {
           </Typography>
         </div>
       </CardContent>
+      <Rating name="read-only" value={props.rating} readOnly />
       <CardActions>
         <Button size="small" variant="contained" color="error">Responder</Button>
       </CardActions>
