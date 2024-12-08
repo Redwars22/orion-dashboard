@@ -19,7 +19,7 @@ export default function FinancesTable(props: { data: IFinances[] }) {
                         <span>{item?.year!}</span>
                         <span>{item?.month!}</span>
                         <span style={{
-                            color: item?.amount < 0 ? "red" : "green",
+                            color: item?.amount < 0 ? "#ff1744" : "#4caf50",
                             fontWeight: "900"
                         }}>R$ {item?.amount!}</span>
                         <Button variant="contained" color="error" onClick={() => window.open(item?.fileURL)}>

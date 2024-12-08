@@ -114,7 +114,6 @@ export default function ProjectsScreen() {
       >
         <h2>PROJETOS</h2>
       </div>
-      <hr />
       {searchMode && <div
         style={{
           display: "flex",
