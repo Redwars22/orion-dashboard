@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "../../styles/dashboard.module.scss";
 import { Stack, Button, InputLabel, MenuItem, Select, TextField } from "@mui/material";
+import { triggerToast } from "../../utils/toast";
+import { ERROR_CODES } from "../../global/errors";
 
 export default function SettingsScreen() {
   const [data, setData] = React.useState({});
@@ -151,13 +153,17 @@ export default function SettingsScreen() {
               <br />
               Chave de produto: {form.productKey}
             </span>
-            <Button variant="contained" color="error" >
+            <Button variant="contained" color="error" onClick={() => {
+              if(form.readOnly) triggerToast(ERROR_CODES.UNAVAILABLE_ACTION_READ_MODE)  
+            }}>
               Alterar chave de produto
             </Button>
             <Button variant="contained" color="error">
               Exportar todos os dados
             </Button>
-            <Button variant="contained" color="warning">
+            <Button variant="contained" color="warning" onClick={() => {
+              if(form.readOnly) triggerToast(ERROR_CODES.UNAVAILABLE_ACTION_READ_MODE)  
+            }}>
               Excluir empresa
             </Button>
           </div>
