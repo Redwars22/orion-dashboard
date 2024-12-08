@@ -44,7 +44,7 @@ export default function TasksComponent(props: {
       flex: 1,
       backgroundColor: "#151b1c"
     }}>
-      <h2>Tarefas</h2>
+      <h2>TAREFAS</h2>
       <div style={{
         display: "flex",
         flexDirection: "column",

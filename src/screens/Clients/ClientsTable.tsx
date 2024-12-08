@@ -33,7 +33,7 @@ export default function ClientsTable(props: {
                 </div>
                 <>{clientsTableData.map((item: IClients) =>
                     <div className={styles.clientsTable}>
-                        <span>{item?.name!}</span>
+                        <span>{item?.name!.toUpperCase()}</span>
                         <span>{item?.CPF!}</span>
                         <span>{item?.address!}</span>
                         <span>{item?.phoneNumber!}</span>

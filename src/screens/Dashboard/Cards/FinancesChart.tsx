@@ -40,7 +40,7 @@ export default function FinancesChartComponent() {
             flex: 1,
             backgroundColor: "#151b1c"
         }}>
-            <h2>Resumo Financeiro</h2>
+            <h2>RESUMO FINANCEIRO</h2>
             <Line
                 datasetIdKey='id'
                 data={{

@@ -39,7 +39,7 @@ export default function EventsComponent(props: {
       backgroundColor: "#151b1c",
       color: "#fff"
     }}>
-      <h2>Eventos</h2>
+      <h2>EVENTOS</h2>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <div style={{
           maxWidth: "150px",

@@ -24,7 +24,7 @@ export default function FinancesTable(props: { data: IFinances[] }) {
                         }}>R$ {item?.amount!}</span>
                         <Button variant="contained" color="error" onClick={() => window.open(item?.fileURL)}>
                             <SystemUpdateAltIcon />
-                            Baixar relatório do mês
+                            Baixar relatório
                         </Button>
                     </div>
                 )}

@@ -18,7 +18,7 @@ export default function SalesComponent(props: {
         flex: 1,
         backgroundColor: "#151b1c"
     }}>
-        <h2>Resumo de vendas</h2>
+        <h2>RESUMO DE VENDAS</h2>
         <div style={{
             marginLeft: "auto",
             marginRight: "auto",

@@ -68,3 +68,5 @@ export interface ISettings {
 	businessName: string;
 	twoFactorAuth: boolean;
 }
+
+export interface IPDFReport {}
