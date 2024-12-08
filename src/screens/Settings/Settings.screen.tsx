@@ -148,7 +148,6 @@ export default function SettingsScreen() {
             <Button variant="contained" color="error">
               Alterar chave de produto
             </Button>
-            <hr />
             <Button variant="contained" color="error">
               Exportar todos os dados
             </Button>

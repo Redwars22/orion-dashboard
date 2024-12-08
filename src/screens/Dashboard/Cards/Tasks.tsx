@@ -52,7 +52,13 @@ export default function TasksComponent(props: {
         alignItems: "flex-start",
         marginLeft: "0.5rem"
       }}>
-        {props.data && tasks()!.map((item: IProjects) => <span>
+        {props.data && tasks()!.map((item: IProjects) => <span style={{
+          display: "flex",
+          flexWrap: 'wrap',
+          gap: '12px',
+          alignItems: "center",
+          justifyContent: "flex-start"
+        }}>
           <AssignmentTurnedInIcon/> - {getTaskStatus(item.status)} - {item?.title} ({item?.owner})
         </span>)}
       </div>

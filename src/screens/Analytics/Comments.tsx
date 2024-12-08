@@ -20,10 +20,10 @@ export default function CommentCard(props: IAthenaComment) {
         }}><Avatar sx={{ bgcolor: `#${Math.floor(Math.random() * 16777215).toString(16)}` }}>
             {props.name.split(" ").map((char) => char.charAt(0)).join("")}
           </Avatar>
-          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+          <Typography sx={{ fontSize: 14 }} color="error" gutterBottom>
             {props.name}
           </Typography>
-          <Rating name="read-only" value={props.rating} readOnly />
+          <Rating name="read-only" color="error" value={props.rating} readOnly />
         </div>
         <div style={{
           display: "flex",
