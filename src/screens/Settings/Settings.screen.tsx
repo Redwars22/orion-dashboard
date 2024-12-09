@@ -84,11 +84,9 @@ export default function SettingsScreen() {
           }}
         />
             <h3>Segurança</h3>
-            <span>Autenticação de dois fatores</span>
-            <FormControlLabel color="error" control={<Checkbox  color="error" defaultChecked/>} label="Habilitar autenticação de dois fatores" />
-            <InputLabel id="demo-simple-select-label" color="error">
+            <span>
               Escolher administrador
-            </InputLabel>
+            </span>
             <Select
               labelId="demo-simple-select-label"
               id="demo-simple-select"
@@ -99,6 +97,7 @@ export default function SettingsScreen() {
                 selectedAdmin: e.target.value
               }))}
               fullWidth
+              disabled
               color="error"
               sx={{
                 backgroundColor: "#2d2b2b",
@@ -106,6 +105,7 @@ export default function SettingsScreen() {
             >
               <>{form.admin.map((item) => <MenuItem value={`${item}`}>{item}</MenuItem>)}</>
             </Select>
+            <FormControlLabel color="error" control={<Checkbox  color="error" defaultChecked/>} label="Habilitar autenticação de dois fatores" />
             <br/>
             <span>Senha Antiga</span>
         <Input
