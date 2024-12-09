@@ -45,7 +45,7 @@ export default function LoginScreen() {
           variant="standard"
           sx={{
             backgroundColor: "#100109",
-            color: "white"
+            color: "white !important" 
           }}
         />
         <TextField
@@ -58,7 +58,7 @@ export default function LoginScreen() {
           variant="standard"
           sx={{
             backgroundColor: "#100109",
-            color: "white"
+            color: "white !important"
           }}
         />
         {invalid && <Typography style={{
