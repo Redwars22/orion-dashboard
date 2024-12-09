@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../styles/dashboard.module.scss";
-import { Stack, Button, InputLabel, MenuItem, Select, TextField, Input } from "@mui/material";
+import { Stack, Button, InputLabel, MenuItem, Select, TextField, Input, FormControlLabel, Checkbox } from "@mui/material";
 import { triggerToast } from "../../utils/toast";
 import { ERROR_CODES } from "../../global/errors";
 
