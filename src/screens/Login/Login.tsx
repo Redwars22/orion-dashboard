@@ -48,8 +48,8 @@ export default function LoginScreen() {
         <Input
           placeholder="Senha"
           type="password"
-          value={username}
-          onChange={handleUsernameChange}
+          value={password}
+          onChange={handlePasswordChange}
           fullWidth
           sx={{
             color: "#f44336 !important"
