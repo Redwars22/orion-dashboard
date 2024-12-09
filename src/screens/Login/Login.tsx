@@ -50,7 +50,19 @@ export default function LoginScreen() {
           value={username}
           onChange={handleUsernameChange}
           fullWidth
-          color="primary"
+          sx={{
+            color: "#f44336 !important"
+          }}
+        />
+        <Input
+          placeholder="Senha"
+          type="password"
+          value={username}
+          onChange={handleUsernameChange}
+          fullWidth
+          sx={{
+            color: "#f44336 !important"
+          }}
         />
         <TextField
           label="Senha"
