@@ -134,9 +134,6 @@ export default function ProjectsScreen() {
             }
           }}
           fullWidth
-          sx={{
-            color: "#f44336 !important"
-          }}
         />
       </div>}
       <div

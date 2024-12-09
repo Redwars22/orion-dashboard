@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../styles/dashboard.module.scss";
-import { Stack, Button, InputLabel, MenuItem, Select, TextField } from "@mui/material";
+import { Stack, Button, InputLabel, MenuItem, Select, TextField, Input } from "@mui/material";
 import { triggerToast } from "../../utils/toast";
 import { ERROR_CODES } from "../../global/errors";
 
@@ -63,6 +63,15 @@ export default function SettingsScreen() {
               alignItems: "center"
             }}
           >
+            <Input
+          placeholder="Nome da Empresa"
+          value={form.businessName}
+          disabled={!form.readOnly}
+          fullWidth
+          sx={{
+            color: "#f44336 !important"
+          }}
+        />
             <TextField
               id="filled-basic"
               label="Nome da Empresa"
