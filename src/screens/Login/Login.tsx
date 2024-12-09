@@ -50,7 +50,6 @@ export default function LoginScreen() {
           value={username}
           onChange={handleUsernameChange}
           fullWidth
-          variant="filled"
           color="primary"
         />
         <TextField
