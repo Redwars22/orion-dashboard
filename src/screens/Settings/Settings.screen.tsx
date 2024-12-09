@@ -72,22 +72,15 @@ export default function SettingsScreen() {
             color: "#f44336 !important"
           }}
         />
-            <TextField
-              id="filled-basic"
-              label="Nome da Empresa"
-              variant="filled"
-              color="error"
-              focused
-              fullWidth
-              value={form.businessName}
-              sx={{
-                backgroundColor: "#2d2b2b",
-              }}
-            />
-            <TextField id="filled-basic" label="CNPJ" variant="filled" color="error"
-              focused fullWidth value={form.CNPJ} sx={{
-                backgroundColor: "#2d2b2b",
-              }}/>
+        <Input
+          placeholder="CNPJ"
+          value={form.CNPJ}
+          disabled={!form.readOnly}
+          fullWidth
+          sx={{
+            color: "#f44336 !important"
+          }}
+        />
             <h3>Segurança</h3>
             <InputLabel id="demo-simple-select-label" color="error"
               focused>
