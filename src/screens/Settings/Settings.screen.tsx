@@ -85,7 +85,7 @@ export default function SettingsScreen() {
         />
             <h3>Segurança</h3>
             <span>Autenticação de dois fatores</span>
-            <FormControlLabel control={<Checkbox  defaultChecked disabled/>} label="Habilitar autenticação de dois fatores" />
+            <FormControlLabel color="error" control={<Checkbox  color="error" defaultChecked/>} label="Habilitar autenticação de dois fatores" />
             <InputLabel id="demo-simple-select-label" color="error">
               Escolher administrador
             </InputLabel>
