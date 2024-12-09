@@ -43,8 +43,8 @@ export default function LoginScreen() {
           fullWidth
           margin="normal"
           variant="standard"
+          color="primary"
           sx={{
-            backgroundColor: "#100109",
             color: "white !important" 
           }}
         />
@@ -56,8 +56,8 @@ export default function LoginScreen() {
           fullWidth
           margin="normal"
           variant="standard"
+          color="primary"
           sx={{
-            backgroundColor: "#100109",
             color: "white !important"
           }}
         />
