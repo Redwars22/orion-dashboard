@@ -43,7 +43,7 @@ export default function LoginScreen() {
           fullWidth
           margin="normal"
           variant="filled"
-          color="primary"
+          color="secondary"
         />
         <TextField
           label="Senha"
@@ -53,7 +53,7 @@ export default function LoginScreen() {
           fullWidth
           margin="normal"
           variant="filled"
-          color="primary"
+          color="secondary"
         />
         {invalid && <Typography style={{
           color: "#FD6060"
