@@ -50,7 +50,6 @@ export default function LoginScreen() {
           value={username}
           onChange={handleUsernameChange}
           fullWidth
-          margin="normal"
           variant="filled"
           color="primary"
         />
