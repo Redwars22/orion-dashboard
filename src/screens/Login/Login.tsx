@@ -36,15 +36,6 @@ export default function LoginScreen() {
         justifyContent: "center"
       }} spacing={2}>
         <Brand isBlue={false} />
-        <TextField
-          label="Nome de Usuário"
-          value={username}
-          onChange={handleUsernameChange}
-          fullWidth
-          margin="normal"
-          variant="filled"
-          color="secondary"
-        />
         <Input
           placeholder="Nome de Usuário"
           value={username}
@@ -63,16 +54,6 @@ export default function LoginScreen() {
           sx={{
             color: "#f44336 !important"
           }}
-        />
-        <TextField
-          label="Senha"
-          type="password"
-          value={password}
-          onChange={handlePasswordChange}
-          fullWidth
-          margin="normal"
-          variant="filled"
-          color="secondary"
         />
         {invalid && <Typography style={{
           color: "#FD6060"
