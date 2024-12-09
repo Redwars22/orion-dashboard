@@ -128,26 +128,29 @@ export default function SettingsScreen() {
               <>{form.admin.map((item) => <MenuItem value={`${item}`}>{item}</MenuItem>)}</>
             </Select>
             <br/>
-            <TextField
-              id="filled-basic"
-              label="Senha antiga"
-              variant="filled"
-              type="password"
-              fullWidth
-              disabled
-              color="error"
-              focused
-            />
-            <TextField
-              id="filled-basic"
-              label="Senha nova"
-              variant="filled"
-              type="password"
-              fullWidth
-              disabled
-              color="error"
-              focused
-            />
+            <span>Senha Antiga</span>
+        <Input
+          placeholder="Senha Antiga"
+          type="password"
+          value={form.CNPJ}
+          disabled={!form.readOnly}
+          fullWidth
+          sx={{
+            color: "#f44336 !important"
+          }}
+        />
+
+<span>Senha Nova</span>
+        <Input
+          placeholder="Senha Nova"
+          type="password"
+          value={form.CNPJ}
+          disabled={!form.readOnly}
+          fullWidth
+          sx={{
+            color: "#f44336 !important"
+          }}
+        />
             <Button variant="contained" color="success" onClick={() => {
               if(form.readOnly) triggerToast(ERROR_CODES.COULD_NOT_SAVE)  
             }}>
