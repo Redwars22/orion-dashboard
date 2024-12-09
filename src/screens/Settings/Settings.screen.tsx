@@ -85,28 +85,7 @@ export default function SettingsScreen() {
         />
             <h3>Segurança</h3>
             <span>Autenticação de dois fatores</span>
-            <InputLabel id="demo-simple-select-label" color="error"
-              focused>
-              Habilitar autenticação de dois fatores
-            </InputLabel>
-            <Select
-              labelId="demo-simple-select-label"
-              id="demo-simple-select"
-              value={form.twoFactorAuth}
-              label="Habilitar autenticação de dois fatores"
-              onChange={(e) => setFormData((s) => ({
-                ...s,
-                twoFactorAuth: Boolean(e.target.value === "true")
-              }))}
-              fullWidth
-              color="error"
-              sx={{
-                backgroundColor: "#2d2b2b",
-              }}
-            >
-              <MenuItem value={"true"}>Habilitado</MenuItem>
-              <MenuItem value={"false"}>Desabilitado</MenuItem>
-            </Select>
+            <FormControlLabel control={<Checkbox  defaultChecked disabled/>} label="Habilitar autenticação de dois fatores" />
             <InputLabel id="demo-simple-select-label" color="error">
               Escolher administrador
             </InputLabel>
@@ -132,7 +111,7 @@ export default function SettingsScreen() {
         <Input
           placeholder="Senha Antiga"
           type="password"
-          value={form.CNPJ}
+          value={"1234566"}
           disabled={!form.readOnly}
           fullWidth
           sx={{
@@ -144,7 +123,7 @@ export default function SettingsScreen() {
         <Input
           placeholder="Senha Nova"
           type="password"
-          value={form.CNPJ}
+          value={"1234566"}
           disabled={!form.readOnly}
           fullWidth
           sx={{
