@@ -58,11 +58,12 @@ export default function SettingsScreen() {
           <div
             style={{
               display: "flex",
-              gap: "0.3rem",
+              gap: "0.5rem",
               flexDirection: "column",
               alignItems: "center"
             }}
           >
+            <span>Nome da Empresa</span>
             <Input
           placeholder="Nome da Empresa"
           value={form.businessName}
@@ -72,6 +73,7 @@ export default function SettingsScreen() {
             color: "#f44336 !important"
           }}
         />
+        <span>CNPJ</span>
         <Input
           placeholder="CNPJ"
           value={form.CNPJ}
@@ -82,6 +84,7 @@ export default function SettingsScreen() {
           }}
         />
             <h3>Segurança</h3>
+            <span>Autenticação de dois fatores</span>
             <InputLabel id="demo-simple-select-label" color="error"
               focused>
               Habilitar autenticação de dois fatores
