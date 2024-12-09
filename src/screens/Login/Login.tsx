@@ -42,11 +42,8 @@ export default function LoginScreen() {
           onChange={handleUsernameChange}
           fullWidth
           margin="normal"
-          variant="standard"
+          variant="filled"
           color="primary"
-          sx={{
-            color: "white !important" 
-          }}
         />
         <TextField
           label="Senha"
@@ -55,11 +52,8 @@ export default function LoginScreen() {
           onChange={handlePasswordChange}
           fullWidth
           margin="normal"
-          variant="standard"
+          variant="filled"
           color="primary"
-          sx={{
-            color: "white !important"
-          }}
         />
         {invalid && <Typography style={{
           color: "#FD6060"
