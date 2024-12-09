@@ -124,18 +124,18 @@ export default function ProjectsScreen() {
           marginBottom: "25px"
         }}
       >
-        <TextField
-          id="filled-basic"
-          label="Digite aqui para pesquisar"
-          variant="filled"
-          fullWidth
-          size="small"
-          color="error"
+        <Input
+          placeholder="Digite aqui para pesquisar"
+          type="password"
           value={query}
           onChange={(q) => {
             if(q.target.value !== ""){
               setQuery(q.target.value);
             }
+          }}
+          fullWidth
+          sx={{
+            color: "#f44336 !important"
           }}
         />
       </div>}
