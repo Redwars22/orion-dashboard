@@ -1,4 +1,4 @@
-import { Stack, TextField, Button, Typography } from "@mui/material";
+import { Stack, TextField, Button, Typography, Input } from "@mui/material";
 import { useState } from "react";
 import Brand from "../../global/Brand";
 import { useNavigate } from "react-router-dom";
@@ -44,6 +44,15 @@ export default function LoginScreen() {
           margin="normal"
           variant="filled"
           color="secondary"
+        />
+        <Input
+          label="Nome de Usuário"
+          value={username}
+          onChange={handleUsernameChange}
+          fullWidth
+          margin="normal"
+          variant="filled"
+          color="primary"
         />
         <TextField
           label="Senha"
