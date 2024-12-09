@@ -46,7 +46,7 @@ export default function LoginScreen() {
           color="secondary"
         />
         <Input
-          label="Nome de Usuário"
+          placeholder="Nome de Usuário"
           value={username}
           onChange={handleUsernameChange}
           fullWidth
